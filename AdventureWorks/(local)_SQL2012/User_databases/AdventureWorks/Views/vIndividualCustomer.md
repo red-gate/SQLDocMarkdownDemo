@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > Sales.vIndividualCustomer
 
 # ![Views](../../../../Images/View32.png) [Sales].[vIndividualCustomer]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > Sales.vIndividualCustomer
+---
 
 ## <a name="#description"></a>MS_Description
+
 Individual customers (names and addresses) that purchase Adventure Works Cycles products online.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Individual customers (names and addresses) that purchase Adventure Works Cycles 
 | Created | 13:14:55 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -39,7 +46,10 @@ Individual customers (names and addresses) that purchase Adventure Works Cycles 
 | Demographics |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [Sales].[vIndividualCustomer] 
@@ -89,9 +99,12 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[Address]](../Tables/Address.md)
+
+DEPENDENCYLIST* [[Person].[Address]](../Tables/Address.md)
 * [[Person].[AddressType]](../Tables/AddressType.md)
 * [[Person].[BusinessEntityAddress]](../Tables/BusinessEntityAddress.md)
 * [[Person].[CountryRegion]](../Tables/CountryRegion.md)
@@ -103,7 +116,12 @@ DEPENDENCYLIST
 * [[Sales].[Customer]](../Tables/Customer.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductListPriceHistory
 
 # ![Tables](../../../../Images/Table32.png) [Production].[ProductListPriceHistory]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.ProductListPriceHistory
+---
 
 ## <a name="#description"></a>MS_Description
+
 Changes in the list price of a product over time.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,23 +19,29 @@ Changes in the list price of a product over time.
 | Last Modified | 13:14:54 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_ProductListPriceHistory_ProductID_StartDate: ProductID\\StartDate](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductListPriceHistory_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int | 4 | NO |  | _Product identification number. Foreign key to Product.ProductID_ |
-| [![Cluster Primary Key PK_ProductListPriceHistory_ProductID_StartDate: ProductID\\StartDate](../../../../Images/pkcluster.png)](#indexes) | StartDate | datetime | 8 | NO |  | _List price start date._ |
+| [![Cluster Primary Key PK_ProductListPriceHistory_ProductID_StartDate: ProductID\StartDate](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductListPriceHistory_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int | 4 | NO |  | _Product identification number. Foreign key to Product.ProductID_ |
+| [![Cluster Primary Key PK_ProductListPriceHistory_ProductID_StartDate: ProductID\StartDate](../../../../Images/pkcluster.png)](#indexes) | StartDate | datetime | 8 | NO |  | _List price start date._ |
 |  | EndDate | datetime | 8 | YES |  | _List price end date_ |
 | [![Check Constraints CK_ProductListPriceHistory_ListPrice : ([ListPrice]>(0.00))](../../../../Images/c-constraint.png)](#checkconstraints) | ListPrice | money | 8 | NO |  | _Product list price._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_ProductListPriceHistory_ProductID_StartDate: ProductID\\StartDate](../../../../Images/pkcluster.png)](#indexes) | PK_ProductListPriceHistory_ProductID_StartDate | ProductID, StartDate | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_ProductListPriceHistory_ProductID_StartDate: ProductID\StartDate](../../../../Images/pkcluster.png)](#indexes) | PK_ProductListPriceHistory_ProductID_StartDate | ProductID, StartDate | YES | _Primary key (clustered) constraint_ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -40,6 +51,8 @@ Changes in the list price of a product over time.
 | CK_ProductListPriceHistory_ListPrice | ListPrice | ([ListPrice]>(0.00)) | _Check constraint [ListPrice] > (0.00)_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -47,7 +60,10 @@ Changes in the list price of a product over time.
 | FK_ProductListPriceHistory_Product_ProductID | ProductID->[[Production].[Product].[ProductID]](Product.md) | _Foreign key constraint referencing Product.ProductID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[ProductListPriceHistory]
 (
@@ -93,18 +109,28 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Product]](Product.md)
+
+DEPENDENCYLIST* [[Production].[Product]](Product.md)
 * [Production](../Security/Schemas/Production.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[dbo].[ufnGetProductDealerPrice]](../Programmability/Functions/Scalar-valued_Functions/ufnGetProductDealerPrice.md)
+
+DEPENDENCYLIST* [[dbo].[ufnGetProductDealerPrice]](../Programmability/Functions/Scalar-valued_Functions/ufnGetProductDealerPrice.md)
 * [[dbo].[ufnGetProductListPrice]](../Programmability/Functions/Scalar-valued_Functions/ufnGetProductListPrice.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

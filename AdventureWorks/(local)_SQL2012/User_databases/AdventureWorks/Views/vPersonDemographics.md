@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > Sales.vPersonDemographics
 
 # ![Views](../../../../Images/View32.png) [Sales].[vPersonDemographics]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > Sales.vPersonDemographics
+---
 
 ## <a name="#description"></a>MS_Description
+
 Displays the content from each element in the xml column Demographics for each customer in the Person.Person table.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Displays the content from each element in the xml column Demographics for each c
 | Created | 13:14:55 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -34,7 +41,10 @@ Displays the content from each element in the xml column Demographics for each c
 | NumberCarsOwned |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [Sales].[vPersonDemographics] 
@@ -75,12 +85,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[Person]](../Tables/Person.md)
+
+DEPENDENCYLIST* [[Person].[Person]](../Tables/Person.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

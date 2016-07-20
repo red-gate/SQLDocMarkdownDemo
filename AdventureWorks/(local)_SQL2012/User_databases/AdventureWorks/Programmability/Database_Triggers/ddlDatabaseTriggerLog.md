@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Database Triggers](Database_Triggers.md) > ddlDatabaseTriggerLog
 
 # ![Database Triggers](../../../../../Images/DdlTrigger32.png) ddlDatabaseTriggerLog
 
-[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Database Triggers](Database_Triggers_.md) > ddlDatabaseTriggerLog
+---
 
 ## <a name="#description"></a>MS_Description
+
 Database trigger to audit all of the DDL changes made to the AdventureWorks 2012 database.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,7 +19,10 @@ Database trigger to audit all of the DDL changes made to the AdventureWorks 2012
 | Disabled | YES |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE TRIGGER [ddlDatabaseTriggerLog] ON DATABASE 
@@ -68,7 +76,13 @@ EXEC sp_addextendedproperty N'MS_Description', N'Database trigger to audit all o
 GO
 
 ```
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

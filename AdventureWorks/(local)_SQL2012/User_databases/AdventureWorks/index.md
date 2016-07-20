@@ -1,23 +1,31 @@
-
-# ![Database](../../../Images/ntDatabase.png) AdventureWorks Database
+#### 
 
 [Project](../../../index.md) > [(local)\\SQL2012](../../index.md) > [User databases](../index.md) > AdventureWorks
 
-## <a name="#description"></a>MS_Description
-AdventureWorks 2012 Sample OLTP Database
-## <a name="#objecttypes"></a>Object Types
-* ![Tables](../../../Images/Table.png) [Tables](Tables/Tables_.md)
-* ![Views](../../../Images/View.png) [Views](Views/Views_.md)
-* ![Stored Procedures](../../../Images/StoredProcedure.png) [Stored Procedures](Programmability/Stored_Procedures/Stored_Procedures_.md)
-* ![Table-valued Functions](../../../Images/Function_Table.png) [Table-valued Functions](Programmability/Functions/Table-valued_Functions/Table-valued_Functions_.md)
-* ![Scalar-valued Functions](../../../Images/Function_Scalar.png) [Scalar-valued Functions](Programmability/Functions/Scalar-valued_Functions/Scalar-valued_Functions_.md)
-* ![Database Triggers](../../../Images/DdlTrigger.png) [Database Triggers](Programmability/Database_Triggers/Database_Triggers_.md)
-* ![User-Defined Data Types](../../../Images/UserDefinedDataType.png) [User-Defined Data Types](Programmability/Types/User-Defined_Data_Types/User-Defined_Data_Types_.md)
-* ![XML Schema Collections](../../../Images/XmlSchemaCollection.png) [XML Schema Collections](Programmability/Types/XML_Schema_Collections/XML_Schema_Collections_.md)
-* ![Full Text Catalogs](../../../Images/FullTextCatalog.png) [Full Text Catalogs](Storage/Full_Text_Catalogs/Full_Text_Catalogs_.md)
-* ![Database Roles](../../../Images/Role_Database.png) [Database Roles](Security/Roles/Database_Roles/Database_Roles_.md)
-* ![Schemas](../../../Images/Schema.png) [Schemas](Security/Schemas/Schemas_.md)
+# ![Database](../../../Images/ntDatabase.png) AdventureWorks Database
 
+---
+
+## <a name="#description"></a>MS_Description
+
+AdventureWorks 2012 Sample OLTP Database
+
+## <a name="#objecttypes"></a>Object Types
+
+* ![Tables](../../../Images/Table.png) [Tables](Tables/Tables.md)
+* ![Views](../../../Images/View.png) [Views](Views/Views.md)
+* ![Stored Procedures](../../../Images/StoredProcedure.png) [Stored Procedures](Programmability/Stored_Procedures/Stored_Procedures.md)
+* ![Table-valued Functions](../../../Images/Function_Table.png) [Table-valued Functions](Programmability/Functions/Table-valued_Functions/Table-valued_Functions.md)
+* ![Scalar-valued Functions](../../../Images/Function_Scalar.png) [Scalar-valued Functions](Programmability/Functions/Scalar-valued_Functions/Scalar-valued_Functions.md)
+* ![Database Triggers](../../../Images/DdlTrigger.png) [Database Triggers](Programmability/Database_Triggers/Database_Triggers.md)
+* ![User-Defined Data Types](../../../Images/UserDefinedDataType.png) [User-Defined Data Types](Programmability/Types/User-Defined_Data_Types/User-Defined_Data_Types.md)
+* ![XML Schema Collections](../../../Images/XmlSchemaCollection.png) [XML Schema Collections](Programmability/Types/XML_Schema_Collections/XML_Schema_Collections.md)
+* ![Full Text Catalogs](../../../Images/FullTextCatalog.png) [Full Text Catalogs](Storage/Full_Text_Catalogs/Full_Text_Catalogs.md)
+* ![Database Roles](../../../Images/Role_Database.png) [Database Roles](Security/Roles/Database_Roles/Database_Roles.md)
+* ![Schemas](../../../Images/Schema.png) [Schemas](Security/Schemas/Schemas.md)
+
+
+---
 
 ## <a name="#dbproperties"></a>Database Properties
 
@@ -34,6 +42,8 @@ AdventureWorks 2012 Sample OLTP Database
 | Database size | 205.75 MB |
 | Unallocated space | 14.84 MB |
 
+
+---
 
 ## <a name="#dboptions"></a>Database Options
 
@@ -94,6 +104,8 @@ AdventureWorks 2012 Sample OLTP Database
 | Database owner | sa |
 
 
+---
+
 ## <a name="#files"></a>Files
 
 | Name | Type | Size | Maxsize | Autogrowth | File Name |
@@ -101,7 +113,12 @@ AdventureWorks 2012 Sample OLTP Database
 | AdventureWorks2012_Data | Data | 205.00 MB | unlimited | 16.00 MB | C:\\SQLDatabases\\AdventureWorks2012.mdf |
 | AdventureWorks2012_Log | Log | 768.00 KB | unlimited | 10.00 percent | C:\\SQLDatabases\\AdventureWorks2012.ldf |
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

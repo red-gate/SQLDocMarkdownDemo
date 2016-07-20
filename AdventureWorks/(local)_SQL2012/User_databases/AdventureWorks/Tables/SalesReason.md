@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.SalesReason
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[SalesReason]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.SalesReason
+---
 
 ## <a name="#description"></a>MS_Description
+
 Lookup table of customer purchase reasons.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Lookup table of customer purchase reasons.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -25,6 +32,8 @@ Lookup table of customer purchase reasons.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -32,7 +41,10 @@ Lookup table of customer purchase reasons.
 | [![Cluster Primary Key PK_SalesReason_SalesReasonID: SalesReasonID](../../../../Images/pkcluster.png)](#indexes) | PK_SalesReason_SalesReasonID | SalesReasonID | YES | _Primary key (clustered) constraint_ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[SalesReason]
 (
@@ -63,17 +75,27 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
+
+DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Sales](../Security/Schemas/Sales.md)
 
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Sales].[SalesOrderHeaderSalesReason]](SalesOrderHeaderSalesReason.md)
+---
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [[Sales].[SalesOrderHeaderSalesReason]](SalesOrderHeaderSalesReason.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

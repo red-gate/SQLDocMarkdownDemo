@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Purchasing.PurchaseOrderDetail
 
 # ![Tables](../../../../Images/Table32.png) [Purchasing].[PurchaseOrderDetail]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Purchasing.PurchaseOrderDetail
+---
 
 ## <a name="#description"></a>MS_Description
+
 Individual products associated with a specific purchase order. See PurchaseOrderHeader.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,12 +19,14 @@ Individual products associated with a specific purchase order. See PurchaseOrder
 | Last Modified | 13:14:55 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Computed | Max Length (Bytes) | Allow Nulls | Identity | Default | Description |
 |---|---|---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_PurchaseOrderDetail_PurchaseOrderID_PurchaseOrderDetailID: PurchaseOrderID\\PurchaseOrderDetailID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID: [Purchasing].[PurchaseOrderHeader].PurchaseOrderID](../../../../Images/fk.png)](#foreignkeys) | PurchaseOrderID | int |  | 4 | NO |  |  | _Primary key. Foreign key to PurchaseOrderHeader.PurchaseOrderID._ |
-| [![Cluster Primary Key PK_PurchaseOrderDetail_PurchaseOrderID_PurchaseOrderDetailID: PurchaseOrderID\\PurchaseOrderDetailID](../../../../Images/pkcluster.png)](#indexes) | PurchaseOrderDetailID | int |  | 4 | NO | 1 - 1 |  | _Primary key. One line number per purchased product._ |
+| [![Cluster Primary Key PK_PurchaseOrderDetail_PurchaseOrderID_PurchaseOrderDetailID: PurchaseOrderID\PurchaseOrderDetailID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID: [Purchasing].[PurchaseOrderHeader].PurchaseOrderID](../../../../Images/fk.png)](#foreignkeys) | PurchaseOrderID | int |  | 4 | NO |  |  | _Primary key. Foreign key to PurchaseOrderHeader.PurchaseOrderID._ |
+| [![Cluster Primary Key PK_PurchaseOrderDetail_PurchaseOrderID_PurchaseOrderDetailID: PurchaseOrderID\PurchaseOrderDetailID](../../../../Images/pkcluster.png)](#indexes) | PurchaseOrderDetailID | int |  | 4 | NO | 1 - 1 |  | _Primary key. One line number per purchased product._ |
 |  | DueDate | datetime |  | 8 | NO |  |  | _Date the product is expected to be received._ |
 | [![Check Constraints CK_PurchaseOrderDetail_OrderQty : ([OrderQty]>(0))](../../../../Images/c-constraint.png)](#checkconstraints) | OrderQty | smallint |  | 2 | NO |  |  | _Quantity ordered._ |
 | [![Indexes IX_PurchaseOrderDetail_ProductID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_PurchaseOrderDetail_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int |  | 4 | NO |  |  | _Product identification number. Foreign key to Product.ProductID._ |
@@ -31,6 +38,8 @@ Individual products associated with a specific purchase order. See PurchaseOrder
 |  | ModifiedDate | datetime |  | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#computedcolumns"></a>Computed columns
 
 | Name | Column definition |
@@ -39,13 +48,17 @@ Individual products associated with a specific purchase order. See PurchaseOrder
 | StockedQty | (isnull([ReceivedQty]-[RejectedQty],(0.00))) |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_PurchaseOrderDetail_PurchaseOrderID_PurchaseOrderDetailID: PurchaseOrderID\\PurchaseOrderDetailID](../../../../Images/pkcluster.png)](#indexes) | PK_PurchaseOrderDetail_PurchaseOrderID_PurchaseOrderDetailID | PurchaseOrderID, PurchaseOrderDetailID | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_PurchaseOrderDetail_PurchaseOrderID_PurchaseOrderDetailID: PurchaseOrderID\PurchaseOrderDetailID](../../../../Images/pkcluster.png)](#indexes) | PK_PurchaseOrderDetail_PurchaseOrderID_PurchaseOrderDetailID | PurchaseOrderID, PurchaseOrderDetailID | YES | _Primary key (clustered) constraint_ |
 |  | IX_PurchaseOrderDetail_ProductID | ProductID |  | _Nonclustered index._ |
 
+
+---
 
 ## <a name="#triggers"></a>Triggers
 
@@ -54,6 +67,8 @@ Individual products associated with a specific purchase order. See PurchaseOrder
 | iPurchaseOrderDetail | YES | YES | After Insert | _AFTER INSERT trigger that inserts a row in the TransactionHistory table and updates the PurchaseOrderHeader.SubTotal column._ |
 | uPurchaseOrderDetail | YES | YES | After Update | _AFTER UPDATE trigger that inserts a row in the TransactionHistory table, updates ModifiedDate in PurchaseOrderDetail and updates the PurchaseOrderHeader.SubTotal column._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -65,6 +80,8 @@ Individual products associated with a specific purchase order. See PurchaseOrder
 | CK_PurchaseOrderDetail_UnitPrice | UnitPrice | ([UnitPrice]>=(0.00)) | _Check constraint [UnitPrice] >= (0.00)_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -73,7 +90,10 @@ Individual products associated with a specific purchase order. See PurchaseOrder
 | FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID | PurchaseOrderID->[[Purchasing].[PurchaseOrderHeader].[PurchaseOrderID]](PurchaseOrderHeader.md) | _Foreign key constraint referencing PurchaseOrderHeader.PurchaseOrderID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Purchasing].[PurchaseOrderDetail]
 (
@@ -281,13 +301,21 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Product]](Product.md)
+
+DEPENDENCYLIST* [[Production].[Product]](Product.md)
 * [[Purchasing].[PurchaseOrderHeader]](PurchaseOrderHeader.md)
 * [Purchasing](../Security/Schemas/Purchasing.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures.md) > dbo.uspPrintError
 
 # ![Stored Procedures](../../../../../Images/StoredProcedure32.png) [dbo].[uspPrintError]
 
-[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures_.md) > dbo.uspPrintError
+---
 
 ## <a name="#description"></a>MS_Description
+
 Prints error information about the error that caused execution to jump to the CATCH block of a TRY...CATCH construct. Should be executed from within the scope of a CATCH block otherwise it will return without printing any error information.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -13,7 +18,10 @@ Prints error information about the error that caused execution to jump to the CA
 | Quoted Identifier On | YES |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 -- uspPrintError prints error information about the error that caused 
@@ -39,11 +47,19 @@ GO
 
 ```
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[dbo].[uspLogError]](uspLogError.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+---
+
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [[dbo].[uspLogError]](uspLogError.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

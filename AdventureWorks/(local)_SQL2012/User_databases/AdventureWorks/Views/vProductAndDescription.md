@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > Production.vProductAndDescription
 
 # ![Views](../../../../Images/View32.png) [Production].[vProductAndDescription]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > Production.vProductAndDescription
+---
 
 ## <a name="#description"></a>MS_Description
+
 Product names and descriptions. Product descriptions are provided in multiple languages.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -16,25 +21,32 @@ Product names and descriptions. Product descriptions are provided in multiple la
 | Last Modified | 13:14:55 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name |
 |---|---|
-| [![Cluster Key IX_vProductAndDescription: CultureID\\ProductID](../../../../Images/cluster.png)](#indexes) | ProductID |
+| [![Cluster Key IX_vProductAndDescription: CultureID\ProductID](../../../../Images/cluster.png)](#indexes) | ProductID |
 |  | Name |
 |  | ProductModel |
-| [![Cluster Key IX_vProductAndDescription: CultureID\\ProductID](../../../../Images/cluster.png)](#indexes) | CultureID |
+| [![Cluster Key IX_vProductAndDescription: CultureID\ProductID](../../../../Images/cluster.png)](#indexes) | CultureID |
 |  | Description |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Key IX_vProductAndDescription: CultureID\\ProductID](../../../../Images/cluster.png)](#indexes) | IX_vProductAndDescription | CultureID, ProductID | YES | _Clustered index on the view vProductAndDescription._ |
+| [![Cluster Key IX_vProductAndDescription: CultureID\ProductID](../../../../Images/cluster.png)](#indexes) | IX_vProductAndDescription | CultureID, ProductID | YES | _Clustered index on the view vProductAndDescription._ |
 
+
+---
 
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [Production].[vProductAndDescription] 
@@ -64,15 +76,23 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Product]](../Tables/Product.md)
+
+DEPENDENCYLIST* [[Production].[Product]](../Tables/Product.md)
 * [[Production].[ProductDescription]](../Tables/ProductDescription.md)
 * [[Production].[ProductModel]](../Tables/ProductModel.md)
 * [[Production].[ProductModelProductDescriptionCulture]](../Tables/ProductModelProductDescriptionCulture.md)
 * [Production](../Security/Schemas/Production.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

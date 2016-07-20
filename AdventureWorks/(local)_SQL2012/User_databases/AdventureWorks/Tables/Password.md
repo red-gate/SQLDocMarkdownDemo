@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.Password
 
 # ![Tables](../../../../Images/Table32.png) [Person].[Password]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Person.Password
+---
 
 ## <a name="#description"></a>MS_Description
+
 One way hashed authentication information
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ One way hashed authentication information
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:54 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -26,12 +33,16 @@ One way hashed authentication information
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
 | [![Cluster Primary Key PK_Password_BusinessEntityID: BusinessEntityID](../../../../Images/pkcluster.png)](#indexes) | PK_Password_BusinessEntityID | BusinessEntityID | YES | _Primary key (clustered) constraint_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -40,7 +51,10 @@ One way hashed authentication information
 | FK_Password_Person_BusinessEntityID | BusinessEntityID->[[Person].[Person].[BusinessEntityID]](Person.md) | _Foreign key constraint referencing Person.BusinessEntityID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Person].[Password]
 (
@@ -78,12 +92,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[Person]](Person.md)
+
+DEPENDENCYLIST* [[Person].[Person]](Person.md)
 * [Person](../Security/Schemas/Person.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

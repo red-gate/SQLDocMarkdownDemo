@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.BillOfMaterials
 
 # ![Tables](../../../../Images/Table32.png) [Production].[BillOfMaterials]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.BillOfMaterials
+---
 
 ## <a name="#description"></a>MS_Description
+
 Items required to make bicycles and bicycle subassemblies. It identifies the heirarchical relationship between a parent product and its components.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -15,14 +20,16 @@ Items required to make bicycles and bicycle subassemblies. It identifies the hei
 | Last Modified | 13:14:53 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Identity | Default | Description |
 |---|---|---|---|---|---|---|---|
 | [![Primary Key PK_BillOfMaterials_BillOfMaterialsID: BillOfMaterialsID](../../../../Images/pk.png)](#indexes) | BillOfMaterialsID | int | 4 | NO | 1 - 1 |  | _Primary key for BillOfMaterials records._ |
-| [![Cluster Key AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate: ProductAssemblyID\\ComponentID\\StartDate](../../../../Images/cluster.png)](#indexes)[![Foreign Keys FK_BillOfMaterials_Product_ProductAssemblyID: [Production].[Product].ProductAssemblyID](../../../../Images/fk.png)](#foreignkeys) | ProductAssemblyID | int | 4 | YES |  |  | _Parent product identification number. Foreign key to Product.ProductID._ |
-| [![Cluster Key AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate: ProductAssemblyID\\ComponentID\\StartDate](../../../../Images/cluster.png)](#indexes)[![Foreign Keys FK_BillOfMaterials_Product_ComponentID: [Production].[Product].ComponentID](../../../../Images/fk.png)](#foreignkeys) | ComponentID | int | 4 | NO |  |  | _Component identification number. Foreign key to Product.ProductID._ |
-| [![Cluster Key AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate: ProductAssemblyID\\ComponentID\\StartDate](../../../../Images/cluster.png)](#indexes) | StartDate | datetime | 8 | NO |  | (getdate()) | _Date the component started being used in the assembly item._ |
+| [![Cluster Key AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate: ProductAssemblyID\ComponentID\StartDate](../../../../Images/cluster.png)](#indexes)[![Foreign Keys FK_BillOfMaterials_Product_ProductAssemblyID: [Production].[Product].ProductAssemblyID](../../../../Images/fk.png)](#foreignkeys) | ProductAssemblyID | int | 4 | YES |  |  | _Parent product identification number. Foreign key to Product.ProductID._ |
+| [![Cluster Key AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate: ProductAssemblyID\ComponentID\StartDate](../../../../Images/cluster.png)](#indexes)[![Foreign Keys FK_BillOfMaterials_Product_ComponentID: [Production].[Product].ComponentID](../../../../Images/fk.png)](#foreignkeys) | ComponentID | int | 4 | NO |  |  | _Component identification number. Foreign key to Product.ProductID._ |
+| [![Cluster Key AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate: ProductAssemblyID\ComponentID\StartDate](../../../../Images/cluster.png)](#indexes) | StartDate | datetime | 8 | NO |  | (getdate()) | _Date the component started being used in the assembly item._ |
 |  | EndDate | datetime | 8 | YES |  |  | _Date the component stopped being used in the assembly item._ |
 | [![Indexes IX_BillOfMaterials_UnitMeasureCode](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_BillOfMaterials_UnitMeasure_UnitMeasureCode: [Production].[UnitMeasure].UnitMeasureCode](../../../../Images/fk.png)](#foreignkeys) | UnitMeasureCode | nchar(3) | 6 | NO |  |  | _Standard code identifying the unit of measure for the quantity._ |
 |  | BOMLevel | smallint | 2 | NO |  |  | _Indicates the depth the component is from its parent (AssemblyID)._ |
@@ -30,14 +37,18 @@ Items required to make bicycles and bicycle subassemblies. It identifies the hei
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
 | [![Primary Key PK_BillOfMaterials_BillOfMaterialsID: BillOfMaterialsID](../../../../Images/pk.png)](#indexes) | PK_BillOfMaterials_BillOfMaterialsID | BillOfMaterialsID | YES | _Primary key (clustered) constraint_ |
-| [![Cluster Key AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate: ProductAssemblyID\\ComponentID\\StartDate](../../../../Images/cluster.png)](#indexes) | AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate | ProductAssemblyID, ComponentID, StartDate | YES | _Clustered index._ |
+| [![Cluster Key AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate: ProductAssemblyID\ComponentID\StartDate](../../../../Images/cluster.png)](#indexes) | AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate | ProductAssemblyID, ComponentID, StartDate | YES | _Clustered index._ |
 |  | IX_BillOfMaterials_UnitMeasureCode | UnitMeasureCode |  | _Nonclustered index._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -49,6 +60,8 @@ Items required to make bicycles and bicycle subassemblies. It identifies the hei
 | CK_BillOfMaterials_ProductAssemblyID |  | ([ProductAssemblyID]<>[ComponentID]) | _Check constraint [ProductAssemblyID] <> [ComponentID]_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -58,7 +71,10 @@ Items required to make bicycles and bicycle subassemblies. It identifies the hei
 | FK_BillOfMaterials_UnitMeasure_UnitMeasureCode | UnitMeasureCode->[[Production].[UnitMeasure].[UnitMeasureCode]](UnitMeasure.md) | _Foreign key constraint referencing UnitMeasure.UnitMeasureCode._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[BillOfMaterials]
 (
@@ -144,19 +160,29 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Product]](Product.md)
+
+DEPENDENCYLIST* [[Production].[Product]](Product.md)
 * [[Production].[UnitMeasure]](UnitMeasure.md)
 * [Production](../Security/Schemas/Production.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[dbo].[uspGetBillOfMaterials]](../Programmability/Stored_Procedures/uspGetBillOfMaterials.md)
+
+DEPENDENCYLIST* [[dbo].[uspGetBillOfMaterials]](../Programmability/Stored_Procedures/uspGetBillOfMaterials.md)
 * [[dbo].[uspGetWhereUsedProductID]](../Programmability/Stored_Procedures/uspGetWhereUsedProductID.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.AddressType
 
 # ![Tables](../../../../Images/Table32.png) [Person].[AddressType]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Person.AddressType
+---
 
 ## <a name="#description"></a>MS_Description
+
 Types of addresses stored in the Address table. 
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Types of addresses stored in the Address table.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:53 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -25,6 +32,8 @@ Types of addresses stored in the Address table.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -34,7 +43,10 @@ Types of addresses stored in the Address table.
 |  | AK_AddressType_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Person].[AddressType]
 (
@@ -75,20 +87,30 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
+
+DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Person](../Security/Schemas/Person.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Person].[BusinessEntityAddress]](BusinessEntityAddress.md)
+
+DEPENDENCYLIST* [[Person].[BusinessEntityAddress]](BusinessEntityAddress.md)
 * [[Purchasing].[vVendorWithAddresses]](../Views/vVendorWithAddresses.md)
 * [[Sales].[vIndividualCustomer]](../Views/vIndividualCustomer.md)
 * [[Sales].[vStoreWithAddresses]](../Views/vStoreWithAddresses.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

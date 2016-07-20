@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > HumanResources.Department
 
 # ![Tables](../../../../Images/Table32.png) [HumanResources].[Department]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > HumanResources.Department
+---
 
 ## <a name="#description"></a>MS_Description
+
 Lookup table containing the departments within the Adventure Works Cycles company.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Lookup table containing the departments within the Adventure Works Cycles compan
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:54 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -25,6 +32,8 @@ Lookup table containing the departments within the Adventure Works Cycles compan
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -33,7 +42,10 @@ Lookup table containing the departments within the Adventure Works Cycles compan
 |  | AK_Department_Name | Name | YES | _Unique nonclustered index._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [HumanResources].[Department]
 (
@@ -68,19 +80,29 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
+
+DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [HumanResources](../Security/Schemas/HumanResources.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[HumanResources].[EmployeeDepartmentHistory]](EmployeeDepartmentHistory.md)
+
+DEPENDENCYLIST* [[HumanResources].[EmployeeDepartmentHistory]](EmployeeDepartmentHistory.md)
 * [[HumanResources].[vEmployeeDepartment]](../Views/vEmployeeDepartment.md)
 * [[HumanResources].[vEmployeeDepartmentHistory]](../Views/vEmployeeDepartmentHistory.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

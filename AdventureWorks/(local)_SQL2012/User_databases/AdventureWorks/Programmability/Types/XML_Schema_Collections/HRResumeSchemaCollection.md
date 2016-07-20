@@ -1,15 +1,24 @@
+#### 
+
+[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Types](../index.md) > [XML Schema Collections](XML_Schema_Collections.md) > HumanResources.HRResumeSchemaCollection
 
 # ![XML Schema Collections](../../../../../../Images/XmlSchemaCollection32.png) [HumanResources].[HRResumeSchemaCollection]
 
-[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Types](../index.md) > [XML Schema Collections](XML_Schema_Collections_.md) > HumanResources.HRResumeSchemaCollection
+---
 
 ## <a name="#description"></a>MS_Description
+
 Collection of XML schemas for the Resume column in the HumanResources.JobCandidate table.
+
 ## <a name="#dependentcolumns"></a>Dependent Columns
+
 * [[HumanResources].[JobCandidate].[Resume]](../../../Tables/JobCandidate.md)
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE XML SCHEMA COLLECTION [HumanResources].[HRResumeSchemaCollection] 
 AS N'<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:t="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume" targetNamespace="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/Resume" elementFormDefault="qualified">
@@ -169,16 +178,26 @@ GO
 
 ```
 
-## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [HumanResources](../../../Security/Schemas/HumanResources.md)
 
+---
+
+## <a name="#uses"></a>Uses
+
+DEPENDENCYLIST* [HumanResources](../../../Security/Schemas/HumanResources.md)
+
+
+---
 
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[HumanResources].[JobCandidate]](../../../Tables/JobCandidate.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+DEPENDENCYLIST* [[HumanResources].[JobCandidate]](../../../Tables/JobCandidate.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

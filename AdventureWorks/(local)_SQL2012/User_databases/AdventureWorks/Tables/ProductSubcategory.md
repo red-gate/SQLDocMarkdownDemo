@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductSubcategory
 
 # ![Tables](../../../../Images/Table32.png) [Production].[ProductSubcategory]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.ProductSubcategory
+---
 
 ## <a name="#description"></a>MS_Description
+
 Product subcategories. See ProductCategory table.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Product subcategories. See ProductCategory table.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:54 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -26,6 +33,8 @@ Product subcategories. See ProductCategory table.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -35,6 +44,8 @@ Product subcategories. See ProductCategory table.
 |  | AK_ProductSubcategory_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -42,7 +53,10 @@ Product subcategories. See ProductCategory table.
 | FK_ProductSubcategory_ProductCategory_ProductCategoryID | ProductCategoryID->[[Production].[ProductCategory].[ProductCategoryID]](ProductCategory.md) | _Foreign key constraint referencing ProductCategory.ProductCategoryID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[ProductSubcategory]
 (
@@ -90,18 +104,28 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[ProductCategory]](ProductCategory.md)
+
+DEPENDENCYLIST* [[Production].[ProductCategory]](ProductCategory.md)
 * [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Production](../Security/Schemas/Production.md)
 
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Production].[Product]](Product.md)
+---
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [[Production].[Product]](Product.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

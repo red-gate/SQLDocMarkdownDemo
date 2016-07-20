@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.SpecialOfferProduct
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[SpecialOfferProduct]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.SpecialOfferProduct
+---
 
 ## <a name="#description"></a>MS_Description
+
 Cross-reference table mapping products to special offer discounts.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,24 +19,30 @@ Cross-reference table mapping products to special offer discounts.
 | Last Modified | 13:14:55 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_SpecialOfferProduct_SpecialOfferID_ProductID: SpecialOfferID\\ProductID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID: [Sales].[SpecialOffer].SpecialOfferID](../../../../Images/fk.png)](#foreignkeys) | SpecialOfferID | int | 4 | NO |  | _Primary key for SpecialOfferProduct records._ |
-| [![Cluster Primary Key PK_SpecialOfferProduct_SpecialOfferID_ProductID: SpecialOfferID\\ProductID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_SpecialOfferProduct_ProductID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_SpecialOfferProduct_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int | 4 | NO |  | _Product identification number. Foreign key to Product.ProductID._ |
+| [![Cluster Primary Key PK_SpecialOfferProduct_SpecialOfferID_ProductID: SpecialOfferID\ProductID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID: [Sales].[SpecialOffer].SpecialOfferID](../../../../Images/fk.png)](#foreignkeys) | SpecialOfferID | int | 4 | NO |  | _Primary key for SpecialOfferProduct records._ |
+| [![Cluster Primary Key PK_SpecialOfferProduct_SpecialOfferID_ProductID: SpecialOfferID\ProductID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_SpecialOfferProduct_ProductID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_SpecialOfferProduct_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int | 4 | NO |  | _Product identification number. Foreign key to Product.ProductID._ |
 | [![Indexes AK_SpecialOfferProduct_rowguid](../../../../Images/Index.png)](#indexes) | rowguid | uniqueidentifier | 16 | NO | (newid()) | _ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_SpecialOfferProduct_SpecialOfferID_ProductID: SpecialOfferID\\ProductID](../../../../Images/pkcluster.png)](#indexes) | PK_SpecialOfferProduct_SpecialOfferID_ProductID | SpecialOfferID, ProductID | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_SpecialOfferProduct_SpecialOfferID_ProductID: SpecialOfferID\ProductID](../../../../Images/pkcluster.png)](#indexes) | PK_SpecialOfferProduct_SpecialOfferID_ProductID | SpecialOfferID, ProductID | YES | _Primary key (clustered) constraint_ |
 |  | AK_SpecialOfferProduct_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 |  | IX_SpecialOfferProduct_ProductID | ProductID |  | _Nonclustered index._ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -41,7 +52,10 @@ Cross-reference table mapping products to special offer discounts.
 | FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID | SpecialOfferID->[[Sales].[SpecialOffer].[SpecialOfferID]](SpecialOffer.md) | _Foreign key constraint referencing SpecialOffer.SpecialOfferID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[SpecialOfferProduct]
 (
@@ -90,18 +104,28 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Product]](Product.md)
+
+DEPENDENCYLIST* [[Production].[Product]](Product.md)
 * [[Sales].[SpecialOffer]](SpecialOffer.md)
 * [Sales](../Security/Schemas/Sales.md)
 
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Sales].[SalesOrderDetail]](SalesOrderDetail.md)
+---
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [[Sales].[SalesOrderDetail]](SalesOrderDetail.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

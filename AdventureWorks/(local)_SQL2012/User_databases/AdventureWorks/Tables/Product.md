@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.Product
 
 # ![Tables](../../../../Images/Table32.png) [Production].[Product]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.Product
+---
 
 ## <a name="#description"></a>MS_Description
+
 Products sold or used in the manfacturing of sold products.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Products sold or used in the manfacturing of sold products.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -46,6 +53,8 @@ Products sold or used in the manfacturing of sold products.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -55,6 +64,8 @@ Products sold or used in the manfacturing of sold products.
 |  | AK_Product_ProductNumber | ProductNumber | YES | _Unique nonclustered index._ |
 |  | AK_Product_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -72,6 +83,8 @@ Products sold or used in the manfacturing of sold products.
 | CK_Product_Style | Style | (upper([Style])='U' OR upper([Style])='M' OR upper([Style])='W' OR [Style] IS NULL) | _Check constraint [Style]='u' OR [Style]='m' OR [Style]='w' OR [Style]='U' OR [Style]='M' OR [Style]='W' OR [Style] IS NULL_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -82,7 +95,10 @@ Products sold or used in the manfacturing of sold products.
 | FK_Product_UnitMeasure_WeightUnitMeasureCode | WeightUnitMeasureCode->[[Production].[UnitMeasure].[UnitMeasureCode]](UnitMeasure.md) | _Foreign key constraint referencing UnitMeasure.UnitMeasureCode._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[Product]
 (
@@ -250,9 +266,12 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[ProductModel]](ProductModel.md)
+
+DEPENDENCYLIST* [[Production].[ProductModel]](ProductModel.md)
 * [[Production].[ProductSubcategory]](ProductSubcategory.md)
 * [[Production].[UnitMeasure]](UnitMeasure.md)
 * [[dbo].[Flag]](../Programmability/Types/User-Defined_Data_Types/Flag.md)
@@ -260,9 +279,11 @@ DEPENDENCYLIST
 * [Production](../Security/Schemas/Production.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Production].[BillOfMaterials]](BillOfMaterials.md)
+
+DEPENDENCYLIST* [[Production].[BillOfMaterials]](BillOfMaterials.md)
 * [[Production].[ProductCostHistory]](ProductCostHistory.md)
 * [[Production].[ProductDocument]](ProductDocument.md)
 * [[Production].[ProductInventory]](ProductInventory.md)
@@ -282,7 +303,12 @@ DEPENDENCYLIST
 * [[dbo].[ufnGetProductListPrice]](../Programmability/Functions/Scalar-valued_Functions/ufnGetProductListPrice.md)
 * [[dbo].[ufnGetProductStandardCost]](../Programmability/Functions/Scalar-valued_Functions/ufnGetProductStandardCost.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

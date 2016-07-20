@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.SalesTaxRate
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[SalesTaxRate]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.SalesTaxRate
+---
 
 ## <a name="#description"></a>MS_Description
+
 Tax rate lookup table.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Tax rate lookup table.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -28,6 +35,8 @@ Tax rate lookup table.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -37,12 +46,16 @@ Tax rate lookup table.
 |  | AK_SalesTaxRate_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 
 
+---
+
 ## <a name="#checkconstraints"></a>Check Constraints
 
 | Name | On Column | Constraint | Description |
 |---|---|---|---|
 | CK_SalesTaxRate_TaxType | TaxType | ([TaxType]>=(1) AND [TaxType]<=(3)) | _Check constraint [TaxType] BETWEEN (1) AND (3)_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -51,7 +64,10 @@ Tax rate lookup table.
 | FK_SalesTaxRate_StateProvince_StateProvinceID | StateProvinceID->[[Person].[StateProvince].[StateProvinceID]](StateProvince.md) | _Foreign key constraint referencing StateProvince.StateProvinceID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[SalesTaxRate]
 (
@@ -111,13 +127,21 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[StateProvince]](StateProvince.md)
+
+DEPENDENCYLIST* [[Person].[StateProvince]](StateProvince.md)
 * [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

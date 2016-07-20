@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.ShoppingCartItem
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[ShoppingCartItem]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.ShoppingCartItem
+---
 
 ## <a name="#description"></a>MS_Description
+
 Contains online customer orders until the order is submitted or cancelled.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Contains online customer orders until the order is submitted or cancelled.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -27,6 +34,8 @@ Contains online customer orders until the order is submitted or cancelled.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -35,12 +44,16 @@ Contains online customer orders until the order is submitted or cancelled.
 |  | IX_ShoppingCartItem_ShoppingCartID_ProductID | ShoppingCartID, ProductID |  | _Nonclustered index._ |
 
 
+---
+
 ## <a name="#checkconstraints"></a>Check Constraints
 
 | Name | On Column | Constraint | Description |
 |---|---|---|---|
 | CK_ShoppingCartItem_Quantity | Quantity | ([Quantity]>=(1)) | _Check constraint [Quantity] >= (1)_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -49,7 +62,10 @@ Contains online customer orders until the order is submitted or cancelled.
 | FK_ShoppingCartItem_Product_ProductID | ProductID->[[Production].[Product].[ProductID]](Product.md) | _Foreign key constraint referencing Product.ProductID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[ShoppingCartItem]
 (
@@ -102,12 +118,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Product]](Product.md)
+
+DEPENDENCYLIST* [[Production].[Product]](Product.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

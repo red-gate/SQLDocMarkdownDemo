@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.SpecialOffer
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[SpecialOffer]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.SpecialOffer
+---
 
 ## <a name="#description"></a>MS_Description
+
 Sale discounts lookup table.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Sale discounts lookup table.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -32,6 +39,8 @@ Sale discounts lookup table.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -39,6 +48,8 @@ Sale discounts lookup table.
 | [![Cluster Primary Key PK_SpecialOffer_SpecialOfferID: SpecialOfferID](../../../../Images/pkcluster.png)](#indexes) | PK_SpecialOffer_SpecialOfferID | SpecialOfferID | YES | _Primary key (clustered) constraint_ |
 |  | AK_SpecialOffer_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -50,7 +61,10 @@ Sale discounts lookup table.
 | CK_SpecialOffer_MinQty | MinQty | ([MinQty]>=(0)) | _Check constraint [MinQty] >= (0)_ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[SpecialOffer]
 (
@@ -128,16 +142,26 @@ GO
 
 ```
 
-## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [Sales](../Security/Schemas/Sales.md)
 
+---
+
+## <a name="#uses"></a>Uses
+
+DEPENDENCYLIST* [Sales](../Security/Schemas/Sales.md)
+
+
+---
 
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Sales].[SpecialOfferProduct]](SpecialOfferProduct.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+DEPENDENCYLIST* [[Sales].[SpecialOfferProduct]](SpecialOfferProduct.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

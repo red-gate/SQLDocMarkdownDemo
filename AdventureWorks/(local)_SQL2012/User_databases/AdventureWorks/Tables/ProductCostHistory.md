@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductCostHistory
 
 # ![Tables](../../../../Images/Table32.png) [Production].[ProductCostHistory]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.ProductCostHistory
+---
 
 ## <a name="#description"></a>MS_Description
+
 Changes in the cost of a product over time.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,23 +19,29 @@ Changes in the cost of a product over time.
 | Last Modified | 13:14:54 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_ProductCostHistory_ProductID_StartDate: ProductID\\StartDate](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductCostHistory_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int | 4 | NO |  | _Product identification number. Foreign key to Product.ProductID_ |
-| [![Cluster Primary Key PK_ProductCostHistory_ProductID_StartDate: ProductID\\StartDate](../../../../Images/pkcluster.png)](#indexes) | StartDate | datetime | 8 | NO |  | _Product cost start date._ |
+| [![Cluster Primary Key PK_ProductCostHistory_ProductID_StartDate: ProductID\StartDate](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductCostHistory_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int | 4 | NO |  | _Product identification number. Foreign key to Product.ProductID_ |
+| [![Cluster Primary Key PK_ProductCostHistory_ProductID_StartDate: ProductID\StartDate](../../../../Images/pkcluster.png)](#indexes) | StartDate | datetime | 8 | NO |  | _Product cost start date._ |
 |  | EndDate | datetime | 8 | YES |  | _Product cost end date._ |
 | [![Check Constraints CK_ProductCostHistory_StandardCost : ([StandardCost]>=(0.00))](../../../../Images/c-constraint.png)](#checkconstraints) | StandardCost | money | 8 | NO |  | _Standard cost of the product._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_ProductCostHistory_ProductID_StartDate: ProductID\\StartDate](../../../../Images/pkcluster.png)](#indexes) | PK_ProductCostHistory_ProductID_StartDate | ProductID, StartDate | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_ProductCostHistory_ProductID_StartDate: ProductID\StartDate](../../../../Images/pkcluster.png)](#indexes) | PK_ProductCostHistory_ProductID_StartDate | ProductID, StartDate | YES | _Primary key (clustered) constraint_ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -40,6 +51,8 @@ Changes in the cost of a product over time.
 | CK_ProductCostHistory_StandardCost | StandardCost | ([StandardCost]>=(0.00)) | _Check constraint [StandardCost] >= (0.00)_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -47,7 +60,10 @@ Changes in the cost of a product over time.
 | FK_ProductCostHistory_Product_ProductID | ProductID->[[Production].[Product].[ProductID]](Product.md) | _Foreign key constraint referencing Product.ProductID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[ProductCostHistory]
 (
@@ -93,17 +109,27 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Product]](Product.md)
+
+DEPENDENCYLIST* [[Production].[Product]](Product.md)
 * [Production](../Security/Schemas/Production.md)
 
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[dbo].[ufnGetProductStandardCost]](../Programmability/Functions/Scalar-valued_Functions/ufnGetProductStandardCost.md)
+---
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [[dbo].[ufnGetProductStandardCost]](../Programmability/Functions/Scalar-valued_Functions/ufnGetProductStandardCost.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

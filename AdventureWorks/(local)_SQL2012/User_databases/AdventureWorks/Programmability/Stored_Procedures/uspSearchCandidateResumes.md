@@ -1,7 +1,10 @@
+#### 
+
+[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures.md) > dbo.uspSearchCandidateResumes
 
 # ![Stored Procedures](../../../../../Images/StoredProcedure32.png) [dbo].[uspSearchCandidateResumes]
 
-[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures_.md) > dbo.uspSearchCandidateResumes
+---
 
 ## <a name="#properties"></a>Properties
 
@@ -10,6 +13,8 @@
 | ANSI Nulls On | YES |
 | Quoted Identifier On | YES |
 
+
+---
 
 ## <a name="#parameters"></a>Parameters
 
@@ -21,7 +26,10 @@
 | @language | int | 4 |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 --A stored procedure which demonstrates integrated full text search
@@ -83,11 +91,19 @@ GO
 
 ```
 
-## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[JobCandidate]](../../Tables/JobCandidate.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+---
+
+## <a name="#uses"></a>Uses
+
+DEPENDENCYLIST* [[HumanResources].[JobCandidate]](../../Tables/JobCandidate.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

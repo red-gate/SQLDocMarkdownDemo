@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures.md) > dbo.uspLogError
 
 # ![Stored Procedures](../../../../../Images/StoredProcedure32.png) [dbo].[uspLogError]
 
-[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures_.md) > dbo.uspLogError
+---
 
 ## <a name="#description"></a>MS_Description
+
 Logs error information in the ErrorLog table about the error that caused execution to jump to the CATCH block of a TRY...CATCH construct. Should be executed from within the scope of a CATCH block otherwise it will return without inserting error information.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -13,6 +18,8 @@ Logs error information in the ErrorLog table about the error that caused executi
 | Quoted Identifier On | YES |
 
 
+---
+
 ## <a name="#parameters"></a>Parameters
 
 | Name | Data Type | Max Length (Bytes) | Direction | Description |
@@ -20,7 +27,10 @@ Logs error information in the ErrorLog table about the error that caused executi
 | @ErrorLogID | int | 4 | Out | _Output parameter for the stored procedure uspLogError. Contains the ErrorLogID value corresponding to the row inserted by uspLogError in the ErrorLog table._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 -- uspLogError logs error information in the ErrorLog table about the 
@@ -91,19 +101,29 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[dbo].[ErrorLog]](../../Tables/ErrorLog.md)
+
+DEPENDENCYLIST* [[dbo].[ErrorLog]](../../Tables/ErrorLog.md)
 * [[dbo].[uspPrintError]](uspPrintError.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[HumanResources].[uspUpdateEmployeeHireInfo]](uspUpdateEmployeeHireInfo.md)
+
+DEPENDENCYLIST* [[HumanResources].[uspUpdateEmployeeHireInfo]](uspUpdateEmployeeHireInfo.md)
 * [[HumanResources].[uspUpdateEmployeeLogin]](uspUpdateEmployeeLogin.md)
 * [[HumanResources].[uspUpdateEmployeePersonalInfo]](uspUpdateEmployeePersonalInfo.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

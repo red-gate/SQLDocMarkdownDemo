@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.Currency
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[Currency]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.Currency
+---
 
 ## <a name="#description"></a>MS_Description
+
 Lookup table containing standard ISO currencies.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -15,6 +20,8 @@ Lookup table containing standard ISO currencies.
 | Last Modified | 13:14:54 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
@@ -24,6 +31,8 @@ Lookup table containing standard ISO currencies.
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -32,7 +41,10 @@ Lookup table containing standard ISO currencies.
 |  | AK_Currency_Name | Name | YES | _Unique nonclustered index._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[Currency]
 (
@@ -64,18 +76,28 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
+
+DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Sales](../Security/Schemas/Sales.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Sales].[CountryRegionCurrency]](CountryRegionCurrency.md)
+
+DEPENDENCYLIST* [[Sales].[CountryRegionCurrency]](CountryRegionCurrency.md)
 * [[Sales].[CurrencyRate]](CurrencyRate.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

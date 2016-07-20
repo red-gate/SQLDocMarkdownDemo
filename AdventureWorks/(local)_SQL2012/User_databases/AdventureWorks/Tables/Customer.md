@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.Customer
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[Customer]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.Customer
+---
 
 ## <a name="#description"></a>MS_Description
+
 Current customer information. Also see the Person and Store tables.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Current customer information. Also see the Person and Store tables.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:54 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -28,12 +35,16 @@ Current customer information. Also see the Person and Store tables.
 |  | ModifiedDate | datetime |  | 8 | NO |  |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#computedcolumns"></a>Computed columns
 
 | Name | Column definition |
 |---|---|
 | AccountNumber | (isnull('AW'+[dbo].[ufnLeadingZeros]([CustomerID]),'')) |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
@@ -45,6 +56,8 @@ Current customer information. Also see the Person and Store tables.
 |  | IX_Customer_TerritoryID | TerritoryID |  | _Nonclustered index._ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -54,7 +67,10 @@ Current customer information. Also see the Person and Store tables.
 | FK_Customer_Store_StoreID | StoreID->[[Sales].[Store].[BusinessEntityID]](Store.md) | _Foreign key constraint referencing Store.BusinessEntityID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[Customer]
 (
@@ -120,22 +136,32 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[Person]](Person.md)
+
+DEPENDENCYLIST* [[Person].[Person]](Person.md)
 * [[Sales].[SalesTerritory]](SalesTerritory.md)
 * [[Sales].[Store]](Store.md)
 * [[dbo].[ufnLeadingZeros]](../Programmability/Functions/Scalar-valued_Functions/ufnLeadingZeros.md)
 * [Sales](../Security/Schemas/Sales.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
+
+DEPENDENCYLIST* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
 * [[Sales].[vIndividualCustomer]](../Views/vIndividualCustomer.md)
 * [[dbo].[ufnGetContactInformation]](../Programmability/Functions/Table-valued_Functions/ufnGetContactInformation.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

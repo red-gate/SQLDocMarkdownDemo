@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.SalesPerson
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[SalesPerson]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.SalesPerson
+---
 
 ## <a name="#description"></a>MS_Description
+
 Sales representative current information.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -13,6 +18,8 @@ Sales representative current information.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -29,6 +36,8 @@ Sales representative current information.
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -36,6 +45,8 @@ Sales representative current information.
 | [![Cluster Primary Key PK_SalesPerson_BusinessEntityID: BusinessEntityID](../../../../Images/pkcluster.png)](#indexes) | PK_SalesPerson_BusinessEntityID | BusinessEntityID | YES | _Primary key (clustered) constraint_ |
 |  | AK_SalesPerson_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -48,6 +59,8 @@ Sales representative current information.
 | CK_SalesPerson_SalesYTD | SalesYTD | ([SalesYTD]>=(0.00)) | _Check constraint [SalesYTD] >= (0.00)_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -56,7 +69,10 @@ Sales representative current information.
 | FK_SalesPerson_SalesTerritory_TerritoryID | TerritoryID->[[Sales].[SalesTerritory].[TerritoryID]](SalesTerritory.md) | _Foreign key constraint referencing SalesTerritory.TerritoryID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[SalesPerson]
 (
@@ -144,23 +160,33 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[Employee]](Employee.md)
+
+DEPENDENCYLIST* [[HumanResources].[Employee]](Employee.md)
 * [[Sales].[SalesTerritory]](SalesTerritory.md)
 * [Sales](../Security/Schemas/Sales.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
+
+DEPENDENCYLIST* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
 * [[Sales].[SalesPersonQuotaHistory]](SalesPersonQuotaHistory.md)
 * [[Sales].[SalesTerritoryHistory]](SalesTerritoryHistory.md)
 * [[Sales].[Store]](Store.md)
 * [[Sales].[vSalesPerson]](../Views/vSalesPerson.md)
 * [[Sales].[vSalesPersonSalesByFiscalYears]](../Views/vSalesPersonSalesByFiscalYears.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

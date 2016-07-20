@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.TransactionHistory
 
 # ![Tables](../../../../Images/Table32.png) [Production].[TransactionHistory]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.TransactionHistory
+---
 
 ## <a name="#description"></a>MS_Description
+
 Record of each purchase order, sales order, or work order transaction year to date.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Record of each purchase order, sales order, or work order transaction year to da
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -30,6 +37,8 @@ Record of each purchase order, sales order, or work order transaction year to da
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -39,12 +48,16 @@ Record of each purchase order, sales order, or work order transaction year to da
 |  | IX_TransactionHistory_ReferenceOrderID_ReferenceOrderLineID | ReferenceOrderID, ReferenceOrderLineID |  | _Nonclustered index._ |
 
 
+---
+
 ## <a name="#checkconstraints"></a>Check Constraints
 
 | Name | On Column | Constraint | Description |
 |---|---|---|---|
 | CK_TransactionHistory_TransactionType | TransactionType | (upper([TransactionType])='P' OR upper([TransactionType])='S' OR upper([TransactionType])='W') | _Check constraint [TransactionType]='p' OR [TransactionType]='s' OR [TransactionType]='w' OR [TransactionType]='P' OR [TransactionType]='S' OR [TransactionType]='W')_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -53,7 +66,10 @@ Record of each purchase order, sales order, or work order transaction year to da
 | FK_TransactionHistory_Product_ProductID | ProductID->[[Production].[Product].[ProductID]](Product.md) | _Foreign key constraint referencing Product.ProductID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[TransactionHistory]
 (
@@ -119,12 +135,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Product]](Product.md)
+
+DEPENDENCYLIST* [[Production].[Product]](Product.md)
 * [Production](../Security/Schemas/Production.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Functions](../index.md) > [Scalar-valued Functions](Scalar-valued_Functions.md) > dbo.ufnGetPurchaseOrderStatusText
 
 # ![Scalar-valued Functions](../../../../../../Images/Function_Scalar32.png) [dbo].[ufnGetPurchaseOrderStatusText]
 
-[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Functions](../index.md) > [Scalar-valued Functions](Scalar-valued_Functions_.md) > dbo.ufnGetPurchaseOrderStatusText
+---
 
 ## <a name="#description"></a>MS_Description
+
 Scalar function returning the text representation of the Status column in the PurchaseOrderHeader table.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -13,6 +18,8 @@ Scalar function returning the text representation of the Status column in the Pu
 | Quoted Identifier On | YES |
 
 
+---
+
 ## <a name="#parameters"></a>Parameters
 
 | Name | Data Type | Max Length (Bytes) | Description |
@@ -20,7 +27,10 @@ Scalar function returning the text representation of the Status column in the Pu
 | @Status | tinyint | 1 | _Input parameter for the scalar function ufnGetPurchaseOrdertStatusText. Enter a valid integer._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE FUNCTION [dbo].[ufnGetPurchaseOrderStatusText](@Status [tinyint])
@@ -48,7 +58,13 @@ EXEC sp_addextendedproperty N'MS_Description', N'Input parameter for the scalar 
 GO
 
 ```
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

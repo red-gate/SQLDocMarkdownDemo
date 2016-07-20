@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > HumanResources.vJobCandidateEmployment
 
 # ![Views](../../../../Images/View32.png) [HumanResources].[vJobCandidateEmployment]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > HumanResources.vJobCandidateEmployment
+---
 
 ## <a name="#description"></a>MS_Description
+
 Displays the content from each employement history related element in the xml column Resume in the HumanResources.JobCandidate table. The content has been localized into French, Simplified Chinese and Thai. Some data may not display correctly unless supplemental language support is installed.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Displays the content from each employement history related element in the xml co
 | Created | 13:14:55 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -32,7 +39,10 @@ Displays the content from each employement history related element in the xml co
 | Emp.Loc.City |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [HumanResources].[vJobCandidateEmployment] 
@@ -68,12 +78,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[JobCandidate]](../Tables/JobCandidate.md)
+
+DEPENDENCYLIST* [[HumanResources].[JobCandidate]](../Tables/JobCandidate.md)
 * [HumanResources](../Security/Schemas/HumanResources.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

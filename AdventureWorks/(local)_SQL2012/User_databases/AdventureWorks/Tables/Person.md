@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.Person
 
 # ![Tables](../../../../Images/Table32.png) [Person].[Person]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Person.Person
+---
 
 ## <a name="#description"></a>MS_Description
+
 Human beings involved with AdventureWorks: employees, customer contacts, and vendor contacts.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Human beings involved with AdventureWorks: employees, customer contacts, and ven
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -37,6 +44,8 @@ XMLVALUE_Person_Demographics](../../../../Images/Index.png)](#indexes)(4) | Demo
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Type | Unique | XML Type | Description |
@@ -51,12 +60,16 @@ XMLVALUE_Person_Demographics](../../../../Images/Index.png)](#indexes)(4) | Demo
 |  | XMLVALUE_Person_Demographics | Demographics | xml |  | Secondary | _Secondary XML index for value._ |
 
 
+---
+
 ## <a name="#triggers"></a>Triggers
 
 | Name | ANSI Nulls On | Quoted Identifier On | On | Not For Replication | Description |
 |---|---|---|---|---|---|
 | iuPerson | YES | YES | After Insert Update | YES | _AFTER INSERT, UPDATE trigger inserting Individual only if the Customer does not exist in the Store table and setting the ModifiedDate column in the Person table to the current date._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -66,6 +79,8 @@ XMLVALUE_Person_Demographics](../../../../Images/Index.png)](#indexes)(4) | Demo
 | CK_Person_PersonType | PersonType | ([PersonType] IS NULL OR upper([PersonType])='GC' OR upper([PersonType])='SP' OR upper([PersonType])='EM' OR upper([PersonType])='IN' OR upper([PersonType])='VC' OR upper([PersonType])='SC') | _Check constraint [PersonType] is one of SC, VC, IN, EM or SP._ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -73,7 +88,10 @@ XMLVALUE_Person_Demographics](../../../../Images/Index.png)](#indexes)(4) | Demo
 | FK_Person_BusinessEntity_BusinessEntityID | BusinessEntityID->[[Person].[BusinessEntity].[BusinessEntityID]](BusinessEntity.md) | _Foreign key constraint referencing BusinessEntity.BusinessEntityID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Person].[Person]
 (
@@ -224,9 +242,12 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[BusinessEntity]](BusinessEntity.md)
+
+DEPENDENCYLIST* [[Person].[BusinessEntity]](BusinessEntity.md)
 * [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [[dbo].[NameStyle]](../Programmability/Types/User-Defined_Data_Types/NameStyle.md)
 * [Person](../Security/Schemas/Person.md)
@@ -234,9 +255,11 @@ DEPENDENCYLIST
 * [[Person].[IndividualSurveySchemaCollection]](../Programmability/Types/XML_Schema_Collections/IndividualSurveySchemaCollection.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[HumanResources].[Employee]](Employee.md)
+
+DEPENDENCYLIST* [[HumanResources].[Employee]](Employee.md)
 * [[Person].[BusinessEntityContact]](BusinessEntityContact.md)
 * [[Person].[EmailAddress]](EmailAddress.md)
 * [[Person].[Password]](Password.md)
@@ -257,7 +280,12 @@ DEPENDENCYLIST
 * [[dbo].[uspGetManagerEmployees]](../Programmability/Stored_Procedures/uspGetManagerEmployees.md)
 * [[dbo].[ufnGetContactInformation]](../Programmability/Functions/Table-valued_Functions/ufnGetContactInformation.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

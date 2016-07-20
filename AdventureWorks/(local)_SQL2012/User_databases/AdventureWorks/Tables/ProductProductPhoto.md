@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductProductPhoto
 
 # ![Tables](../../../../Images/Table32.png) [Production].[ProductProductPhoto]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.ProductProductPhoto
+---
 
 ## <a name="#description"></a>MS_Description
+
 Cross-reference table mapping products and product photos.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -15,22 +20,28 @@ Cross-reference table mapping products and product photos.
 | Last Modified | 13:14:54 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Primary Key PK_ProductProductPhoto_ProductID_ProductPhotoID: ProductID\\ProductPhotoID](../../../../Images/pk.png)](#indexes)[![Foreign Keys FK_ProductProductPhoto_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int | 4 | NO |  | _Product identification number. Foreign key to Product.ProductID._ |
-| [![Primary Key PK_ProductProductPhoto_ProductID_ProductPhotoID: ProductID\\ProductPhotoID](../../../../Images/pk.png)](#indexes)[![Foreign Keys FK_ProductProductPhoto_ProductPhoto_ProductPhotoID: [Production].[ProductPhoto].ProductPhotoID](../../../../Images/fk.png)](#foreignkeys) | ProductPhotoID | int | 4 | NO |  | _Product photo identification number. Foreign key to ProductPhoto.ProductPhotoID._ |
+| [![Primary Key PK_ProductProductPhoto_ProductID_ProductPhotoID: ProductID\ProductPhotoID](../../../../Images/pk.png)](#indexes)[![Foreign Keys FK_ProductProductPhoto_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int | 4 | NO |  | _Product identification number. Foreign key to Product.ProductID._ |
+| [![Primary Key PK_ProductProductPhoto_ProductID_ProductPhotoID: ProductID\ProductPhotoID](../../../../Images/pk.png)](#indexes)[![Foreign Keys FK_ProductProductPhoto_ProductPhoto_ProductPhotoID: [Production].[ProductPhoto].ProductPhotoID](../../../../Images/fk.png)](#foreignkeys) | ProductPhotoID | int | 4 | NO |  | _Product photo identification number. Foreign key to ProductPhoto.ProductPhotoID._ |
 |  | Primary | [[dbo].[Flag]](../Programmability/Types/User-Defined_Data_Types/Flag.md) | 1 | NO | ((0)) | _0 = Photo is not the principal image. 1 = Photo is the principal image._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Primary Key PK_ProductProductPhoto_ProductID_ProductPhotoID: ProductID\\ProductPhotoID](../../../../Images/pk.png)](#indexes) | PK_ProductProductPhoto_ProductID_ProductPhotoID | ProductID, ProductPhotoID | YES | _Primary key (clustered) constraint_ |
+| [![Primary Key PK_ProductProductPhoto_ProductID_ProductPhotoID: ProductID\ProductPhotoID](../../../../Images/pk.png)](#indexes) | PK_ProductProductPhoto_ProductID_ProductPhotoID | ProductID, ProductPhotoID | YES | _Primary key (clustered) constraint_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -40,7 +51,10 @@ Cross-reference table mapping products and product photos.
 | FK_ProductProductPhoto_ProductPhoto_ProductPhotoID | ProductPhotoID->[[Production].[ProductPhoto].[ProductPhotoID]](ProductPhoto.md) | _Foreign key constraint referencing ProductPhoto.ProductPhotoID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[ProductProductPhoto]
 (
@@ -81,14 +95,22 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Product]](Product.md)
+
+DEPENDENCYLIST* [[Production].[Product]](Product.md)
 * [[Production].[ProductPhoto]](ProductPhoto.md)
 * [[dbo].[Flag]](../Programmability/Types/User-Defined_Data_Types/Flag.md)
 * [Production](../Security/Schemas/Production.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

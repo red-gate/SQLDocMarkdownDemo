@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Purchasing.Vendor
 
 # ![Tables](../../../../Images/Table32.png) [Purchasing].[Vendor]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Purchasing.Vendor
+---
 
 ## <a name="#description"></a>MS_Description
+
 Companies from whom Adventure Works Cycles purchases parts or other goods.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Companies from whom Adventure Works Cycles purchases parts or other goods.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -29,6 +36,8 @@ Companies from whom Adventure Works Cycles purchases parts or other goods.
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -37,12 +46,16 @@ Companies from whom Adventure Works Cycles purchases parts or other goods.
 |  | AK_Vendor_AccountNumber | AccountNumber | YES | _Unique nonclustered index._ |
 
 
+---
+
 ## <a name="#triggers"></a>Triggers
 
 | Name | ANSI Nulls On | Quoted Identifier On | On | Not For Replication | Description |
 |---|---|---|---|---|---|
 | dVendor | YES | YES | Instead Of Delete | YES | _INSTEAD OF DELETE trigger which keeps Vendors from being deleted._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -51,6 +64,8 @@ Companies from whom Adventure Works Cycles purchases parts or other goods.
 | CK_Vendor_CreditRating | CreditRating | ([CreditRating]>=(1) AND [CreditRating]<=(5)) | _Check constraint [CreditRating] BETWEEN (1) AND (5)_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -58,7 +73,10 @@ Companies from whom Adventure Works Cycles purchases parts or other goods.
 | FK_Vendor_BusinessEntity_BusinessEntityID | BusinessEntityID->[[Person].[BusinessEntity].[BusinessEntityID]](BusinessEntity.md) | _Foreign key constraint referencing BusinessEntity.BusinessEntityID_ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Purchasing].[Vendor]
 (
@@ -163,24 +181,34 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[BusinessEntity]](BusinessEntity.md)
+
+DEPENDENCYLIST* [[Person].[BusinessEntity]](BusinessEntity.md)
 * [[dbo].[AccountNumber]](../Programmability/Types/User-Defined_Data_Types/AccountNumber.md)
 * [[dbo].[Flag]](../Programmability/Types/User-Defined_Data_Types/Flag.md)
 * [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Purchasing](../Security/Schemas/Purchasing.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Purchasing].[ProductVendor]](ProductVendor.md)
+
+DEPENDENCYLIST* [[Purchasing].[ProductVendor]](ProductVendor.md)
 * [[Purchasing].[PurchaseOrderHeader]](PurchaseOrderHeader.md)
 * [[Purchasing].[vVendorWithAddresses]](../Views/vVendorWithAddresses.md)
 * [[Purchasing].[vVendorWithContacts]](../Views/vVendorWithContacts.md)
 * [[dbo].[ufnGetContactInformation]](../Programmability/Functions/Table-valued_Functions/ufnGetContactInformation.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

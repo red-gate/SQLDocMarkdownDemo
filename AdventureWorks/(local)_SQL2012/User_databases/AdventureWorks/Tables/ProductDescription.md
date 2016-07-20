@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductDescription
 
 # ![Tables](../../../../Images/Table32.png) [Production].[ProductDescription]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.ProductDescription
+---
 
 ## <a name="#description"></a>MS_Description
+
 Product descriptions in several languages.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Product descriptions in several languages.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -25,6 +32,8 @@ Product descriptions in several languages.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -33,7 +42,10 @@ Product descriptions in several languages.
 |  | AK_ProductDescription_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[ProductDescription]
 (
@@ -70,17 +82,27 @@ GO
 
 ```
 
-## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [Production](../Security/Schemas/Production.md)
 
+---
+
+## <a name="#uses"></a>Uses
+
+DEPENDENCYLIST* [Production](../Security/Schemas/Production.md)
+
+
+---
 
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Production].[ProductModelProductDescriptionCulture]](ProductModelProductDescriptionCulture.md)
+
+DEPENDENCYLIST* [[Production].[ProductModelProductDescriptionCulture]](ProductModelProductDescriptionCulture.md)
 * [[Production].[vProductAndDescription]](../Views/vProductAndDescription.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

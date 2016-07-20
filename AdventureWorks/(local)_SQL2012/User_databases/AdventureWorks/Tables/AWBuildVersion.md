@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > dbo.AWBuildVersion
 
 # ![Tables](../../../../Images/Table32.png) [dbo].[AWBuildVersion]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > dbo.AWBuildVersion
+---
 
 ## <a name="#description"></a>MS_Description
+
 Current version number of the AdventureWorks 2012 sample database. 
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Current version number of the AdventureWorks 2012 sample database.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:41 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -25,6 +32,8 @@ Current version number of the AdventureWorks 2012 sample database.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -32,7 +41,10 @@ Current version number of the AdventureWorks 2012 sample database.
 | [![Cluster Primary Key PK_AWBuildVersion_SystemInformationID: SystemInformationID](../../../../Images/pkcluster.png)](#indexes) | PK_AWBuildVersion_SystemInformationID | SystemInformationID | YES | _Primary key (clustered) constraint_ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [dbo].[AWBuildVersion]
 (
@@ -62,7 +74,13 @@ EXEC sp_addextendedproperty N'MS_Description', N'Clustered index created by a pr
 GO
 
 ```
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

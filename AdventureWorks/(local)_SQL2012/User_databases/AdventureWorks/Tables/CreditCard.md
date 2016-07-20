@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.CreditCard
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[CreditCard]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.CreditCard
+---
 
 ## <a name="#description"></a>MS_Description
+
 Customer credit card information.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Customer credit card information.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:54 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -27,6 +34,8 @@ Customer credit card information.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -35,7 +44,10 @@ Customer credit card information.
 |  | AK_CreditCard_CardNumber | CardNumber | YES | _Unique nonclustered index._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[CreditCard]
 (
@@ -76,17 +88,27 @@ GO
 
 ```
 
-## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [Sales](../Security/Schemas/Sales.md)
 
+---
+
+## <a name="#uses"></a>Uses
+
+DEPENDENCYLIST* [Sales](../Security/Schemas/Sales.md)
+
+
+---
 
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Sales].[PersonCreditCard]](PersonCreditCard.md)
+
+DEPENDENCYLIST* [[Sales].[PersonCreditCard]](PersonCreditCard.md)
 * [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

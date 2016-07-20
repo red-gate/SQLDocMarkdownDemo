@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductModelIllustration
 
 # ![Tables](../../../../Images/Table32.png) [Production].[ProductModelIllustration]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.ProductModelIllustration
+---
 
 ## <a name="#description"></a>MS_Description
+
 Cross-reference table mapping product models and illustrations.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,21 +19,27 @@ Cross-reference table mapping product models and illustrations.
 | Last Modified | 13:14:54 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_ProductModelIllustration_ProductModelID_IllustrationID: ProductModelID\\IllustrationID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductModelIllustration_ProductModel_ProductModelID: [Production].[ProductModel].ProductModelID](../../../../Images/fk.png)](#foreignkeys) | ProductModelID | int | 4 | NO |  | _Primary key. Foreign key to ProductModel.ProductModelID._ |
-| [![Cluster Primary Key PK_ProductModelIllustration_ProductModelID_IllustrationID: ProductModelID\\IllustrationID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductModelIllustration_Illustration_IllustrationID: [Production].[Illustration].IllustrationID](../../../../Images/fk.png)](#foreignkeys) | IllustrationID | int | 4 | NO |  | _Primary key. Foreign key to Illustration.IllustrationID._ |
+| [![Cluster Primary Key PK_ProductModelIllustration_ProductModelID_IllustrationID: ProductModelID\IllustrationID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductModelIllustration_ProductModel_ProductModelID: [Production].[ProductModel].ProductModelID](../../../../Images/fk.png)](#foreignkeys) | ProductModelID | int | 4 | NO |  | _Primary key. Foreign key to ProductModel.ProductModelID._ |
+| [![Cluster Primary Key PK_ProductModelIllustration_ProductModelID_IllustrationID: ProductModelID\IllustrationID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductModelIllustration_Illustration_IllustrationID: [Production].[Illustration].IllustrationID](../../../../Images/fk.png)](#foreignkeys) | IllustrationID | int | 4 | NO |  | _Primary key. Foreign key to Illustration.IllustrationID._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_ProductModelIllustration_ProductModelID_IllustrationID: ProductModelID\\IllustrationID](../../../../Images/pkcluster.png)](#indexes) | PK_ProductModelIllustration_ProductModelID_IllustrationID | ProductModelID, IllustrationID | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_ProductModelIllustration_ProductModelID_IllustrationID: ProductModelID\IllustrationID](../../../../Images/pkcluster.png)](#indexes) | PK_ProductModelIllustration_ProductModelID_IllustrationID | ProductModelID, IllustrationID | YES | _Primary key (clustered) constraint_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -38,7 +49,10 @@ Cross-reference table mapping product models and illustrations.
 | FK_ProductModelIllustration_ProductModel_ProductModelID | ProductModelID->[[Production].[ProductModel].[ProductModelID]](ProductModel.md) | _Foreign key constraint referencing ProductModel.ProductModelID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[ProductModelIllustration]
 (
@@ -74,13 +88,21 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Illustration]](Illustration.md)
+
+DEPENDENCYLIST* [[Production].[Illustration]](Illustration.md)
 * [[Production].[ProductModel]](ProductModel.md)
 * [Production](../Security/Schemas/Production.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

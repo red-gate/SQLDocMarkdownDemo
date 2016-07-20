@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > HumanResources.vJobCandidate
 
 # ![Views](../../../../Images/View32.png) [HumanResources].[vJobCandidate]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > HumanResources.vJobCandidate
+---
 
 ## <a name="#description"></a>MS_Description
+
 Job candidate names and resumes.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Job candidate names and resumes.
 | Created | 13:14:55 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -37,7 +44,10 @@ Job candidate names and resumes.
 | ModifiedDate |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [HumanResources].[vJobCandidate] 
@@ -81,12 +91,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[JobCandidate]](../Tables/JobCandidate.md)
+
+DEPENDENCYLIST* [[HumanResources].[JobCandidate]](../Tables/JobCandidate.md)
 * [HumanResources](../Security/Schemas/HumanResources.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

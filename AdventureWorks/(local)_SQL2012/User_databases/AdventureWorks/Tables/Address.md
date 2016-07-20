@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.Address
 
 # ![Tables](../../../../Images/Table32.png) [Person].[Address]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Person.Address
+---
 
 ## <a name="#description"></a>MS_Description
+
 Street address information for customers, employees, and vendors.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Street address information for customers, employees, and vendors.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:54 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -31,6 +38,8 @@ IX_Address_StateProvinceID](../../../../Images/Index.png)](#indexes)(2)[![Foreig
 |  | ModifiedDate | datetime | 8 | NO |  |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -41,6 +50,8 @@ IX_Address_StateProvinceID](../../../../Images/Index.png)](#indexes)(2)[![Foreig
 |  | IX_Address_StateProvinceID | StateProvinceID |  | _Nonclustered index._ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -48,7 +59,10 @@ IX_Address_StateProvinceID](../../../../Images/Index.png)](#indexes)(2)[![Foreig
 | FK_Address_StateProvince_StateProvinceID | StateProvinceID->[[Person].[StateProvince].[StateProvinceID]](StateProvince.md) | _Foreign key constraint referencing StateProvince.StateProvinceID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Person].[Address]
 (
@@ -112,15 +126,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[StateProvince]](StateProvince.md)
+
+DEPENDENCYLIST* [[Person].[StateProvince]](StateProvince.md)
 * [Person](../Security/Schemas/Person.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Person].[BusinessEntityAddress]](BusinessEntityAddress.md)
+
+DEPENDENCYLIST* [[Person].[BusinessEntityAddress]](BusinessEntityAddress.md)
 * [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
 * [[HumanResources].[vEmployee]](../Views/vEmployee.md)
 * [[Purchasing].[vVendorWithAddresses]](../Views/vVendorWithAddresses.md)
@@ -128,7 +147,12 @@ DEPENDENCYLIST
 * [[Sales].[vSalesPerson]](../Views/vSalesPerson.md)
 * [[Sales].[vStoreWithAddresses]](../Views/vStoreWithAddresses.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > Person.vStateProvinceCountryRegion
 
 # ![Views](../../../../Images/View32.png) [Person].[vStateProvinceCountryRegion]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > Person.vStateProvinceCountryRegion
+---
 
 ## <a name="#description"></a>MS_Description
+
 Joins StateProvince table with CountryRegion table.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -16,27 +21,34 @@ Joins StateProvince table with CountryRegion table.
 | Last Modified | 13:14:55 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name |
 |---|---|
-| [![Cluster Key IX_vStateProvinceCountryRegion: StateProvinceID\\CountryRegionCode](../../../../Images/cluster.png)](#indexes) | StateProvinceID |
+| [![Cluster Key IX_vStateProvinceCountryRegion: StateProvinceID\CountryRegionCode](../../../../Images/cluster.png)](#indexes) | StateProvinceID |
 |  | StateProvinceCode |
 |  | IsOnlyStateProvinceFlag |
 |  | StateProvinceName |
 |  | TerritoryID |
-| [![Cluster Key IX_vStateProvinceCountryRegion: StateProvinceID\\CountryRegionCode](../../../../Images/cluster.png)](#indexes) | CountryRegionCode |
+| [![Cluster Key IX_vStateProvinceCountryRegion: StateProvinceID\CountryRegionCode](../../../../Images/cluster.png)](#indexes) | CountryRegionCode |
 |  | CountryRegionName |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Key IX_vStateProvinceCountryRegion: StateProvinceID\\CountryRegionCode](../../../../Images/cluster.png)](#indexes) | IX_vStateProvinceCountryRegion | StateProvinceID, CountryRegionCode | YES | _Clustered index on the view vStateProvinceCountryRegion._ |
+| [![Cluster Key IX_vStateProvinceCountryRegion: StateProvinceID\CountryRegionCode](../../../../Images/cluster.png)](#indexes) | IX_vStateProvinceCountryRegion | StateProvinceID, CountryRegionCode | YES | _Clustered index on the view vStateProvinceCountryRegion._ |
 
+
+---
 
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [Person].[vStateProvinceCountryRegion] 
@@ -63,13 +75,21 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[CountryRegion]](../Tables/CountryRegion.md)
+
+DEPENDENCYLIST* [[Person].[CountryRegion]](../Tables/CountryRegion.md)
 * [[Person].[StateProvince]](../Tables/StateProvince.md)
 * [Person](../Security/Schemas/Person.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

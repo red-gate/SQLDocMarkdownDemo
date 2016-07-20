@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Functions](../index.md) > [Scalar-valued Functions](Scalar-valued_Functions.md) > dbo.ufnGetProductListPrice
 
 # ![Scalar-valued Functions](../../../../../../Images/Function_Scalar32.png) [dbo].[ufnGetProductListPrice]
 
-[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Functions](../index.md) > [Scalar-valued Functions](Scalar-valued_Functions_.md) > dbo.ufnGetProductListPrice
+---
 
 ## <a name="#description"></a>MS_Description
+
 Scalar function returning the list price for a given product on a particular order date.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -12,6 +17,8 @@ Scalar function returning the list price for a given product on a particular ord
 | ANSI Nulls On | YES |
 | Quoted Identifier On | YES |
 
+
+---
 
 ## <a name="#parameters"></a>Parameters
 
@@ -21,7 +28,10 @@ Scalar function returning the list price for a given product on a particular ord
 | @OrderDate | datetime | 8 | _Input parameter for the scalar function ufnGetProductListPrice. Enter a valid order date._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE FUNCTION [dbo].[ufnGetProductListPrice](@ProductID [int], @OrderDate [datetime])
@@ -49,12 +59,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Product]](../../../Tables/Product.md)
+
+DEPENDENCYLIST* [[Production].[Product]](../../../Tables/Product.md)
 * [[Production].[ProductListPriceHistory]](../../../Tables/ProductListPriceHistory.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

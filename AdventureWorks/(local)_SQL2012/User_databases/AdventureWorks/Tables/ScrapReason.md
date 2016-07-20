@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ScrapReason
 
 # ![Tables](../../../../Images/Table32.png) [Production].[ScrapReason]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.ScrapReason
+---
 
 ## <a name="#description"></a>MS_Description
+
 Manufacturing failure reasons lookup table.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -15,6 +20,8 @@ Manufacturing failure reasons lookup table.
 | Last Modified | 13:14:55 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Identity | Default | Description |
@@ -24,6 +31,8 @@ Manufacturing failure reasons lookup table.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -32,7 +41,10 @@ Manufacturing failure reasons lookup table.
 |  | AK_ScrapReason_Name | Name | YES | _Unique nonclustered index._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[ScrapReason]
 (
@@ -64,17 +76,27 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
+
+DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Production](../Security/Schemas/Production.md)
 
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Production].[WorkOrder]](WorkOrder.md)
+---
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [[Production].[WorkOrder]](WorkOrder.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

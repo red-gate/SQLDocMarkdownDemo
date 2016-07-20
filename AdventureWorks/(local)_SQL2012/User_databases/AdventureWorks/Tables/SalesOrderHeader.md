@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.SalesOrderHeader
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[SalesOrderHeader]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.SalesOrderHeader
+---
 
 ## <a name="#description"></a>MS_Description
+
 General sales order information.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ General sales order information.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -47,6 +54,8 @@ General sales order information.
 |  | ModifiedDate | datetime |  | 8 | NO |  |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#computedcolumns"></a>Computed columns
 
 | Name | Column definition |
@@ -54,6 +63,8 @@ General sales order information.
 | SalesOrderNumber | (isnull(N'SO'+CONVERT([nvarchar](23),[SalesOrderID],(0)),N'*** ERROR ***')) |
 | TotalDue | (isnull(([SubTotal]+[TaxAmt])+[Freight],(0))) |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
@@ -66,12 +77,16 @@ General sales order information.
 |  | IX_SalesOrderHeader_SalesPersonID | SalesPersonID |  | _Nonclustered index._ |
 
 
+---
+
 ## <a name="#triggers"></a>Triggers
 
 | Name | ANSI Nulls On | Quoted Identifier On | On | Not For Replication | Description |
 |---|---|---|---|---|---|
 | uSalesOrderHeader | YES | YES | After Update | YES | _AFTER UPDATE trigger that updates the RevisionNumber and ModifiedDate columns in the SalesOrderHeader table.Updates the SalesYTD column in the SalesPerson and SalesTerritory tables._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -84,6 +99,8 @@ General sales order information.
 | CK_SalesOrderHeader_SubTotal | SubTotal | ([SubTotal]>=(0.00)) | _Check constraint [SubTotal] >= (0.00)_ |
 | CK_SalesOrderHeader_TaxAmt | TaxAmt | ([TaxAmt]>=(0.00)) | _Check constraint [TaxAmt] >= (0.00)_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -99,7 +116,10 @@ General sales order information.
 | FK_SalesOrderHeader_ShipMethod_ShipMethodID | ShipMethodID->[[Purchasing].[ShipMethod].[ShipMethodID]](ShipMethod.md) | _Foreign key constraint referencing ShipMethod.ShipMethodID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[SalesOrderHeader]
 (
@@ -356,9 +376,12 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[Address]](Address.md)
+
+DEPENDENCYLIST* [[Person].[Address]](Address.md)
 * [[Purchasing].[ShipMethod]](ShipMethod.md)
 * [[Sales].[CreditCard]](CreditCard.md)
 * [[Sales].[CurrencyRate]](CurrencyRate.md)
@@ -371,13 +394,20 @@ DEPENDENCYLIST
 * [Sales](../Security/Schemas/Sales.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Sales].[SalesOrderDetail]](SalesOrderDetail.md)
+
+DEPENDENCYLIST* [[Sales].[SalesOrderDetail]](SalesOrderDetail.md)
 * [[Sales].[SalesOrderHeaderSalesReason]](SalesOrderHeaderSalesReason.md)
 * [[Sales].[vSalesPersonSalesByFiscalYears]](../Views/vSalesPersonSalesByFiscalYears.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

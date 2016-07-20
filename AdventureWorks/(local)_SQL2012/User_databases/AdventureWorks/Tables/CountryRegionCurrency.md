@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.CountryRegionCurrency
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[CountryRegionCurrency]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.CountryRegionCurrency
+---
 
 ## <a name="#description"></a>MS_Description
+
 Cross-reference table mapping ISO currency codes to a country or region.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -15,22 +20,28 @@ Cross-reference table mapping ISO currency codes to a country or region.
 | Last Modified | 13:14:53 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_CountryRegionCurrency_CountryRegionCode_CurrencyCode: CountryRegionCode\\CurrencyCode](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_CountryRegionCurrency_CountryRegion_CountryRegionCode: [Person].[CountryRegion].CountryRegionCode](../../../../Images/fk.png)](#foreignkeys) | CountryRegionCode | nvarchar(3) | 6 | NO |  | _ISO code for countries and regions. Foreign key to CountryRegion.CountryRegionCode._ |
-| [![Cluster Primary Key PK_CountryRegionCurrency_CountryRegionCode_CurrencyCode: CountryRegionCode\\CurrencyCode](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_CountryRegionCurrency_CurrencyCode](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_CountryRegionCurrency_Currency_CurrencyCode: [Sales].[Currency].CurrencyCode](../../../../Images/fk.png)](#foreignkeys) | CurrencyCode | nchar(3) | 6 | NO |  | _ISO standard currency code. Foreign key to Currency.CurrencyCode._ |
+| [![Cluster Primary Key PK_CountryRegionCurrency_CountryRegionCode_CurrencyCode: CountryRegionCode\CurrencyCode](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_CountryRegionCurrency_CountryRegion_CountryRegionCode: [Person].[CountryRegion].CountryRegionCode](../../../../Images/fk.png)](#foreignkeys) | CountryRegionCode | nvarchar(3) | 6 | NO |  | _ISO code for countries and regions. Foreign key to CountryRegion.CountryRegionCode._ |
+| [![Cluster Primary Key PK_CountryRegionCurrency_CountryRegionCode_CurrencyCode: CountryRegionCode\CurrencyCode](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_CountryRegionCurrency_CurrencyCode](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_CountryRegionCurrency_Currency_CurrencyCode: [Sales].[Currency].CurrencyCode](../../../../Images/fk.png)](#foreignkeys) | CurrencyCode | nchar(3) | 6 | NO |  | _ISO standard currency code. Foreign key to Currency.CurrencyCode._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_CountryRegionCurrency_CountryRegionCode_CurrencyCode: CountryRegionCode\\CurrencyCode](../../../../Images/pkcluster.png)](#indexes) | PK_CountryRegionCurrency_CountryRegionCode_CurrencyCode | CountryRegionCode, CurrencyCode | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_CountryRegionCurrency_CountryRegionCode_CurrencyCode: CountryRegionCode\CurrencyCode](../../../../Images/pkcluster.png)](#indexes) | PK_CountryRegionCurrency_CountryRegionCode_CurrencyCode | CountryRegionCode, CurrencyCode | YES | _Primary key (clustered) constraint_ |
 |  | IX_CountryRegionCurrency_CurrencyCode | CurrencyCode |  | _Nonclustered index._ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -40,7 +51,10 @@ Cross-reference table mapping ISO currency codes to a country or region.
 | FK_CountryRegionCurrency_Currency_CurrencyCode | CurrencyCode->[[Sales].[Currency].[CurrencyCode]](Currency.md) | _Foreign key constraint referencing Currency.CurrencyCode._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[CountryRegionCurrency]
 (
@@ -80,13 +94,21 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[CountryRegion]](CountryRegion.md)
+
+DEPENDENCYLIST* [[Person].[CountryRegion]](CountryRegion.md)
 * [[Sales].[Currency]](Currency.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

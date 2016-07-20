@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.SalesOrderDetail
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[SalesOrderDetail]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.SalesOrderDetail
+---
 
 ## <a name="#description"></a>MS_Description
+
 Individual products associated with a specific sales order. See SalesOrderHeader.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -15,22 +20,26 @@ Individual products associated with a specific sales order. See SalesOrderHeader
 | Last Modified | 13:14:55 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Computed | Max Length (Bytes) | Allow Nulls | Identity | Default | Description |
 |---|---|---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID: SalesOrderID\\SalesOrderDetailID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID: [Sales].[SalesOrderHeader].SalesOrderID](../../../../Images/fk.png)](#foreignkeys) | SalesOrderID | int |  | 4 | NO |  |  | _Primary key. Foreign key to SalesOrderHeader.SalesOrderID._ |
-| [![Cluster Primary Key PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID: SalesOrderID\\SalesOrderDetailID](../../../../Images/pkcluster.png)](#indexes) | SalesOrderDetailID | int |  | 4 | NO | 1 - 1 |  | _Primary key. One incremental unique number per product sold._ |
+| [![Cluster Primary Key PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID: SalesOrderID\SalesOrderDetailID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID: [Sales].[SalesOrderHeader].SalesOrderID](../../../../Images/fk.png)](#foreignkeys) | SalesOrderID | int |  | 4 | NO |  |  | _Primary key. Foreign key to SalesOrderHeader.SalesOrderID._ |
+| [![Cluster Primary Key PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID: SalesOrderID\SalesOrderDetailID](../../../../Images/pkcluster.png)](#indexes) | SalesOrderDetailID | int |  | 4 | NO | 1 - 1 |  | _Primary key. One incremental unique number per product sold._ |
 |  | CarrierTrackingNumber | nvarchar(25) |  | 50 | YES |  |  | _Shipment tracking number supplied by the shipper._ |
 | [![Check Constraints CK_SalesOrderDetail_OrderQty : ([OrderQty]>(0))](../../../../Images/c-constraint.png)](#checkconstraints) | OrderQty | smallint |  | 2 | NO |  |  | _Quantity ordered per product._ |
-| [![Indexes IX_SalesOrderDetail_ProductID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID: [Sales].[SpecialOfferProduct].SpecialOfferID\\ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int |  | 4 | NO |  |  | _Product sold to customer. Foreign key to Product.ProductID._ |
-| [![Foreign Keys FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID: [Sales].[SpecialOfferProduct].SpecialOfferID\\ProductID](../../../../Images/fk.png)](#foreignkeys) | SpecialOfferID | int |  | 4 | NO |  |  | _Promotional code. Foreign key to SpecialOffer.SpecialOfferID._ |
+| [![Indexes IX_SalesOrderDetail_ProductID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID: [Sales].[SpecialOfferProduct].SpecialOfferID\ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int |  | 4 | NO |  |  | _Product sold to customer. Foreign key to Product.ProductID._ |
+| [![Foreign Keys FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID: [Sales].[SpecialOfferProduct].SpecialOfferID\ProductID](../../../../Images/fk.png)](#foreignkeys) | SpecialOfferID | int |  | 4 | NO |  |  | _Promotional code. Foreign key to SpecialOffer.SpecialOfferID._ |
 | [![Check Constraints CK_SalesOrderDetail_UnitPrice : ([UnitPrice]>=(0.00))](../../../../Images/c-constraint.png)](#checkconstraints) | UnitPrice | money |  | 8 | NO |  |  | _Selling price of a single product._ |
 | [![Check Constraints CK_SalesOrderDetail_UnitPriceDiscount : ([UnitPriceDiscount]>=(0.00))](../../../../Images/c-constraint.png)](#checkconstraints) | UnitPriceDiscount | money |  | 8 | NO |  | ((0.0)) | _Discount amount._ |
 |  | LineTotal | numeric(38,6) | YES | 17 | NO |  |  | _Per product subtotal. Computed as UnitPrice * (1 - UnitPriceDiscount) * OrderQty._ |
 | [![Indexes AK_SalesOrderDetail_rowguid](../../../../Images/Index.png)](#indexes) | rowguid | uniqueidentifier |  | 16 | NO |  | (newid()) | _ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample._ |
 |  | ModifiedDate | datetime |  | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
+
+---
 
 ## <a name="#computedcolumns"></a>Computed columns
 
@@ -39,14 +48,18 @@ Individual products associated with a specific sales order. See SalesOrderHeader
 | LineTotal | (isnull(([UnitPrice]*((1.0)-[UnitPriceDiscount]))*[OrderQty],(0.0))) |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID: SalesOrderID\\SalesOrderDetailID](../../../../Images/pkcluster.png)](#indexes) | PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID | SalesOrderID, SalesOrderDetailID | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID: SalesOrderID\SalesOrderDetailID](../../../../Images/pkcluster.png)](#indexes) | PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID | SalesOrderID, SalesOrderDetailID | YES | _Primary key (clustered) constraint_ |
 |  | AK_SalesOrderDetail_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 |  | IX_SalesOrderDetail_ProductID | ProductID |  | _Nonclustered index._ |
 
+
+---
 
 ## <a name="#triggers"></a>Triggers
 
@@ -54,6 +67,8 @@ Individual products associated with a specific sales order. See SalesOrderHeader
 |---|---|---|---|---|
 | iduSalesOrderDetail | YES | YES | After Delete Insert Update | _AFTER INSERT, DELETE, UPDATE trigger that inserts a row in the TransactionHistory table, updates ModifiedDate in SalesOrderDetail and updates the SalesOrderHeader.SubTotal column._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -64,6 +79,8 @@ Individual products associated with a specific sales order. See SalesOrderHeader
 | CK_SalesOrderDetail_UnitPriceDiscount | UnitPriceDiscount | ([UnitPriceDiscount]>=(0.00)) | _Check constraint [UnitPriceDiscount] >= (0.00)_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Delete | Columns | Description |
@@ -73,7 +90,10 @@ Individual products associated with a specific sales order. See SalesOrderHeader
 ProductID->[[Sales].[SpecialOfferProduct].[ProductID]](SpecialOfferProduct.md) | _Foreign key constraint referencing SpecialOfferProduct.SpecialOfferIDProductID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[SalesOrderDetail]
 (
@@ -244,13 +264,21 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
+
+DEPENDENCYLIST* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
 * [[Sales].[SpecialOfferProduct]](SpecialOfferProduct.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

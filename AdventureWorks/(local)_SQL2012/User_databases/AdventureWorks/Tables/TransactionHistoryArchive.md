@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.TransactionHistoryArchive
 
 # ![Tables](../../../../Images/Table32.png) [Production].[TransactionHistoryArchive]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.TransactionHistoryArchive
+---
 
 ## <a name="#description"></a>MS_Description
+
 Transactions for previous years.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Transactions for previous years.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:47 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -30,6 +37,8 @@ Transactions for previous years.
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -39,6 +48,8 @@ Transactions for previous years.
 |  | IX_TransactionHistoryArchive_ReferenceOrderID_ReferenceOrderLineID | ReferenceOrderID, ReferenceOrderLineID |  | _Nonclustered index._ |
 
 
+---
+
 ## <a name="#checkconstraints"></a>Check Constraints
 
 | Name | On Column | Constraint | Description |
@@ -46,7 +57,10 @@ Transactions for previous years.
 | CK_TransactionHistoryArchive_TransactionType | TransactionType | (upper([TransactionType])='P' OR upper([TransactionType])='S' OR upper([TransactionType])='W') | _Check constraint [TransactionType]='p' OR [TransactionType]='s' OR [TransactionType]='w' OR [TransactionType]='P' OR [TransactionType]='S' OR [TransactionType]='W'_ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[TransactionHistoryArchive]
 (
@@ -108,11 +122,19 @@ GO
 
 ```
 
-## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [Production](../Security/Schemas/Production.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+---
+
+## <a name="#uses"></a>Uses
+
+DEPENDENCYLIST* [Production](../Security/Schemas/Production.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > Production.vProductModelCatalogDescription
 
 # ![Views](../../../../Images/View32.png) [Production].[vProductModelCatalogDescription]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > Production.vProductModelCatalogDescription
+---
 
 ## <a name="#description"></a>MS_Description
+
 Displays the content from each element in the xml column CatalogDescription for each product in the Production.ProductModel table that has catalog data.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Displays the content from each element in the xml column CatalogDescription for 
 | Created | 13:14:55 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -46,7 +53,10 @@ Displays the content from each element in the xml column CatalogDescription for 
 | ModifiedDate |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [Production].[vProductModelCatalogDescription] 
@@ -116,12 +126,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[ProductModel]](../Tables/ProductModel.md)
+
+DEPENDENCYLIST* [[Production].[ProductModel]](../Tables/ProductModel.md)
 * [Production](../Security/Schemas/Production.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

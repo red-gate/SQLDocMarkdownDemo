@@ -1,15 +1,24 @@
+#### 
+
+[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Types](../index.md) > [XML Schema Collections](XML_Schema_Collections.md) > Sales.StoreSurveySchemaCollection
 
 # ![XML Schema Collections](../../../../../../Images/XmlSchemaCollection32.png) [Sales].[StoreSurveySchemaCollection]
 
-[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Types](../index.md) > [XML Schema Collections](XML_Schema_Collections_.md) > Sales.StoreSurveySchemaCollection
+---
 
 ## <a name="#description"></a>MS_Description
+
 Collection of XML schemas for the Demographics column in the Sales.Store table.
+
 ## <a name="#dependentcolumns"></a>Dependent Columns
+
 * [[Sales].[Store].[Demographics]](../../../Tables/Store.md)
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE XML SCHEMA COLLECTION [Sales].[StoreSurveySchemaCollection] 
 AS N'<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:t="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/StoreSurvey" targetNamespace="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/StoreSurvey" elementFormDefault="qualified">
@@ -81,16 +90,26 @@ GO
 
 ```
 
-## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [Sales](../../../Security/Schemas/Sales.md)
 
+---
+
+## <a name="#uses"></a>Uses
+
+DEPENDENCYLIST* [Sales](../../../Security/Schemas/Sales.md)
+
+
+---
 
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Sales].[Store]](../../../Tables/Store.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+DEPENDENCYLIST* [[Sales].[Store]](../../../Tables/Store.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

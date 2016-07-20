@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.SalesTerritoryHistory
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[SalesTerritoryHistory]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.SalesTerritoryHistory
+---
 
 ## <a name="#description"></a>MS_Description
+
 Sales representative transfers to other sales territories.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,25 +19,31 @@ Sales representative transfers to other sales territories.
 | Last Modified | 13:14:55 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_SalesTerritoryHistory_BusinessEntityID_StartDate_TerritoryID: BusinessEntityID\\StartDate\\TerritoryID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID: [Sales].[SalesPerson].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Primary key. The sales rep.  Foreign key to SalesPerson.BusinessEntityID._ |
-| [![Cluster Primary Key PK_SalesTerritoryHistory_BusinessEntityID_StartDate_TerritoryID: BusinessEntityID\\StartDate\\TerritoryID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SalesTerritoryHistory_SalesTerritory_TerritoryID: [Sales].[SalesTerritory].TerritoryID](../../../../Images/fk.png)](#foreignkeys) | TerritoryID | int | 4 | NO |  | _Primary key. Territory identification number. Foreign key to SalesTerritory.SalesTerritoryID._ |
-| [![Cluster Primary Key PK_SalesTerritoryHistory_BusinessEntityID_StartDate_TerritoryID: BusinessEntityID\\StartDate\\TerritoryID](../../../../Images/pkcluster.png)](#indexes) | StartDate | datetime | 8 | NO |  | _Primary key. Date the sales representive started work in the territory._ |
+| [![Cluster Primary Key PK_SalesTerritoryHistory_BusinessEntityID_StartDate_TerritoryID: BusinessEntityID\StartDate\TerritoryID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID: [Sales].[SalesPerson].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Primary key. The sales rep.  Foreign key to SalesPerson.BusinessEntityID._ |
+| [![Cluster Primary Key PK_SalesTerritoryHistory_BusinessEntityID_StartDate_TerritoryID: BusinessEntityID\StartDate\TerritoryID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SalesTerritoryHistory_SalesTerritory_TerritoryID: [Sales].[SalesTerritory].TerritoryID](../../../../Images/fk.png)](#foreignkeys) | TerritoryID | int | 4 | NO |  | _Primary key. Territory identification number. Foreign key to SalesTerritory.SalesTerritoryID._ |
+| [![Cluster Primary Key PK_SalesTerritoryHistory_BusinessEntityID_StartDate_TerritoryID: BusinessEntityID\StartDate\TerritoryID](../../../../Images/pkcluster.png)](#indexes) | StartDate | datetime | 8 | NO |  | _Primary key. Date the sales representive started work in the territory._ |
 |  | EndDate | datetime | 8 | YES |  | _Date the sales representative left work in the territory._ |
 | [![Indexes AK_SalesTerritoryHistory_rowguid](../../../../Images/Index.png)](#indexes) | rowguid | uniqueidentifier | 16 | NO | (newid()) | _ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_SalesTerritoryHistory_BusinessEntityID_StartDate_TerritoryID: BusinessEntityID\\StartDate\\TerritoryID](../../../../Images/pkcluster.png)](#indexes) | PK_SalesTerritoryHistory_BusinessEntityID_StartDate_TerritoryID | BusinessEntityID, StartDate, TerritoryID | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_SalesTerritoryHistory_BusinessEntityID_StartDate_TerritoryID: BusinessEntityID\StartDate\TerritoryID](../../../../Images/pkcluster.png)](#indexes) | PK_SalesTerritoryHistory_BusinessEntityID_StartDate_TerritoryID | BusinessEntityID, StartDate, TerritoryID | YES | _Primary key (clustered) constraint_ |
 |  | AK_SalesTerritoryHistory_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -40,6 +51,8 @@ Sales representative transfers to other sales territories.
 |---|---|---|
 | CK_SalesTerritoryHistory_EndDate | ([EndDate]>=[StartDate] OR [EndDate] IS NULL) | _Check constraint [EndDate] >= [StartDate] OR [EndDate] IS NULL_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -49,7 +62,10 @@ Sales representative transfers to other sales territories.
 | FK_SalesTerritoryHistory_SalesTerritory_TerritoryID | TerritoryID->[[Sales].[SalesTerritory].[TerritoryID]](SalesTerritory.md) | _Foreign key constraint referencing SalesTerritory.TerritoryID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[SalesTerritoryHistory]
 (
@@ -104,13 +120,21 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Sales].[SalesPerson]](SalesPerson.md)
+
+DEPENDENCYLIST* [[Sales].[SalesPerson]](SalesPerson.md)
 * [[Sales].[SalesTerritory]](SalesTerritory.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

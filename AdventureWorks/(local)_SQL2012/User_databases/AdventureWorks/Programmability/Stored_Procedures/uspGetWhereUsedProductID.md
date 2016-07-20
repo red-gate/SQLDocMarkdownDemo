@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures.md) > dbo.uspGetWhereUsedProductID
 
 # ![Stored Procedures](../../../../../Images/StoredProcedure32.png) [dbo].[uspGetWhereUsedProductID]
 
-[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures_.md) > dbo.uspGetWhereUsedProductID
+---
 
 ## <a name="#description"></a>MS_Description
+
 Stored procedure using a recursive query to return all components or assemblies that directly or indirectly use the specified ProductID.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -12,6 +17,8 @@ Stored procedure using a recursive query to return all components or assemblies 
 | ANSI Nulls On | YES |
 | Quoted Identifier On | YES |
 
+
+---
 
 ## <a name="#parameters"></a>Parameters
 
@@ -21,7 +28,10 @@ Stored procedure using a recursive query to return all components or assemblies 
 | @CheckDate | datetime | 8 | _Input parameter for the stored procedure uspGetWhereUsedProductID used to eliminate components not used after that date. Enter a valid date._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE PROCEDURE [dbo].[uspGetWhereUsedProductID]
@@ -68,12 +78,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[BillOfMaterials]](../../Tables/BillOfMaterials.md)
+
+DEPENDENCYLIST* [[Production].[BillOfMaterials]](../../Tables/BillOfMaterials.md)
 * [[Production].[Product]](../../Tables/Product.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

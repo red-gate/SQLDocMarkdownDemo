@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.SalesOrderHeaderSalesReason
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[SalesOrderHeaderSalesReason]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.SalesOrderHeaderSalesReason
+---
 
 ## <a name="#description"></a>MS_Description
+
 Cross-reference table mapping sales orders to sales reason codes.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,21 +19,27 @@ Cross-reference table mapping sales orders to sales reason codes.
 | Last Modified | 13:14:55 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_SalesOrderHeaderSalesReason_SalesOrderID_SalesReasonID: SalesOrderID\\SalesReasonID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID: [Sales].[SalesOrderHeader].SalesOrderID](../../../../Images/fk.png)](#foreignkeys) | SalesOrderID | int | 4 | NO |  | _Primary key. Foreign key to SalesOrderHeader.SalesOrderID._ |
-| [![Cluster Primary Key PK_SalesOrderHeaderSalesReason_SalesOrderID_SalesReasonID: SalesOrderID\\SalesReasonID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID: [Sales].[SalesReason].SalesReasonID](../../../../Images/fk.png)](#foreignkeys) | SalesReasonID | int | 4 | NO |  | _Primary key. Foreign key to SalesReason.SalesReasonID._ |
+| [![Cluster Primary Key PK_SalesOrderHeaderSalesReason_SalesOrderID_SalesReasonID: SalesOrderID\SalesReasonID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID: [Sales].[SalesOrderHeader].SalesOrderID](../../../../Images/fk.png)](#foreignkeys) | SalesOrderID | int | 4 | NO |  | _Primary key. Foreign key to SalesOrderHeader.SalesOrderID._ |
+| [![Cluster Primary Key PK_SalesOrderHeaderSalesReason_SalesOrderID_SalesReasonID: SalesOrderID\SalesReasonID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID: [Sales].[SalesReason].SalesReasonID](../../../../Images/fk.png)](#foreignkeys) | SalesReasonID | int | 4 | NO |  | _Primary key. Foreign key to SalesReason.SalesReasonID._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_SalesOrderHeaderSalesReason_SalesOrderID_SalesReasonID: SalesOrderID\\SalesReasonID](../../../../Images/pkcluster.png)](#indexes) | PK_SalesOrderHeaderSalesReason_SalesOrderID_SalesReasonID | SalesOrderID, SalesReasonID | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_SalesOrderHeaderSalesReason_SalesOrderID_SalesReasonID: SalesOrderID\SalesReasonID](../../../../Images/pkcluster.png)](#indexes) | PK_SalesOrderHeaderSalesReason_SalesOrderID_SalesReasonID | SalesOrderID, SalesReasonID | YES | _Primary key (clustered) constraint_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -38,7 +49,10 @@ Cross-reference table mapping sales orders to sales reason codes.
 | FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID |  | SalesReasonID->[[Sales].[SalesReason].[SalesReasonID]](SalesReason.md) | _Foreign key constraint referencing SalesReason.SalesReasonID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[SalesOrderHeaderSalesReason]
 (
@@ -74,13 +88,21 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
+
+DEPENDENCYLIST* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
 * [[Sales].[SalesReason]](SalesReason.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

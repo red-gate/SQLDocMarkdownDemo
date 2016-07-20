@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > HumanResources.vEmployeeDepartmentHistory
 
 # ![Views](../../../../Images/View32.png) [HumanResources].[vEmployeeDepartmentHistory]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > HumanResources.vEmployeeDepartmentHistory
+---
 
 ## <a name="#description"></a>MS_Description
+
 Returns employee name and current and previous departments.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Returns employee name and current and previous departments.
 | Created | 13:14:55 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -32,7 +39,10 @@ Returns employee name and current and previous departments.
 | EndDate |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [HumanResources].[vEmployeeDepartmentHistory] 
@@ -64,16 +74,24 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[Department]](../Tables/Department.md)
+
+DEPENDENCYLIST* [[HumanResources].[Department]](../Tables/Department.md)
 * [[HumanResources].[Employee]](../Tables/Employee.md)
 * [[HumanResources].[EmployeeDepartmentHistory]](../Tables/EmployeeDepartmentHistory.md)
 * [[HumanResources].[Shift]](../Tables/Shift.md)
 * [[Person].[Person]](../Tables/Person.md)
 * [HumanResources](../Security/Schemas/HumanResources.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductPhoto
 
 # ![Tables](../../../../Images/Table32.png) [Production].[ProductPhoto]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.ProductPhoto
+---
 
 ## <a name="#description"></a>MS_Description
+
 Product images.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Product images.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:54 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -27,6 +34,8 @@ Product images.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -34,7 +43,10 @@ Product images.
 | [![Cluster Primary Key PK_ProductPhoto_ProductPhotoID: ProductPhotoID](../../../../Images/pkcluster.png)](#indexes) | PK_ProductPhoto_ProductPhotoID | ProductPhotoID | YES | _Primary key (clustered) constraint_ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[ProductPhoto]
 (
@@ -71,16 +83,26 @@ GO
 
 ```
 
-## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [Production](../Security/Schemas/Production.md)
 
+---
+
+## <a name="#uses"></a>Uses
+
+DEPENDENCYLIST* [Production](../Security/Schemas/Production.md)
+
+
+---
 
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Production].[ProductProductPhoto]](ProductProductPhoto.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+DEPENDENCYLIST* [[Production].[ProductProductPhoto]](ProductProductPhoto.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

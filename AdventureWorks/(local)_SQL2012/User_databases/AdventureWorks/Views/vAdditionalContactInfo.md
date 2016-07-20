@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > Person.vAdditionalContactInfo
 
 # ![Views](../../../../Images/View32.png) [Person].[vAdditionalContactInfo]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > Person.vAdditionalContactInfo
+---
 
 ## <a name="#description"></a>MS_Description
+
 Displays the contact name and content from each element in the xml column AdditionalContactInfo for that person.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Displays the contact name and content from each element in the xml column Additi
 | Created | 13:14:55 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -38,7 +45,10 @@ Displays the contact name and content from each element in the xml column Additi
 | ModifiedDate |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [Person].[vAdditionalContactInfo] 
@@ -94,12 +104,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[Person]](../Tables/Person.md)
+
+DEPENDENCYLIST* [[Person].[Person]](../Tables/Person.md)
 * [Person](../Security/Schemas/Person.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

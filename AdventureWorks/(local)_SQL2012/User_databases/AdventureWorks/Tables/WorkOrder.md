@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.WorkOrder
 
 # ![Tables](../../../../Images/Table32.png) [Production].[WorkOrder]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.WorkOrder
+---
 
 ## <a name="#description"></a>MS_Description
+
 Manufacturing work orders.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -13,6 +18,8 @@ Manufacturing work orders.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -30,12 +37,16 @@ Manufacturing work orders.
 |  | ModifiedDate | datetime |  | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#computedcolumns"></a>Computed columns
 
 | Name | Column definition |
 |---|---|
 | StockedQty | (isnull([OrderQty]-[ScrappedQty],(0))) |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
@@ -46,6 +57,8 @@ Manufacturing work orders.
 |  | IX_WorkOrder_ScrapReasonID | ScrapReasonID |  | _Nonclustered index._ |
 
 
+---
+
 ## <a name="#triggers"></a>Triggers
 
 | Name | ANSI Nulls On | Quoted Identifier On | On | Description |
@@ -53,6 +66,8 @@ Manufacturing work orders.
 | iWorkOrder | YES | YES | After Insert | _AFTER INSERT trigger that inserts a row in the TransactionHistory table._ |
 | uWorkOrder | YES | YES | After Update | _AFTER UPDATE trigger that inserts a row in the TransactionHistory table, updates ModifiedDate in the WorkOrder table._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -63,6 +78,8 @@ Manufacturing work orders.
 | CK_WorkOrder_ScrappedQty | ScrappedQty | ([ScrappedQty]>=(0)) | _Check constraint [ScrappedQty] >= (0)_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -71,7 +88,10 @@ Manufacturing work orders.
 | FK_WorkOrder_ScrapReason_ScrapReasonID | ScrapReasonID->[[Production].[ScrapReason].[ScrapReasonID]](ScrapReason.md) | _Foreign key constraint referencing ScrapReason.ScrapReasonID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[WorkOrder]
 (
@@ -239,18 +259,28 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Product]](Product.md)
+
+DEPENDENCYLIST* [[Production].[Product]](Product.md)
 * [[Production].[ScrapReason]](ScrapReason.md)
 * [Production](../Security/Schemas/Production.md)
 
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Production].[WorkOrderRouting]](WorkOrderRouting.md)
+---
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [[Production].[WorkOrderRouting]](WorkOrderRouting.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

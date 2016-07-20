@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.Document
 
 # ![Tables](../../../../Images/Table32.png) [Production].[Document]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.Document
+---
 
 ## <a name="#description"></a>MS_Description
+
 Product maintenance documents.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -16,6 +21,8 @@ Product maintenance documents.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:54 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -38,12 +45,16 @@ UQ__Document__F73921F793071A63](../../../../Images/Index.png)](#indexes)(2) | ro
 |  | ModifiedDate | datetime |  | 8 | NO |  |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#computedcolumns"></a>Computed columns
 
 | Name | Column definition |
 |---|---|
 | DocumentLevel | ([DocumentNode].[GetLevel]()) |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
@@ -56,12 +67,16 @@ UQ__Document__F73921F793071A63](../../../../Images/Index.png)](#indexes)(2) | ro
 |  | IX_Document_FileName_Revision | FileName, Revision |  | _Unique nonclustered index._ |
 
 
+---
+
 ## <a name="#checkconstraints"></a>Check Constraints
 
 | Name | On Column | Constraint | Description |
 |---|---|---|---|
 | CK_Document_Status | Status | ([Status]>=(1) AND [Status]<=(3)) | _Check constraint [Status] BETWEEN (1) AND (3)_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -70,7 +85,10 @@ UQ__Document__F73921F793071A63](../../../../Images/Index.png)](#indexes)(2) | ro
 | FK_Document_Employee_Owner | Owner->[[HumanResources].[Employee].[BusinessEntityID]](Employee.md) | _Foreign key constraint referencing Employee.BusinessEntityID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[Document]
 (
@@ -163,18 +181,28 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[Employee]](Employee.md)
+
+DEPENDENCYLIST* [[HumanResources].[Employee]](Employee.md)
 * [Production](../Security/Schemas/Production.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Production].[ProductDocument]](ProductDocument.md)
+
+DEPENDENCYLIST* [[Production].[ProductDocument]](ProductDocument.md)
 * [AW2008FullTextCatalog](../Storage/Full_Text_Catalogs/AW2008FullTextCatalog.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

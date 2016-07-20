@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.PersonPhone
 
 # ![Tables](../../../../Images/Table32.png) [Person].[PersonPhone]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Person.PersonPhone
+---
 
 ## <a name="#description"></a>MS_Description
+
 Telephone number and type of a person.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -15,23 +20,29 @@ Telephone number and type of a person.
 | Last Modified | 13:14:54 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID: BusinessEntityID\\PhoneNumber\\PhoneNumberTypeID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_PersonPhone_Person_BusinessEntityID: [Person].[Person].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Business entity identification number. Foreign key to Person.BusinessEntityID._ |
-| [![Cluster Primary Key PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID: BusinessEntityID\\PhoneNumber\\PhoneNumberTypeID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_PersonPhone_PhoneNumber](../../../../Images/Index.png)](#indexes) | PhoneNumber | [[dbo].[Phone]](../Programmability/Types/User-Defined_Data_Types/Phone.md) | 50 | NO |  | _Telephone number identification number._ |
-| [![Cluster Primary Key PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID: BusinessEntityID\\PhoneNumber\\PhoneNumberTypeID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID: [Person].[PhoneNumberType].PhoneNumberTypeID](../../../../Images/fk.png)](#foreignkeys) | PhoneNumberTypeID | int | 4 | NO |  | _Kind of phone number. Foreign key to PhoneNumberType.PhoneNumberTypeID._ |
+| [![Cluster Primary Key PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID: BusinessEntityID\PhoneNumber\PhoneNumberTypeID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_PersonPhone_Person_BusinessEntityID: [Person].[Person].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Business entity identification number. Foreign key to Person.BusinessEntityID._ |
+| [![Cluster Primary Key PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID: BusinessEntityID\PhoneNumber\PhoneNumberTypeID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_PersonPhone_PhoneNumber](../../../../Images/Index.png)](#indexes) | PhoneNumber | [[dbo].[Phone]](../Programmability/Types/User-Defined_Data_Types/Phone.md) | 50 | NO |  | _Telephone number identification number._ |
+| [![Cluster Primary Key PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID: BusinessEntityID\PhoneNumber\PhoneNumberTypeID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID: [Person].[PhoneNumberType].PhoneNumberTypeID](../../../../Images/fk.png)](#foreignkeys) | PhoneNumberTypeID | int | 4 | NO |  | _Kind of phone number. Foreign key to PhoneNumberType.PhoneNumberTypeID._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID: BusinessEntityID\\PhoneNumber\\PhoneNumberTypeID](../../../../Images/pkcluster.png)](#indexes) | PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID | BusinessEntityID, PhoneNumber, PhoneNumberTypeID | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID: BusinessEntityID\PhoneNumber\PhoneNumberTypeID](../../../../Images/pkcluster.png)](#indexes) | PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID | BusinessEntityID, PhoneNumber, PhoneNumberTypeID | YES | _Primary key (clustered) constraint_ |
 |  | IX_PersonPhone_PhoneNumber | PhoneNumber |  | _Nonclustered index._ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -41,7 +52,10 @@ Telephone number and type of a person.
 | FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID | PhoneNumberTypeID->[[Person].[PhoneNumberType].[PhoneNumberTypeID]](PhoneNumberType.md) | _Foreign key constraint referencing PhoneNumberType.PhoneNumberTypeID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Person].[PersonPhone]
 (
@@ -84,23 +98,33 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[Person]](Person.md)
+
+DEPENDENCYLIST* [[Person].[Person]](Person.md)
 * [[Person].[PhoneNumberType]](PhoneNumberType.md)
 * [[dbo].[Phone]](../Programmability/Types/User-Defined_Data_Types/Phone.md)
 * [Person](../Security/Schemas/Person.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[HumanResources].[vEmployee]](../Views/vEmployee.md)
+
+DEPENDENCYLIST* [[HumanResources].[vEmployee]](../Views/vEmployee.md)
 * [[Purchasing].[vVendorWithContacts]](../Views/vVendorWithContacts.md)
 * [[Sales].[vIndividualCustomer]](../Views/vIndividualCustomer.md)
 * [[Sales].[vSalesPerson]](../Views/vSalesPerson.md)
 * [[Sales].[vStoreWithContacts]](../Views/vStoreWithContacts.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

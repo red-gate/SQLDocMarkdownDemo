@@ -1,15 +1,24 @@
+#### 
+
+[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Types](../index.md) > [XML Schema Collections](XML_Schema_Collections.md) > Person.IndividualSurveySchemaCollection
 
 # ![XML Schema Collections](../../../../../../Images/XmlSchemaCollection32.png) [Person].[IndividualSurveySchemaCollection]
 
-[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Types](../index.md) > [XML Schema Collections](XML_Schema_Collections_.md) > Person.IndividualSurveySchemaCollection
+---
 
 ## <a name="#description"></a>MS_Description
+
 Collection of XML schemas for the Demographics column in the Person.Person table.
+
 ## <a name="#dependentcolumns"></a>Dependent Columns
+
 * [[Person].[Person].[Demographics]](../../../Tables/Person.md)
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE XML SCHEMA COLLECTION [Person].[IndividualSurveySchemaCollection] 
 AS N'<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:t="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/IndividualSurvey" targetNamespace="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/IndividualSurvey" elementFormDefault="qualified">
@@ -63,16 +72,26 @@ GO
 
 ```
 
-## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [Person](../../../Security/Schemas/Person.md)
 
+---
+
+## <a name="#uses"></a>Uses
+
+DEPENDENCYLIST* [Person](../../../Security/Schemas/Person.md)
+
+
+---
 
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Person].[Person]](../../../Tables/Person.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+DEPENDENCYLIST* [[Person].[Person]](../../../Tables/Person.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

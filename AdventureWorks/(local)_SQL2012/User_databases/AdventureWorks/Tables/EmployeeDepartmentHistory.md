@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > HumanResources.EmployeeDepartmentHistory
 
 # ![Tables](../../../../Images/Table32.png) [HumanResources].[EmployeeDepartmentHistory]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > HumanResources.EmployeeDepartmentHistory
+---
 
 ## <a name="#description"></a>MS_Description
+
 Employee department transfers.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,26 +19,32 @@ Employee department transfers.
 | Last Modified | 13:14:54 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID: BusinessEntityID\\StartDate\\DepartmentID\\ShiftID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_EmployeeDepartmentHistory_Employee_BusinessEntityID: [HumanResources].[Employee].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Employee identification number. Foreign key to Employee.BusinessEntityID._ |
-| [![Cluster Primary Key PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID: BusinessEntityID\\StartDate\\DepartmentID\\ShiftID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_EmployeeDepartmentHistory_DepartmentID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_EmployeeDepartmentHistory_Department_DepartmentID: [HumanResources].[Department].DepartmentID](../../../../Images/fk.png)](#foreignkeys) | DepartmentID | smallint | 2 | NO |  | _Department in which the employee worked including currently. Foreign key to Department.DepartmentID._ |
-| [![Cluster Primary Key PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID: BusinessEntityID\\StartDate\\DepartmentID\\ShiftID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_EmployeeDepartmentHistory_ShiftID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_EmployeeDepartmentHistory_Shift_ShiftID: [HumanResources].[Shift].ShiftID](../../../../Images/fk.png)](#foreignkeys) | ShiftID | tinyint | 1 | NO |  | _Identifies which 8-hour shift the employee works. Foreign key to Shift.Shift.ID._ |
-| [![Cluster Primary Key PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID: BusinessEntityID\\StartDate\\DepartmentID\\ShiftID](../../../../Images/pkcluster.png)](#indexes) | StartDate | date | 3 | NO |  | _Date the employee started work in the department._ |
+| [![Cluster Primary Key PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID: BusinessEntityID\StartDate\DepartmentID\ShiftID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_EmployeeDepartmentHistory_Employee_BusinessEntityID: [HumanResources].[Employee].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Employee identification number. Foreign key to Employee.BusinessEntityID._ |
+| [![Cluster Primary Key PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID: BusinessEntityID\StartDate\DepartmentID\ShiftID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_EmployeeDepartmentHistory_DepartmentID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_EmployeeDepartmentHistory_Department_DepartmentID: [HumanResources].[Department].DepartmentID](../../../../Images/fk.png)](#foreignkeys) | DepartmentID | smallint | 2 | NO |  | _Department in which the employee worked including currently. Foreign key to Department.DepartmentID._ |
+| [![Cluster Primary Key PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID: BusinessEntityID\StartDate\DepartmentID\ShiftID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_EmployeeDepartmentHistory_ShiftID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_EmployeeDepartmentHistory_Shift_ShiftID: [HumanResources].[Shift].ShiftID](../../../../Images/fk.png)](#foreignkeys) | ShiftID | tinyint | 1 | NO |  | _Identifies which 8-hour shift the employee works. Foreign key to Shift.Shift.ID._ |
+| [![Cluster Primary Key PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID: BusinessEntityID\StartDate\DepartmentID\ShiftID](../../../../Images/pkcluster.png)](#indexes) | StartDate | date | 3 | NO |  | _Date the employee started work in the department._ |
 |  | EndDate | date | 3 | YES |  | _Date the employee left the department. NULL = Current department._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID: BusinessEntityID\\StartDate\\DepartmentID\\ShiftID](../../../../Images/pkcluster.png)](#indexes) | PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID | BusinessEntityID, StartDate, DepartmentID, ShiftID | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID: BusinessEntityID\StartDate\DepartmentID\ShiftID](../../../../Images/pkcluster.png)](#indexes) | PK_EmployeeDepartmentHistory_BusinessEntityID_StartDate_DepartmentID | BusinessEntityID, StartDate, DepartmentID, ShiftID | YES | _Primary key (clustered) constraint_ |
 |  | IX_EmployeeDepartmentHistory_DepartmentID | DepartmentID |  | _Nonclustered index._ |
 |  | IX_EmployeeDepartmentHistory_ShiftID | ShiftID |  | _Nonclustered index._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -41,6 +52,8 @@ Employee department transfers.
 |---|---|---|
 | CK_EmployeeDepartmentHistory_EndDate | ([EndDate]>=[StartDate] OR [EndDate] IS NULL) | _Check constraint [EndDate] >= [StartDate] OR [EndDate] IS NUL_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -51,7 +64,10 @@ Employee department transfers.
 | FK_EmployeeDepartmentHistory_Shift_ShiftID | ShiftID->[[HumanResources].[Shift].[ShiftID]](Shift.md) | _Foreign key constraint referencing Shift.ShiftID_ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [HumanResources].[EmployeeDepartmentHistory]
 (
@@ -112,20 +128,30 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[Department]](Department.md)
+
+DEPENDENCYLIST* [[HumanResources].[Department]](Department.md)
 * [[HumanResources].[Employee]](Employee.md)
 * [[HumanResources].[Shift]](Shift.md)
 * [HumanResources](../Security/Schemas/HumanResources.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[HumanResources].[vEmployeeDepartment]](../Views/vEmployeeDepartment.md)
+
+DEPENDENCYLIST* [[HumanResources].[vEmployeeDepartment]](../Views/vEmployeeDepartment.md)
 * [[HumanResources].[vEmployeeDepartmentHistory]](../Views/vEmployeeDepartmentHistory.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

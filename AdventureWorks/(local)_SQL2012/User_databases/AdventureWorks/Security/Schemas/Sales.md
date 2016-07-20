@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Security](../index.md) > [Schemas](Schemas.md) > Sales
 
 # ![Schemas](../../../../../Images/Schema32.png) Sales
 
-[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Security](../index.md) > [Schemas](Schemas_.md) > Sales
+---
 
 ## <a name="#description"></a>MS_Description
+
 Contains objects related to customers, sales orders, and sales territories.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -12,7 +17,10 @@ Contains objects related to customers, sales orders, and sales territories.
 | Owner | dbo |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE SCHEMA [Sales]
 AUTHORIZATION [dbo]
@@ -22,9 +30,12 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Sales].[CountryRegionCurrency]](../../Tables/CountryRegionCurrency.md)
+
+DEPENDENCYLIST* [[Sales].[CountryRegionCurrency]](../../Tables/CountryRegionCurrency.md)
 * [[Sales].[CreditCard]](../../Tables/CreditCard.md)
 * [[Sales].[Currency]](../../Tables/Currency.md)
 * [[Sales].[CurrencyRate]](../../Tables/CurrencyRate.md)
@@ -52,7 +63,12 @@ DEPENDENCYLIST
 * [[Sales].[vStoreWithDemographics]](../../Views/vStoreWithDemographics.md)
 * [[Sales].[StoreSurveySchemaCollection]](../../Programmability/Types/XML_Schema_Collections/StoreSurveySchemaCollection.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

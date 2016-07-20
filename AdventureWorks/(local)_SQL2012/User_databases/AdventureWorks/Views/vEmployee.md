@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > HumanResources.vEmployee
 
 # ![Views](../../../../Images/View32.png) [HumanResources].[vEmployee]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > HumanResources.vEmployee
+---
 
 ## <a name="#description"></a>MS_Description
+
 Employee names and addresses.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Employee names and addresses.
 | Created | 13:14:55 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -39,7 +46,10 @@ Employee names and addresses.
 | AdditionalContactInfo |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [HumanResources].[vEmployee] 
@@ -86,9 +96,12 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[Employee]](../Tables/Employee.md)
+
+DEPENDENCYLIST* [[HumanResources].[Employee]](../Tables/Employee.md)
 * [[Person].[Address]](../Tables/Address.md)
 * [[Person].[BusinessEntityAddress]](../Tables/BusinessEntityAddress.md)
 * [[Person].[CountryRegion]](../Tables/CountryRegion.md)
@@ -99,7 +112,12 @@ DEPENDENCYLIST
 * [[Person].[StateProvince]](../Tables/StateProvince.md)
 * [HumanResources](../Security/Schemas/HumanResources.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

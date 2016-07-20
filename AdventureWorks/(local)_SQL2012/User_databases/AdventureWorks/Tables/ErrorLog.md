@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > dbo.ErrorLog
 
 # ![Tables](../../../../Images/Table32.png) [dbo].[ErrorLog]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > dbo.ErrorLog
+---
 
 ## <a name="#description"></a>MS_Description
+
 Audit table tracking errors in the the AdventureWorks database that are caught by the CATCH block of a TRY...CATCH construct. Data is inserted by stored procedure dbo.uspLogError when it is executed from inside the CATCH block of a TRY...CATCH construct.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Audit table tracking errors in the the AdventureWorks database that are caught b
 | Created | 13:14:18 14 March 2012 |
 | Last Modified | 13:14:18 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -30,6 +37,8 @@ Audit table tracking errors in the the AdventureWorks database that are caught b
 |  | ErrorMessage | nvarchar(4000) | 8000 | NO |  |  | _The message text of the error that occurred._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -37,7 +46,10 @@ Audit table tracking errors in the the AdventureWorks database that are caught b
 | [![Cluster Primary Key PK_ErrorLog_ErrorLogID: ErrorLogID](../../../../Images/pkcluster.png)](#indexes) | PK_ErrorLog_ErrorLogID | ErrorLogID | YES | _Primary key (clustered) constraint_ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [dbo].[ErrorLog]
 (
@@ -83,11 +95,19 @@ GO
 
 ```
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[dbo].[uspLogError]](../Programmability/Stored_Procedures/uspLogError.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+---
+
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [[dbo].[uspLogError]](../Programmability/Stored_Procedures/uspLogError.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

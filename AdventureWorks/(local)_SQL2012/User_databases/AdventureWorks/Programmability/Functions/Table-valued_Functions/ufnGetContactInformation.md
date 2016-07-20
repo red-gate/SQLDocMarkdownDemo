@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Functions](../index.md) > [Table-valued Functions](Table-valued_Functions.md) > dbo.ufnGetContactInformation
 
 # ![Table-valued Functions](../../../../../../Images/Function_Table32.png) [dbo].[ufnGetContactInformation]
 
-[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Functions](../index.md) > [Table-valued Functions](Table-valued_Functions_.md) > dbo.ufnGetContactInformation
+---
 
 ## <a name="#description"></a>MS_Description
+
 Table value function returning the first name, last name, job title and contact type for a given contact.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -13,6 +18,8 @@ Table value function returning the first name, last name, job title and contact 
 | Quoted Identifier On | YES |
 
 
+---
+
 ## <a name="#parameters"></a>Parameters
 
 | Name | Data Type | Max Length (Bytes) | Description |
@@ -20,7 +27,10 @@ Table value function returning the first name, last name, job title and contact 
 | @PersonID | int | 4 | _Input parameter for the table value function ufnGetContactInformation. Enter a valid PersonID from the Person.Contact table._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE FUNCTION [dbo].[ufnGetContactInformation](@PersonID int)
@@ -100,9 +110,12 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[Employee]](../../../Tables/Employee.md)
+
+DEPENDENCYLIST* [[HumanResources].[Employee]](../../../Tables/Employee.md)
 * [[Person].[BusinessEntityContact]](../../../Tables/BusinessEntityContact.md)
 * [[Person].[ContactType]](../../../Tables/ContactType.md)
 * [[Person].[Person]](../../../Tables/Person.md)
@@ -110,7 +123,12 @@ DEPENDENCYLIST
 * [[Sales].[Customer]](../../../Tables/Customer.md)
 * [[Sales].[Store]](../../../Tables/Store.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

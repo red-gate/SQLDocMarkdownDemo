@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductReview
 
 # ![Tables](../../../../Images/Table32.png) [Production].[ProductReview]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.ProductReview
+---
 
 ## <a name="#description"></a>MS_Description
+
 Customer reviews of products they have purchased.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -16,6 +21,8 @@ Customer reviews of products they have purchased.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:54 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -31,6 +38,8 @@ Customer reviews of products they have purchased.
 |  | ModifiedDate | datetime | 8 | NO |  |  |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Included Columns | Unique | Description |
@@ -39,12 +48,16 @@ Customer reviews of products they have purchased.
 |  | IX_ProductReview_ProductID_Name | ProductID, ReviewerName | Comments |  | _Nonclustered index._ |
 
 
+---
+
 ## <a name="#checkconstraints"></a>Check Constraints
 
 | Name | On Column | Constraint | Description |
 |---|---|---|---|
 | CK_ProductReview_Rating | Rating | ([Rating]>=(1) AND [Rating]<=(5)) | _Check constraint [Rating] BETWEEN (1) AND (5)_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -53,7 +66,10 @@ Customer reviews of products they have purchased.
 | FK_ProductReview_Product_ProductID | ProductID->[[Production].[Product].[ProductID]](Product.md) | _Foreign key constraint referencing Product.ProductID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[ProductReview]
 (
@@ -114,18 +130,28 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Product]](Product.md)
+
+DEPENDENCYLIST* [[Production].[Product]](Product.md)
 * [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Production](../Security/Schemas/Production.md)
 
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [AW2008FullTextCatalog](../Storage/Full_Text_Catalogs/AW2008FullTextCatalog.md)
+---
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [AW2008FullTextCatalog](../Storage/Full_Text_Catalogs/AW2008FullTextCatalog.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

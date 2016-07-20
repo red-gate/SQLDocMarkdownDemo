@@ -1,11 +1,17 @@
-
-# ![Server](../Images/ntServer.png) (local)\\SQL2012
+#### 
 
 [Project](../index.md) > (local)\\SQL2012
 
+# ![Server](../Images/ntServer.png) (local)\\SQL2012
+
+---
+
 ## <a name="#databases"></a>Databases (1)
+
 * ![Database](../Images/Database.png) [AdventureWorks](User_databases/AdventureWorks/index.md)
 
+
+---
 
 ## <a name="#serverproperties"></a>Server Properties
 
@@ -24,6 +30,8 @@
 | Collation | Latin1_General_CI_AS |
 
 
+---
+
 ## <a name="#serversettings"></a>Server Settings
 
 | Property | Value |
@@ -36,6 +44,8 @@
 | Default backup media retention | 0 |
 | Compress Backup | NO |
 
+
+---
 
 ## <a name="#advancedserversettings"></a>Advanced Server Settings
 
@@ -59,7 +69,12 @@
 | Filestream access level | YES |
 | Optimize for ad hoc workloads | NO |
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

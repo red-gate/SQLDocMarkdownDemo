@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.BusinessEntityContact
 
 # ![Tables](../../../../Images/Table32.png) [Person].[BusinessEntityContact]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Person.BusinessEntityContact
+---
 
 ## <a name="#description"></a>MS_Description
+
 Cross-reference table mapping stores, vendors, and employees to people
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,26 +19,32 @@ Cross-reference table mapping stores, vendors, and employees to people
 | Last Modified | 13:14:53 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID: BusinessEntityID\\PersonID\\ContactTypeID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_BusinessEntityContact_BusinessEntity_BusinessEntityID: [Person].[BusinessEntity].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Primary key. Foreign key to BusinessEntity.BusinessEntityID._ |
-| [![Cluster Primary Key PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID: BusinessEntityID\\PersonID\\ContactTypeID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_BusinessEntityContact_PersonID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_BusinessEntityContact_Person_PersonID: [Person].[Person].PersonID](../../../../Images/fk.png)](#foreignkeys) | PersonID | int | 4 | NO |  | _Primary key. Foreign key to Person.BusinessEntityID._ |
-| [![Cluster Primary Key PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID: BusinessEntityID\\PersonID\\ContactTypeID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_BusinessEntityContact_ContactTypeID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_BusinessEntityContact_ContactType_ContactTypeID: [Person].[ContactType].ContactTypeID](../../../../Images/fk.png)](#foreignkeys) | ContactTypeID | int | 4 | NO |  | _Primary key.  Foreign key to ContactType.ContactTypeID._ |
+| [![Cluster Primary Key PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID: BusinessEntityID\PersonID\ContactTypeID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_BusinessEntityContact_BusinessEntity_BusinessEntityID: [Person].[BusinessEntity].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Primary key. Foreign key to BusinessEntity.BusinessEntityID._ |
+| [![Cluster Primary Key PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID: BusinessEntityID\PersonID\ContactTypeID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_BusinessEntityContact_PersonID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_BusinessEntityContact_Person_PersonID: [Person].[Person].PersonID](../../../../Images/fk.png)](#foreignkeys) | PersonID | int | 4 | NO |  | _Primary key. Foreign key to Person.BusinessEntityID._ |
+| [![Cluster Primary Key PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID: BusinessEntityID\PersonID\ContactTypeID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_BusinessEntityContact_ContactTypeID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_BusinessEntityContact_ContactType_ContactTypeID: [Person].[ContactType].ContactTypeID](../../../../Images/fk.png)](#foreignkeys) | ContactTypeID | int | 4 | NO |  | _Primary key.  Foreign key to ContactType.ContactTypeID._ |
 | [![Indexes AK_BusinessEntityContact_rowguid](../../../../Images/Index.png)](#indexes) | rowguid | uniqueidentifier | 16 | NO | (newid()) | _ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID: BusinessEntityID\\PersonID\\ContactTypeID](../../../../Images/pkcluster.png)](#indexes) | PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID | BusinessEntityID, PersonID, ContactTypeID | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID: BusinessEntityID\PersonID\ContactTypeID](../../../../Images/pkcluster.png)](#indexes) | PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID | BusinessEntityID, PersonID, ContactTypeID | YES | _Primary key (clustered) constraint_ |
 |  | AK_BusinessEntityContact_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 |  | IX_BusinessEntityContact_ContactTypeID | ContactTypeID |  | _Nonclustered index._ |
 |  | IX_BusinessEntityContact_PersonID | PersonID |  | _Nonclustered index._ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -44,7 +55,10 @@ Cross-reference table mapping stores, vendors, and employees to people
 | FK_BusinessEntityContact_Person_PersonID | PersonID->[[Person].[Person].[BusinessEntityID]](Person.md) | _Foreign key constraint referencing Person.BusinessEntityID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Person].[BusinessEntityContact]
 (
@@ -104,21 +118,31 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[BusinessEntity]](BusinessEntity.md)
+
+DEPENDENCYLIST* [[Person].[BusinessEntity]](BusinessEntity.md)
 * [[Person].[ContactType]](ContactType.md)
 * [[Person].[Person]](Person.md)
 * [Person](../Security/Schemas/Person.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Purchasing].[vVendorWithContacts]](../Views/vVendorWithContacts.md)
+
+DEPENDENCYLIST* [[Purchasing].[vVendorWithContacts]](../Views/vVendorWithContacts.md)
 * [[Sales].[vStoreWithContacts]](../Views/vStoreWithContacts.md)
 * [[dbo].[ufnGetContactInformation]](../Programmability/Functions/Table-valued_Functions/ufnGetContactInformation.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

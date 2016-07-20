@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.Location
 
 # ![Tables](../../../../Images/Table32.png) [Production].[Location]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.Location
+---
 
 ## <a name="#description"></a>MS_Description
+
 Product inventory and manufacturing locations.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Product inventory and manufacturing locations.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -26,6 +33,8 @@ Product inventory and manufacturing locations.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -33,6 +42,8 @@ Product inventory and manufacturing locations.
 | [![Cluster Primary Key PK_Location_LocationID: LocationID](../../../../Images/pkcluster.png)](#indexes) | PK_Location_LocationID | LocationID | YES | _Primary key (clustered) constraint_ |
 |  | AK_Location_Name | Name | YES | _Unique nonclustered index._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -42,7 +53,10 @@ Product inventory and manufacturing locations.
 | CK_Location_CostRate | CostRate | ([CostRate]>=(0.00)) | _Check constraint [CostRate] >= (0.00)_ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[Location]
 (
@@ -92,18 +106,28 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
+
+DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Production](../Security/Schemas/Production.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Production].[ProductInventory]](ProductInventory.md)
+
+DEPENDENCYLIST* [[Production].[ProductInventory]](ProductInventory.md)
 * [[Production].[WorkOrderRouting]](WorkOrderRouting.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > Sales.vStoreWithContacts
 
 # ![Views](../../../../Images/View32.png) [Sales].[vStoreWithContacts]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > Sales.vStoreWithContacts
+---
 
 ## <a name="#description"></a>MS_Description
+
 Stores (including store contacts) that sell Adventure Works Cycles products to consumers.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Stores (including store contacts) that sell Adventure Works Cycles products to c
 | Created | 13:14:55 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -33,7 +40,10 @@ Stores (including store contacts) that sell Adventure Works Cycles products to c
 | EmailPromotion |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [Sales].[vStoreWithContacts] AS 
@@ -69,9 +79,12 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[BusinessEntityContact]](../Tables/BusinessEntityContact.md)
+
+DEPENDENCYLIST* [[Person].[BusinessEntityContact]](../Tables/BusinessEntityContact.md)
 * [[Person].[ContactType]](../Tables/ContactType.md)
 * [[Person].[EmailAddress]](../Tables/EmailAddress.md)
 * [[Person].[Person]](../Tables/Person.md)
@@ -80,7 +93,12 @@ DEPENDENCYLIST
 * [[Sales].[Store]](../Tables/Store.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > Sales.vSalesPersonSalesByFiscalYears
 
 # ![Views](../../../../Images/View32.png) [Sales].[vSalesPersonSalesByFiscalYears]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > Sales.vSalesPersonSalesByFiscalYears
+---
 
 ## <a name="#description"></a>MS_Description
+
 Uses PIVOT to return aggregated sales information for each sales representative.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Uses PIVOT to return aggregated sales information for each sales representative.
 | Created | 13:14:55 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -28,7 +35,10 @@ Uses PIVOT to return aggregated sales information for each sales representative.
 | 2004 |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [Sales].[vSalesPersonSalesByFiscalYears] 
@@ -70,16 +80,24 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[Employee]](../Tables/Employee.md)
+
+DEPENDENCYLIST* [[HumanResources].[Employee]](../Tables/Employee.md)
 * [[Person].[Person]](../Tables/Person.md)
 * [[Sales].[SalesOrderHeader]](../Tables/SalesOrderHeader.md)
 * [[Sales].[SalesPerson]](../Tables/SalesPerson.md)
 * [[Sales].[SalesTerritory]](../Tables/SalesTerritory.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

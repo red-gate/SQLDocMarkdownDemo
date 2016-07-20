@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.BusinessEntityAddress
 
 # ![Tables](../../../../Images/Table32.png) [Person].[BusinessEntityAddress]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Person.BusinessEntityAddress
+---
 
 ## <a name="#description"></a>MS_Description
+
 Cross-reference table mapping customers, vendors, and employees to their addresses.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,26 +19,32 @@ Cross-reference table mapping customers, vendors, and employees to their address
 | Last Modified | 13:14:53 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID: BusinessEntityID\\AddressID\\AddressTypeID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID: [Person].[BusinessEntity].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Primary key. Foreign key to BusinessEntity.BusinessEntityID._ |
-| [![Cluster Primary Key PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID: BusinessEntityID\\AddressID\\AddressTypeID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_BusinessEntityAddress_AddressID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_BusinessEntityAddress_Address_AddressID: [Person].[Address].AddressID](../../../../Images/fk.png)](#foreignkeys) | AddressID | int | 4 | NO |  | _Primary key. Foreign key to Address.AddressID._ |
-| [![Cluster Primary Key PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID: BusinessEntityID\\AddressID\\AddressTypeID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_BusinessEntityAddress_AddressTypeID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_BusinessEntityAddress_AddressType_AddressTypeID: [Person].[AddressType].AddressTypeID](../../../../Images/fk.png)](#foreignkeys) | AddressTypeID | int | 4 | NO |  | _Primary key. Foreign key to AddressType.AddressTypeID._ |
+| [![Cluster Primary Key PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID: BusinessEntityID\AddressID\AddressTypeID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID: [Person].[BusinessEntity].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Primary key. Foreign key to BusinessEntity.BusinessEntityID._ |
+| [![Cluster Primary Key PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID: BusinessEntityID\AddressID\AddressTypeID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_BusinessEntityAddress_AddressID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_BusinessEntityAddress_Address_AddressID: [Person].[Address].AddressID](../../../../Images/fk.png)](#foreignkeys) | AddressID | int | 4 | NO |  | _Primary key. Foreign key to Address.AddressID._ |
+| [![Cluster Primary Key PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID: BusinessEntityID\AddressID\AddressTypeID](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_BusinessEntityAddress_AddressTypeID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_BusinessEntityAddress_AddressType_AddressTypeID: [Person].[AddressType].AddressTypeID](../../../../Images/fk.png)](#foreignkeys) | AddressTypeID | int | 4 | NO |  | _Primary key. Foreign key to AddressType.AddressTypeID._ |
 | [![Indexes AK_BusinessEntityAddress_rowguid](../../../../Images/Index.png)](#indexes) | rowguid | uniqueidentifier | 16 | NO | (newid()) | _ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID: BusinessEntityID\\AddressID\\AddressTypeID](../../../../Images/pkcluster.png)](#indexes) | PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID | BusinessEntityID, AddressID, AddressTypeID | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID: BusinessEntityID\AddressID\AddressTypeID](../../../../Images/pkcluster.png)](#indexes) | PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID | BusinessEntityID, AddressID, AddressTypeID | YES | _Primary key (clustered) constraint_ |
 |  | AK_BusinessEntityAddress_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 |  | IX_BusinessEntityAddress_AddressID | AddressID |  | _Nonclustered index._ |
 |  | IX_BusinessEntityAddress_AddressTypeID | AddressTypeID |  | _Nonclustered index._ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -44,7 +55,10 @@ Cross-reference table mapping customers, vendors, and employees to their address
 | FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID | BusinessEntityID->[[Person].[BusinessEntity].[BusinessEntityID]](BusinessEntity.md) | _Foreign key constraint referencing BusinessEntity.BusinessEntityID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Person].[BusinessEntityAddress]
 (
@@ -104,23 +118,33 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[Address]](Address.md)
+
+DEPENDENCYLIST* [[Person].[Address]](Address.md)
 * [[Person].[AddressType]](AddressType.md)
 * [[Person].[BusinessEntity]](BusinessEntity.md)
 * [Person](../Security/Schemas/Person.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[HumanResources].[vEmployee]](../Views/vEmployee.md)
+
+DEPENDENCYLIST* [[HumanResources].[vEmployee]](../Views/vEmployee.md)
 * [[Purchasing].[vVendorWithAddresses]](../Views/vVendorWithAddresses.md)
 * [[Sales].[vIndividualCustomer]](../Views/vIndividualCustomer.md)
 * [[Sales].[vSalesPerson]](../Views/vSalesPerson.md)
 * [[Sales].[vStoreWithAddresses]](../Views/vStoreWithAddresses.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

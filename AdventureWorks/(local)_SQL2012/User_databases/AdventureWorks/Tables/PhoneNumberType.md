@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.PhoneNumberType
 
 # ![Tables](../../../../Images/Table32.png) [Person].[PhoneNumberType]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Person.PhoneNumberType
+---
 
 ## <a name="#description"></a>MS_Description
+
 Type of phone number of a person.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -15,6 +20,8 @@ Type of phone number of a person.
 | Last Modified | 13:14:54 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Identity | Default | Description |
@@ -24,6 +31,8 @@ Type of phone number of a person.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -31,7 +40,10 @@ Type of phone number of a person.
 | [![Cluster Primary Key PK_PhoneNumberType_PhoneNumberTypeID: PhoneNumberTypeID](../../../../Images/pkcluster.png)](#indexes) | PK_PhoneNumberType_PhoneNumberTypeID | PhoneNumberTypeID | YES | _Primary key (clustered) constraint_ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Person].[PhoneNumberType]
 (
@@ -59,22 +71,32 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
+
+DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Person](../Security/Schemas/Person.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Person].[PersonPhone]](PersonPhone.md)
+
+DEPENDENCYLIST* [[Person].[PersonPhone]](PersonPhone.md)
 * [[HumanResources].[vEmployee]](../Views/vEmployee.md)
 * [[Purchasing].[vVendorWithContacts]](../Views/vVendorWithContacts.md)
 * [[Sales].[vIndividualCustomer]](../Views/vIndividualCustomer.md)
 * [[Sales].[vSalesPerson]](../Views/vSalesPerson.md)
 * [[Sales].[vStoreWithContacts]](../Views/vStoreWithContacts.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.BusinessEntity
 
 # ![Tables](../../../../Images/Table32.png) [Person].[BusinessEntity]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Person.BusinessEntity
+---
 
 ## <a name="#description"></a>MS_Description
+
 Source of the ID that connects vendors, customers, and employees with address and contact information.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -13,6 +18,8 @@ Source of the ID that connects vendors, customers, and employees with address an
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -23,6 +30,8 @@ Source of the ID that connects vendors, customers, and employees with address an
 |  | ModifiedDate | datetime | 8 | NO |  |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -31,7 +40,10 @@ Source of the ID that connects vendors, customers, and employees with address an
 |  | AK_BusinessEntity_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Person].[BusinessEntity]
 (
@@ -65,20 +77,30 @@ GO
 
 ```
 
-## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [Person](../Security/Schemas/Person.md)
 
+---
+
+## <a name="#uses"></a>Uses
+
+DEPENDENCYLIST* [Person](../Security/Schemas/Person.md)
+
+
+---
 
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Person].[BusinessEntityAddress]](BusinessEntityAddress.md)
+
+DEPENDENCYLIST* [[Person].[BusinessEntityAddress]](BusinessEntityAddress.md)
 * [[Person].[BusinessEntityContact]](BusinessEntityContact.md)
 * [[Person].[Person]](Person.md)
 * [[Purchasing].[Vendor]](Vendor.md)
 * [[Sales].[Store]](Store.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

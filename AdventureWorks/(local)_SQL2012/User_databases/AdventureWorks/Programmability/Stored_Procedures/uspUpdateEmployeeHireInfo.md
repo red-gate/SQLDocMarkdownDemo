@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures.md) > HumanResources.uspUpdateEmployeeHireInfo
 
 # ![Stored Procedures](../../../../../Images/StoredProcedure32.png) [HumanResources].[uspUpdateEmployeeHireInfo]
 
-[Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures_.md) > HumanResources.uspUpdateEmployeeHireInfo
+---
 
 ## <a name="#description"></a>MS_Description
+
 Updates the Employee table and inserts a new row in the EmployeePayHistory table with the values specified in the input parameters.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -12,6 +17,8 @@ Updates the Employee table and inserts a new row in the EmployeePayHistory table
 | ANSI Nulls On | YES |
 | Quoted Identifier On | YES |
 
+
+---
 
 ## <a name="#parameters"></a>Parameters
 
@@ -26,7 +33,10 @@ Updates the Employee table and inserts a new row in the EmployeePayHistory table
 | @CurrentFlag | Flag | 1 | _Input parameter for the stored procedure uspUpdateEmployeeHireInfo. Enter the current flag for the employee._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE PROCEDURE [HumanResources].[uspUpdateEmployeeHireInfo]
@@ -91,15 +101,23 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[Employee]](../../Tables/Employee.md)
+
+DEPENDENCYLIST* [[HumanResources].[Employee]](../../Tables/Employee.md)
 * [[HumanResources].[EmployeePayHistory]](../../Tables/EmployeePayHistory.md)
 * [[dbo].[uspLogError]](uspLogError.md)
 * [[dbo].[Flag]](../Types/User-Defined_Data_Types/Flag.md)
 * [HumanResources](../../Security/Schemas/HumanResources.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

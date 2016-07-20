@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > HumanResources.EmployeePayHistory
 
 # ![Tables](../../../../Images/Table32.png) [HumanResources].[EmployeePayHistory]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > HumanResources.EmployeePayHistory
+---
 
 ## <a name="#description"></a>MS_Description
+
 Employee pay history.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,23 +19,29 @@ Employee pay history.
 | Last Modified | 13:14:54 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_EmployeePayHistory_BusinessEntityID_RateChangeDate: BusinessEntityID\\RateChangeDate](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_EmployeePayHistory_Employee_BusinessEntityID: [HumanResources].[Employee].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Employee identification number. Foreign key to Employee.BusinessEntityID._ |
-| [![Cluster Primary Key PK_EmployeePayHistory_BusinessEntityID_RateChangeDate: BusinessEntityID\\RateChangeDate](../../../../Images/pkcluster.png)](#indexes) | RateChangeDate | datetime | 8 | NO |  | _Date the change in pay is effective_ |
+| [![Cluster Primary Key PK_EmployeePayHistory_BusinessEntityID_RateChangeDate: BusinessEntityID\RateChangeDate](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_EmployeePayHistory_Employee_BusinessEntityID: [HumanResources].[Employee].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Employee identification number. Foreign key to Employee.BusinessEntityID._ |
+| [![Cluster Primary Key PK_EmployeePayHistory_BusinessEntityID_RateChangeDate: BusinessEntityID\RateChangeDate](../../../../Images/pkcluster.png)](#indexes) | RateChangeDate | datetime | 8 | NO |  | _Date the change in pay is effective_ |
 | [![Check Constraints CK_EmployeePayHistory_Rate : ([Rate]>=(6.50) AND [Rate]<=(200.00))](../../../../Images/c-constraint.png)](#checkconstraints) | Rate | money | 8 | NO |  | _Salary hourly rate._ |
 | [![Check Constraints CK_EmployeePayHistory_PayFrequency : ([PayFrequency]=(2) OR [PayFrequency]=(1))](../../../../Images/c-constraint.png)](#checkconstraints) | PayFrequency | tinyint | 1 | NO |  | _1 = Salary received monthly, 2 = Salary received biweekly_ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_EmployeePayHistory_BusinessEntityID_RateChangeDate: BusinessEntityID\\RateChangeDate](../../../../Images/pkcluster.png)](#indexes) | PK_EmployeePayHistory_BusinessEntityID_RateChangeDate | BusinessEntityID, RateChangeDate | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_EmployeePayHistory_BusinessEntityID_RateChangeDate: BusinessEntityID\RateChangeDate](../../../../Images/pkcluster.png)](#indexes) | PK_EmployeePayHistory_BusinessEntityID_RateChangeDate | BusinessEntityID, RateChangeDate | YES | _Primary key (clustered) constraint_ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -40,6 +51,8 @@ Employee pay history.
 | CK_EmployeePayHistory_Rate | Rate | ([Rate]>=(6.50) AND [Rate]<=(200.00)) | _Check constraint [Rate] >= (6.50) AND [Rate] <= (200.00)_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -47,7 +60,10 @@ Employee pay history.
 | FK_EmployeePayHistory_Employee_BusinessEntityID | BusinessEntityID->[[HumanResources].[Employee].[BusinessEntityID]](Employee.md) | _Foreign key constraint referencing Employee.EmployeeID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [HumanResources].[EmployeePayHistory]
 (
@@ -93,17 +109,27 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[Employee]](Employee.md)
+
+DEPENDENCYLIST* [[HumanResources].[Employee]](Employee.md)
 * [HumanResources](../Security/Schemas/HumanResources.md)
 
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[HumanResources].[uspUpdateEmployeeHireInfo]](../Programmability/Stored_Procedures/uspUpdateEmployeeHireInfo.md)
+---
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [[HumanResources].[uspUpdateEmployeeHireInfo]](../Programmability/Stored_Procedures/uspUpdateEmployeeHireInfo.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

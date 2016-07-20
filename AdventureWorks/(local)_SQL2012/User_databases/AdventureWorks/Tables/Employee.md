@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > HumanResources.Employee
 
 # ![Tables](../../../../Images/Table32.png) [HumanResources].[Employee]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > HumanResources.Employee
+---
 
 ## <a name="#description"></a>MS_Description
+
 Employee information such as salary, department, and title.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Employee information such as salary, department, and title.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -38,12 +45,16 @@ IX_Employee_OrganizationNode](../../../../Images/Index.png)](#indexes)(2) | Orga
 |  | ModifiedDate | datetime |  | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#computedcolumns"></a>Computed columns
 
 | Name | Column definition |
 |---|---|
 | OrganizationLevel | ([OrganizationNode].[GetLevel]()) |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
@@ -57,12 +68,16 @@ IX_Employee_OrganizationNode](../../../../Images/Index.png)](#indexes)(2) | Orga
 |  | IX_Employee_OrganizationNode | OrganizationNode |  | _Unique nonclustered index._ |
 
 
+---
+
 ## <a name="#triggers"></a>Triggers
 
 | Name | ANSI Nulls On | Quoted Identifier On | On | Not For Replication | Description |
 |---|---|---|---|---|---|
 | dEmployee | YES | YES | Instead Of Delete | YES | _INSTEAD OF DELETE trigger which keeps Employees from being deleted._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -76,6 +91,8 @@ IX_Employee_OrganizationNode](../../../../Images/Index.png)](#indexes)(2) | Orga
 | CK_Employee_MaritalStatus | MaritalStatus | (upper([MaritalStatus])='S' OR upper([MaritalStatus])='M') | _Check constraint [MaritalStatus]='s' OR [MaritalStatus]='m' OR [MaritalStatus]='S' OR [MaritalStatus]='M'_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -83,7 +100,10 @@ IX_Employee_OrganizationNode](../../../../Images/Index.png)](#indexes)(2) | Orga
 | FK_Employee_Person_BusinessEntityID | BusinessEntityID->[[Person].[Person].[BusinessEntityID]](Person.md) | _Foreign key constraint referencing Person.BusinessEntityID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [HumanResources].[Employee]
 (
@@ -236,16 +256,21 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[Person]](Person.md)
+
+DEPENDENCYLIST* [[Person].[Person]](Person.md)
 * [[dbo].[Flag]](../Programmability/Types/User-Defined_Data_Types/Flag.md)
 * [HumanResources](../Security/Schemas/HumanResources.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[HumanResources].[EmployeeDepartmentHistory]](EmployeeDepartmentHistory.md)
+
+DEPENDENCYLIST* [[HumanResources].[EmployeeDepartmentHistory]](EmployeeDepartmentHistory.md)
 * [[HumanResources].[EmployeePayHistory]](EmployeePayHistory.md)
 * [[HumanResources].[JobCandidate]](JobCandidate.md)
 * [[Production].[Document]](Document.md)
@@ -263,7 +288,12 @@ DEPENDENCYLIST
 * [[HumanResources].[uspUpdateEmployeePersonalInfo]](../Programmability/Stored_Procedures/uspUpdateEmployeePersonalInfo.md)
 * [[dbo].[ufnGetContactInformation]](../Programmability/Functions/Table-valued_Functions/ufnGetContactInformation.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

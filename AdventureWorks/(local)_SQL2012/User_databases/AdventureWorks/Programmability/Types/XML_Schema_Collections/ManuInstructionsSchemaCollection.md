@@ -1,15 +1,24 @@
+#### 
+
+[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Types](../index.md) > [XML Schema Collections](XML_Schema_Collections.md) > Production.ManuInstructionsSchemaCollection
 
 # ![XML Schema Collections](../../../../../../Images/XmlSchemaCollection32.png) [Production].[ManuInstructionsSchemaCollection]
 
-[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Types](../index.md) > [XML Schema Collections](XML_Schema_Collections_.md) > Production.ManuInstructionsSchemaCollection
+---
 
 ## <a name="#description"></a>MS_Description
+
 Collection of XML schemas for the Instructions column in the Production.ProductModel table.
+
 ## <a name="#dependentcolumns"></a>Dependent Columns
+
 * [[Production].[ProductModel].[Instructions]](../../../Tables/ProductModel.md)
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE XML SCHEMA COLLECTION [Production].[ManuInstructionsSchemaCollection] 
 AS N'<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:t="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ProductModelManuInstructions" targetNamespace="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ProductModelManuInstructions" elementFormDefault="qualified">
@@ -59,16 +68,26 @@ GO
 
 ```
 
-## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [Production](../../../Security/Schemas/Production.md)
 
+---
+
+## <a name="#uses"></a>Uses
+
+DEPENDENCYLIST* [Production](../../../Security/Schemas/Production.md)
+
+
+---
 
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Production].[ProductModel]](../../../Tables/ProductModel.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+DEPENDENCYLIST* [[Production].[ProductModel]](../../../Tables/ProductModel.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

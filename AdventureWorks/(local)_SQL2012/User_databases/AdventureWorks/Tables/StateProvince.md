@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.StateProvince
 
 # ![Tables](../../../../Images/Table32.png) [Person].[StateProvince]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Person.StateProvince
+---
 
 ## <a name="#description"></a>MS_Description
+
 State and province lookup table.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ State and province lookup table.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -29,6 +36,8 @@ State and province lookup table.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -39,6 +48,8 @@ State and province lookup table.
 |  | AK_StateProvince_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -47,7 +58,10 @@ State and province lookup table.
 | FK_StateProvince_SalesTerritory_TerritoryID | TerritoryID->[[Sales].[SalesTerritory].[TerritoryID]](SalesTerritory.md) | _Foreign key constraint referencing SalesTerritory.TerritoryID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Person].[StateProvince]
 (
@@ -114,18 +128,23 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Person].[CountryRegion]](CountryRegion.md)
+
+DEPENDENCYLIST* [[Person].[CountryRegion]](CountryRegion.md)
 * [[Sales].[SalesTerritory]](SalesTerritory.md)
 * [[dbo].[Flag]](../Programmability/Types/User-Defined_Data_Types/Flag.md)
 * [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Person](../Security/Schemas/Person.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Person].[Address]](Address.md)
+
+DEPENDENCYLIST* [[Person].[Address]](Address.md)
 * [[Sales].[SalesTaxRate]](SalesTaxRate.md)
 * [[HumanResources].[vEmployee]](../Views/vEmployee.md)
 * [[Person].[vStateProvinceCountryRegion]](../Views/vStateProvinceCountryRegion.md)
@@ -134,7 +153,12 @@ DEPENDENCYLIST
 * [[Sales].[vSalesPerson]](../Views/vSalesPerson.md)
 * [[Sales].[vStoreWithAddresses]](../Views/vStoreWithAddresses.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

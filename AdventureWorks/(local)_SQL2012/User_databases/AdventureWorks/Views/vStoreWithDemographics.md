@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > Sales.vStoreWithDemographics
 
 # ![Views](../../../../Images/View32.png) [Sales].[vStoreWithDemographics]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > Sales.vStoreWithDemographics
+---
 
 ## <a name="#description"></a>MS_Description
+
 Stores (including demographics) that sell Adventure Works Cycles products to consumers.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Stores (including demographics) that sell Adventure Works Cycles products to con
 | Created | 13:14:55 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -33,7 +40,10 @@ Stores (including demographics) that sell Adventure Works Cycles products to con
 | NumberEmployees |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [Sales].[vStoreWithDemographics] AS 
@@ -67,12 +77,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Sales].[Store]](../Tables/Store.md)
+
+DEPENDENCYLIST* [[Sales].[Store]](../Tables/Store.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

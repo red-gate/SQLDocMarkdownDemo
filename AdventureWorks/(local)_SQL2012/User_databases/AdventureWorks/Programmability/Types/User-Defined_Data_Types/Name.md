@@ -1,7 +1,10 @@
+#### 
+
+[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Types](../index.md) > [User-Defined Data Types](User-Defined_Data_Types.md) > dbo.Name
 
 # ![User-Defined Data Types](../../../../../../Images/UserDefinedDataType32.png) [dbo].[Name]
 
-[Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Types](../index.md) > [User-Defined Data Types](User-Defined_Data_Types_.md) > dbo.Name
+---
 
 ## <a name="#properties"></a>Properties
 
@@ -12,16 +15,22 @@
 | Length | 50 |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TYPE [dbo].[Name] FROM nvarchar (50) NULL
 GO
 
 ```
 
+
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[HumanResources].[Department]](../../../Tables/Department.md)
+
+DEPENDENCYLIST* [[HumanResources].[Department]](../../../Tables/Department.md)
 * [[HumanResources].[Shift]](../../../Tables/Shift.md)
 * [[Person].[AddressType]](../../../Tables/AddressType.md)
 * [[Person].[ContactType]](../../../Tables/ContactType.md)
@@ -46,7 +55,12 @@ DEPENDENCYLIST
 * [[Sales].[SalesTerritory]](../../../Tables/SalesTerritory.md)
 * [[Sales].[Store]](../../../Tables/Store.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

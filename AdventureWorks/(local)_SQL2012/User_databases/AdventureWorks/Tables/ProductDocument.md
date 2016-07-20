@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductDocument
 
 # ![Tables](../../../../Images/Table32.png) [Production].[ProductDocument]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.ProductDocument
+---
 
 ## <a name="#description"></a>MS_Description
+
 Cross-reference table mapping products to related product documents.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,21 +19,27 @@ Cross-reference table mapping products to related product documents.
 | Last Modified | 13:14:54 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_ProductDocument_ProductID_DocumentNode: ProductID\\DocumentNode](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductDocument_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int | 4 | NO |  | _Product identification number. Foreign key to Product.ProductID._ |
-| [![Cluster Primary Key PK_ProductDocument_ProductID_DocumentNode: ProductID\\DocumentNode](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductDocument_Document_DocumentNode: [Production].[Document].DocumentNode](../../../../Images/fk.png)](#foreignkeys) | DocumentNode | hierarchyid | 892 | NO |  | _Document identification number. Foreign key to Document.DocumentNode._ |
+| [![Cluster Primary Key PK_ProductDocument_ProductID_DocumentNode: ProductID\DocumentNode](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductDocument_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int | 4 | NO |  | _Product identification number. Foreign key to Product.ProductID._ |
+| [![Cluster Primary Key PK_ProductDocument_ProductID_DocumentNode: ProductID\DocumentNode](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductDocument_Document_DocumentNode: [Production].[Document].DocumentNode](../../../../Images/fk.png)](#foreignkeys) | DocumentNode | hierarchyid | 892 | NO |  | _Document identification number. Foreign key to Document.DocumentNode._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_ProductDocument_ProductID_DocumentNode: ProductID\\DocumentNode](../../../../Images/pkcluster.png)](#indexes) | PK_ProductDocument_ProductID_DocumentNode | ProductID, DocumentNode | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_ProductDocument_ProductID_DocumentNode: ProductID\DocumentNode](../../../../Images/pkcluster.png)](#indexes) | PK_ProductDocument_ProductID_DocumentNode | ProductID, DocumentNode | YES | _Primary key (clustered) constraint_ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -38,7 +49,10 @@ Cross-reference table mapping products to related product documents.
 | FK_ProductDocument_Product_ProductID | ProductID->[[Production].[Product].[ProductID]](Product.md) | _Foreign key constraint referencing Product.ProductID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[ProductDocument]
 (
@@ -74,13 +88,21 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Document]](Document.md)
+
+DEPENDENCYLIST* [[Production].[Document]](Document.md)
 * [[Production].[Product]](Product.md)
 * [Production](../Security/Schemas/Production.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

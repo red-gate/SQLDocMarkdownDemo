@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > HumanResources.JobCandidate
 
 # ![Tables](../../../../Images/Table32.png) [HumanResources].[JobCandidate]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > HumanResources.JobCandidate
+---
 
 ## <a name="#description"></a>MS_Description
+
 Résumés submitted to Human Resources by job applicants.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -16,6 +21,8 @@ Résumés submitted to Human Resources by job applicants.
 | Last Modified | 13:14:54 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Full Text Indexed | Language | Identity | Default | Description |
@@ -26,6 +33,8 @@ Résumés submitted to Human Resources by job applicants.
 |  | ModifiedDate | datetime | 8 | NO |  |  |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -34,6 +43,8 @@ Résumés submitted to Human Resources by job applicants.
 |  | IX_JobCandidate_BusinessEntityID | BusinessEntityID |  | _Nonclustered index._ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -41,7 +52,10 @@ Résumés submitted to Human Resources by job applicants.
 | FK_JobCandidate_Employee_BusinessEntityID | BusinessEntityID->[[HumanResources].[Employee].[BusinessEntityID]](Employee.md) | _Foreign key constraint referencing Employee.EmployeeID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [HumanResources].[JobCandidate]
 (
@@ -84,22 +98,32 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[Employee]](Employee.md)
+
+DEPENDENCYLIST* [[HumanResources].[Employee]](Employee.md)
 * [HumanResources](../Security/Schemas/HumanResources.md)
 * [[HumanResources].[HRResumeSchemaCollection]](../Programmability/Types/XML_Schema_Collections/HRResumeSchemaCollection.md)
 
 
+---
+
 ## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[HumanResources].[vJobCandidate]](../Views/vJobCandidate.md)
+
+DEPENDENCYLIST* [[HumanResources].[vJobCandidate]](../Views/vJobCandidate.md)
 * [[HumanResources].[vJobCandidateEducation]](../Views/vJobCandidateEducation.md)
 * [[HumanResources].[vJobCandidateEmployment]](../Views/vJobCandidateEmployment.md)
 * [[dbo].[uspSearchCandidateResumes]](../Programmability/Stored_Procedures/uspSearchCandidateResumes.md)
 * [AW2008FullTextCatalog](../Storage/Full_Text_Catalogs/AW2008FullTextCatalog.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

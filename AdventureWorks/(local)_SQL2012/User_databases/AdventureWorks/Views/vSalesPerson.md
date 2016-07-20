@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > Sales.vSalesPerson
 
 # ![Views](../../../../Images/View32.png) [Sales].[vSalesPerson]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views_.md) > Sales.vSalesPerson
+---
 
 ## <a name="#description"></a>MS_Description
+
 Sales representiatives (names and addresses) and their sales-related information.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Sales representiatives (names and addresses) and their sales-related information
 | Created | 13:14:55 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -43,7 +50,10 @@ Sales representiatives (names and addresses) and their sales-related information
 | SalesLastYear |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 
 CREATE VIEW [Sales].[vSalesPerson] 
@@ -98,9 +108,12 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[Employee]](../Tables/Employee.md)
+
+DEPENDENCYLIST* [[HumanResources].[Employee]](../Tables/Employee.md)
 * [[Person].[Address]](../Tables/Address.md)
 * [[Person].[BusinessEntityAddress]](../Tables/BusinessEntityAddress.md)
 * [[Person].[CountryRegion]](../Tables/CountryRegion.md)
@@ -113,7 +126,12 @@ DEPENDENCYLIST
 * [[Sales].[SalesTerritory]](../Tables/SalesTerritory.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

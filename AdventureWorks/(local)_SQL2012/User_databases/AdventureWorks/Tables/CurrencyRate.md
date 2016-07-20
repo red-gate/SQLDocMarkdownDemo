@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.CurrencyRate
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[CurrencyRate]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.CurrencyRate
+---
 
 ## <a name="#description"></a>MS_Description
+
 Currency exchange rates.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,6 +19,8 @@ Currency exchange rates.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:54 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -28,6 +35,8 @@ Currency exchange rates.
 |  | ModifiedDate | datetime | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
@@ -35,6 +44,8 @@ Currency exchange rates.
 | [![Cluster Primary Key PK_CurrencyRate_CurrencyRateID: CurrencyRateID](../../../../Images/pkcluster.png)](#indexes) | PK_CurrencyRate_CurrencyRateID | CurrencyRateID | YES | _Primary key (clustered) constraint_ |
 |  | AK_CurrencyRate_CurrencyRateDate_FromCurrencyCode_ToCurrencyCode | CurrencyRateDate, FromCurrencyCode, ToCurrencyCode | YES | _Unique nonclustered index._ |
 
+
+---
 
 ## <a name="#foreignkeys"></a>Foreign Keys
 
@@ -44,7 +55,10 @@ Currency exchange rates.
 | FK_CurrencyRate_Currency_ToCurrencyCode | ToCurrencyCode->[[Sales].[Currency].[CurrencyCode]](Currency.md) | _Foreign key constraint referencing Currency.ToCurrencyCode._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[CurrencyRate]
 (
@@ -96,17 +110,27 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Sales].[Currency]](Currency.md)
+
+DEPENDENCYLIST* [[Sales].[Currency]](Currency.md)
 * [Sales](../Security/Schemas/Sales.md)
 
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
+---
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

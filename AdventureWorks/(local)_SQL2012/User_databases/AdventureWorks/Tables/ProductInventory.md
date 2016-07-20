@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductInventory
 
 # ![Tables](../../../../Images/Table32.png) [Production].[ProductInventory]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Production.ProductInventory
+---
 
 ## <a name="#description"></a>MS_Description
+
 Product inventory information.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -15,12 +20,14 @@ Product inventory information.
 | Last Modified | 13:14:54 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_ProductInventory_ProductID_LocationID: ProductID\\LocationID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductInventory_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int | 4 | NO |  | _Product identification number. Foreign key to Product.ProductID._ |
-| [![Cluster Primary Key PK_ProductInventory_ProductID_LocationID: ProductID\\LocationID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductInventory_Location_LocationID: [Production].[Location].LocationID](../../../../Images/fk.png)](#foreignkeys) | LocationID | smallint | 2 | NO |  | _Inventory location identification number. Foreign key to Location.LocationID. _ |
+| [![Cluster Primary Key PK_ProductInventory_ProductID_LocationID: ProductID\LocationID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductInventory_Product_ProductID: [Production].[Product].ProductID](../../../../Images/fk.png)](#foreignkeys) | ProductID | int | 4 | NO |  | _Product identification number. Foreign key to Product.ProductID._ |
+| [![Cluster Primary Key PK_ProductInventory_ProductID_LocationID: ProductID\LocationID](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_ProductInventory_Location_LocationID: [Production].[Location].LocationID](../../../../Images/fk.png)](#foreignkeys) | LocationID | smallint | 2 | NO |  | _Inventory location identification number. Foreign key to Location.LocationID. _ |
 | [![Check Constraints CK_ProductInventory_Shelf : ([Shelf] like '[A-Za-z]' OR [Shelf]='N/A')](../../../../Images/c-constraint.png)](#checkconstraints) | Shelf | nvarchar(10) | 20 | NO |  | _Storage compartment within an inventory location._ |
 | [![Check Constraints CK_ProductInventory_Bin : ([Bin]>=(0) AND [Bin]<=(100))](../../../../Images/c-constraint.png)](#checkconstraints) | Bin | tinyint | 1 | NO |  | _Storage container on a shelf in an inventory location._ |
 |  | Quantity | smallint | 2 | NO | ((0)) | _Quantity of products in the inventory location._ |
@@ -28,12 +35,16 @@ Product inventory information.
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_ProductInventory_ProductID_LocationID: ProductID\\LocationID](../../../../Images/pkcluster.png)](#indexes) | PK_ProductInventory_ProductID_LocationID | ProductID, LocationID | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_ProductInventory_ProductID_LocationID: ProductID\LocationID](../../../../Images/pkcluster.png)](#indexes) | PK_ProductInventory_ProductID_LocationID | ProductID, LocationID | YES | _Primary key (clustered) constraint_ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -43,6 +54,8 @@ Product inventory information.
 | CK_ProductInventory_Shelf | Shelf | ([Shelf] like '[A-Za-z]' OR [Shelf]='N/A') | _Check constraint [Shelf] like '[A-Za-z]' OR [Shelf]='N/A'_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -51,7 +64,10 @@ Product inventory information.
 | FK_ProductInventory_Product_ProductID | ProductID->[[Production].[Product].[ProductID]](Product.md) | _Foreign key constraint referencing Product.ProductID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Production].[ProductInventory]
 (
@@ -111,18 +127,28 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Production].[Location]](Location.md)
+
+DEPENDENCYLIST* [[Production].[Location]](Location.md)
 * [[Production].[Product]](Product.md)
 * [Production](../Security/Schemas/Production.md)
 
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[dbo].[ufnGetStock]](../Programmability/Functions/Scalar-valued_Functions/ufnGetStock.md)
+---
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [[dbo].[ufnGetStock]](../Programmability/Functions/Scalar-valued_Functions/ufnGetStock.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

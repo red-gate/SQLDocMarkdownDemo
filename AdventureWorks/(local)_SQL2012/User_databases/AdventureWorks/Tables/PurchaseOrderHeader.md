@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Purchasing.PurchaseOrderHeader
 
 # ![Tables](../../../../Images/Table32.png) [Purchasing].[PurchaseOrderHeader]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Purchasing.PurchaseOrderHeader
+---
 
 ## <a name="#description"></a>MS_Description
+
 General purchase order information. See PurchaseOrderDetail.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -13,6 +18,8 @@ General purchase order information. See PurchaseOrderDetail.
 | Created | 13:14:19 14 March 2012 |
 | Last Modified | 13:14:55 14 March 2012 |
 
+
+---
 
 ## <a name="#columns"></a>Columns
 
@@ -33,12 +40,16 @@ General purchase order information. See PurchaseOrderDetail.
 |  | ModifiedDate | datetime |  |  | 8 | NO |  | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#computedcolumns"></a>Computed columns
 
 | Name | Column definition |
 |---|---|
 | TotalDue | (isnull(([SubTotal]+[TaxAmt])+[Freight],(0))) |
 
+
+---
 
 ## <a name="#indexes"></a>Indexes
 
@@ -49,12 +60,16 @@ General purchase order information. See PurchaseOrderDetail.
 |  | IX_PurchaseOrderHeader_VendorID | VendorID |  | _Nonclustered index._ |
 
 
+---
+
 ## <a name="#triggers"></a>Triggers
 
 | Name | ANSI Nulls On | Quoted Identifier On | On | Description |
 |---|---|---|---|---|
 | uPurchaseOrderHeader | YES | YES | After Update | _AFTER UPDATE trigger that updates the RevisionNumber and ModifiedDate columns in the PurchaseOrderHeader table._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -67,6 +82,8 @@ General purchase order information. See PurchaseOrderDetail.
 | CK_PurchaseOrderHeader_TaxAmt | TaxAmt | ([TaxAmt]>=(0.00)) | _Check constraint [TaxAmt] >= (0.00)_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -76,7 +93,10 @@ General purchase order information. See PurchaseOrderDetail.
 | FK_PurchaseOrderHeader_Vendor_VendorID | VendorID->[[Purchasing].[Vendor].[BusinessEntityID]](Vendor.md) | _Foreign key constraint referencing Vendor.VendorID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Purchasing].[PurchaseOrderHeader]
 (
@@ -225,19 +245,29 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[HumanResources].[Employee]](Employee.md)
+
+DEPENDENCYLIST* [[HumanResources].[Employee]](Employee.md)
 * [[Purchasing].[ShipMethod]](ShipMethod.md)
 * [[Purchasing].[Vendor]](Vendor.md)
 * [Purchasing](../Security/Schemas/Purchasing.md)
 
 
-## <a name="#usedby"></a>Used By
-DEPENDENCYLIST
-* [[Purchasing].[PurchaseOrderDetail]](PurchaseOrderDetail.md)
+---
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+## <a name="#usedby"></a>Used By
+
+DEPENDENCYLIST* [[Purchasing].[PurchaseOrderDetail]](PurchaseOrderDetail.md)
+
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 

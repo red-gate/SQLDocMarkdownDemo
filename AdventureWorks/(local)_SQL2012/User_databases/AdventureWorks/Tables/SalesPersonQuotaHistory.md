@@ -1,10 +1,15 @@
+#### 
+
+[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.SalesPersonQuotaHistory
 
 # ![Tables](../../../../Images/Table32.png) [Sales].[SalesPersonQuotaHistory]
 
-[Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables_.md) > Sales.SalesPersonQuotaHistory
+---
 
 ## <a name="#description"></a>MS_Description
+
 Sales performance tracking.
+
 ## <a name="#properties"></a>Properties
 
 | Property | Value |
@@ -14,24 +19,30 @@ Sales performance tracking.
 | Last Modified | 13:14:55 14 March 2012 |
 
 
+---
+
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Allow Nulls | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_SalesPersonQuotaHistory_BusinessEntityID_QuotaDate: BusinessEntityID\\QuotaDate](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID: [Sales].[SalesPerson].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Sales person identification number. Foreign key to SalesPerson.BusinessEntityID._ |
-| [![Cluster Primary Key PK_SalesPersonQuotaHistory_BusinessEntityID_QuotaDate: BusinessEntityID\\QuotaDate](../../../../Images/pkcluster.png)](#indexes) | QuotaDate | datetime | 8 | NO |  | _Sales quota date._ |
+| [![Cluster Primary Key PK_SalesPersonQuotaHistory_BusinessEntityID_QuotaDate: BusinessEntityID\QuotaDate](../../../../Images/pkcluster.png)](#indexes)[![Foreign Keys FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID: [Sales].[SalesPerson].BusinessEntityID](../../../../Images/fk.png)](#foreignkeys) | BusinessEntityID | int | 4 | NO |  | _Sales person identification number. Foreign key to SalesPerson.BusinessEntityID._ |
+| [![Cluster Primary Key PK_SalesPersonQuotaHistory_BusinessEntityID_QuotaDate: BusinessEntityID\QuotaDate](../../../../Images/pkcluster.png)](#indexes) | QuotaDate | datetime | 8 | NO |  | _Sales quota date._ |
 | [![Check Constraints CK_SalesPersonQuotaHistory_SalesQuota : ([SalesQuota]>(0.00))](../../../../Images/c-constraint.png)](#checkconstraints) | SalesQuota | money | 8 | NO |  | _Sales quota amount._ |
 | [![Indexes AK_SalesPersonQuotaHistory_rowguid](../../../../Images/Index.png)](#indexes) | rowguid | uniqueidentifier | 16 | NO | (newid()) | _ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample._ |
 |  | ModifiedDate | datetime | 8 | NO | (getdate()) | _Date and time the record was last updated._ |
 
 
+---
+
 ## <a name="#indexes"></a>Indexes
 
 | Key | Name | Key Columns | Unique | Description |
 |---|---|---|---|---|
-| [![Cluster Primary Key PK_SalesPersonQuotaHistory_BusinessEntityID_QuotaDate: BusinessEntityID\\QuotaDate](../../../../Images/pkcluster.png)](#indexes) | PK_SalesPersonQuotaHistory_BusinessEntityID_QuotaDate | BusinessEntityID, QuotaDate | YES | _Primary key (clustered) constraint_ |
+| [![Cluster Primary Key PK_SalesPersonQuotaHistory_BusinessEntityID_QuotaDate: BusinessEntityID\QuotaDate](../../../../Images/pkcluster.png)](#indexes) | PK_SalesPersonQuotaHistory_BusinessEntityID_QuotaDate | BusinessEntityID, QuotaDate | YES | _Primary key (clustered) constraint_ |
 |  | AK_SalesPersonQuotaHistory_rowguid | rowguid | YES | _Unique nonclustered index. Used to support replication samples._ |
 
+
+---
 
 ## <a name="#checkconstraints"></a>Check Constraints
 
@@ -40,6 +51,8 @@ Sales performance tracking.
 | CK_SalesPersonQuotaHistory_SalesQuota | SalesQuota | ([SalesQuota]>(0.00)) | _Check constraint [SalesQuota] > (0.00)_ |
 
 
+---
+
 ## <a name="#foreignkeys"></a>Foreign Keys
 
 | Name | Columns | Description |
@@ -47,7 +60,10 @@ Sales performance tracking.
 | FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID | BusinessEntityID->[[Sales].[SalesPerson].[BusinessEntityID]](SalesPerson.md) | _Foreign key constraint referencing SalesPerson.SalesPersonID._ |
 
 
+---
+
 ## <a name="#sqlscript"></a>SQL Script
+
 ```sql
 CREATE TABLE [Sales].[SalesPersonQuotaHistory]
 (
@@ -95,12 +111,20 @@ GO
 
 ```
 
+
+---
+
 ## <a name="#uses"></a>Uses
-DEPENDENCYLIST
-* [[Sales].[SalesPerson]](SalesPerson.md)
+
+DEPENDENCYLIST* [[Sales].[SalesPerson]](SalesPerson.md)
 * [Sales](../Security/Schemas/Sales.md)
 
-FOOTER: FOOTER: Author:  Chris Whitworth
-FOOTER: Created: 19 July 2016 09:34
-FOOTER: Copyright 2016 - All Rights Reserved
+
+---
+
+###### Author:  Chris Whitworth
+
+###### Copyright 2016 - All Rights Reserved
+
+###### Created: 20 July 2016 10:31
 
