@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductReview
 
@@ -135,7 +135,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[Production].[Product]](Product.md)
+* [[Production].[Product]](Product.md)
 * [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Production](../Security/Schemas/Production.md)
 
@@ -144,7 +144,7 @@ DEPENDENCYLIST* [[Production].[Product]](Product.md)
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [AW2008FullTextCatalog](../Storage/Full_Text_Catalogs/AW2008FullTextCatalog.md)
+* [AW2008FullTextCatalog](../Storage/Full_Text_Catalogs/AW2008FullTextCatalog.md)
 
 
 ---
@@ -153,5 +153,5 @@ DEPENDENCYLIST* [AW2008FullTextCatalog](../Storage/Full_Text_Catalogs/AW2008Full
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

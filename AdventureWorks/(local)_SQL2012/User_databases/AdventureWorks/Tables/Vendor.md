@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Purchasing.Vendor
 
@@ -186,7 +186,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[Person].[BusinessEntity]](BusinessEntity.md)
+* [[Person].[BusinessEntity]](BusinessEntity.md)
 * [[dbo].[AccountNumber]](../Programmability/Types/User-Defined_Data_Types/AccountNumber.md)
 * [[dbo].[Flag]](../Programmability/Types/User-Defined_Data_Types/Flag.md)
 * [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
@@ -197,7 +197,7 @@ DEPENDENCYLIST* [[Person].[BusinessEntity]](BusinessEntity.md)
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[Purchasing].[ProductVendor]](ProductVendor.md)
+* [[Purchasing].[ProductVendor]](ProductVendor.md)
 * [[Purchasing].[PurchaseOrderHeader]](PurchaseOrderHeader.md)
 * [[Purchasing].[vVendorWithAddresses]](../Views/vVendorWithAddresses.md)
 * [[Purchasing].[vVendorWithContacts]](../Views/vVendorWithContacts.md)
@@ -210,5 +210,5 @@ DEPENDENCYLIST* [[Purchasing].[ProductVendor]](ProductVendor.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

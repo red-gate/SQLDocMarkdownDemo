@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > HumanResources.Department
 
@@ -85,7 +85,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
+* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [HumanResources](../Security/Schemas/HumanResources.md)
 
 
@@ -93,7 +93,7 @@ DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[HumanResources].[EmployeeDepartmentHistory]](EmployeeDepartmentHistory.md)
+* [[HumanResources].[EmployeeDepartmentHistory]](EmployeeDepartmentHistory.md)
 * [[HumanResources].[vEmployeeDepartment]](../Views/vEmployeeDepartment.md)
 * [[HumanResources].[vEmployeeDepartmentHistory]](../Views/vEmployeeDepartmentHistory.md)
 
@@ -104,5 +104,5 @@ DEPENDENCYLIST* [[HumanResources].[EmployeeDepartmentHistory]](EmployeeDepartmen
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

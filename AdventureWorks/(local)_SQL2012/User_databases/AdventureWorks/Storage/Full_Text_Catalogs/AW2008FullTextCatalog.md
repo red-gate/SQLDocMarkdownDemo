@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Storage](../index.md) > [Full Text Catalogs](Full_Text_Catalogs.md) > AW2008FullTextCatalog
 
@@ -48,7 +48,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[HumanResources].[JobCandidate]](../../Tables/JobCandidate.md)
+* [[HumanResources].[JobCandidate]](../../Tables/JobCandidate.md)
 * [[Production].[Document]](../../Tables/Document.md)
 * [[Production].[ProductReview]](../../Tables/ProductReview.md)
 
@@ -59,5 +59,5 @@ DEPENDENCYLIST* [[HumanResources].[JobCandidate]](../../Tables/JobCandidate.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

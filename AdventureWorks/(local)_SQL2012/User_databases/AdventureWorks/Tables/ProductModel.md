@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductModel
 
@@ -112,7 +112,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
+* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Production](../Security/Schemas/Production.md)
 * [[Production].[ManuInstructionsSchemaCollection]](../Programmability/Types/XML_Schema_Collections/ManuInstructionsSchemaCollection.md)
 * [[Production].[ProductDescriptionSchemaCollection]](../Programmability/Types/XML_Schema_Collections/ProductDescriptionSchemaCollection.md)
@@ -122,7 +122,7 @@ DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[Production].[Product]](Product.md)
+* [[Production].[Product]](Product.md)
 * [[Production].[ProductModelIllustration]](ProductModelIllustration.md)
 * [[Production].[ProductModelProductDescriptionCulture]](ProductModelProductDescriptionCulture.md)
 * [[Production].[vProductAndDescription]](../Views/vProductAndDescription.md)
@@ -136,5 +136,5 @@ DEPENDENCYLIST* [[Production].[Product]](Product.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.Product
 
@@ -271,7 +271,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[Production].[ProductModel]](ProductModel.md)
+* [[Production].[ProductModel]](ProductModel.md)
 * [[Production].[ProductSubcategory]](ProductSubcategory.md)
 * [[Production].[UnitMeasure]](UnitMeasure.md)
 * [[dbo].[Flag]](../Programmability/Types/User-Defined_Data_Types/Flag.md)
@@ -283,7 +283,7 @@ DEPENDENCYLIST* [[Production].[ProductModel]](ProductModel.md)
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[Production].[BillOfMaterials]](BillOfMaterials.md)
+* [[Production].[BillOfMaterials]](BillOfMaterials.md)
 * [[Production].[ProductCostHistory]](ProductCostHistory.md)
 * [[Production].[ProductDocument]](ProductDocument.md)
 * [[Production].[ProductInventory]](ProductInventory.md)
@@ -310,5 +310,5 @@ DEPENDENCYLIST* [[Production].[BillOfMaterials]](BillOfMaterials.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

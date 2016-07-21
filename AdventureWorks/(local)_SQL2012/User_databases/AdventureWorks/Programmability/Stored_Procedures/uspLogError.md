@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures.md) > dbo.uspLogError
 
@@ -106,7 +106,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[dbo].[ErrorLog]](../../Tables/ErrorLog.md)
+* [[dbo].[ErrorLog]](../../Tables/ErrorLog.md)
 * [[dbo].[uspPrintError]](uspPrintError.md)
 
 
@@ -114,7 +114,7 @@ DEPENDENCYLIST* [[dbo].[ErrorLog]](../../Tables/ErrorLog.md)
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[HumanResources].[uspUpdateEmployeeHireInfo]](uspUpdateEmployeeHireInfo.md)
+* [[HumanResources].[uspUpdateEmployeeHireInfo]](uspUpdateEmployeeHireInfo.md)
 * [[HumanResources].[uspUpdateEmployeeLogin]](uspUpdateEmployeeLogin.md)
 * [[HumanResources].[uspUpdateEmployeePersonalInfo]](uspUpdateEmployeePersonalInfo.md)
 
@@ -125,5 +125,5 @@ DEPENDENCYLIST* [[HumanResources].[uspUpdateEmployeeHireInfo]](uspUpdateEmployee
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

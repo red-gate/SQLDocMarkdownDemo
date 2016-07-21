@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Functions](../index.md) > [Scalar-valued Functions](Scalar-valued_Functions.md) > dbo.ufnGetProductDealerPrice
 
@@ -70,7 +70,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[Production].[Product]](../../../Tables/Product.md)
+* [[Production].[Product]](../../../Tables/Product.md)
 * [[Production].[ProductListPriceHistory]](../../../Tables/ProductListPriceHistory.md)
 
 
@@ -80,5 +80,5 @@ DEPENDENCYLIST* [[Production].[Product]](../../../Tables/Product.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

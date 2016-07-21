@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Types](../index.md) > [User-Defined Data Types](User-Defined_Data_Types.md) > dbo.Flag
 
@@ -30,7 +30,7 @@ GO
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[HumanResources].[Employee]](../../../Tables/Employee.md)
+* [[HumanResources].[Employee]](../../../Tables/Employee.md)
 * [[Person].[StateProvince]](../../../Tables/StateProvince.md)
 * [[Production].[Product]](../../../Tables/Product.md)
 * [[Production].[ProductProductPhoto]](../../../Tables/ProductProductPhoto.md)
@@ -46,5 +46,5 @@ DEPENDENCYLIST* [[HumanResources].[Employee]](../../../Tables/Employee.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

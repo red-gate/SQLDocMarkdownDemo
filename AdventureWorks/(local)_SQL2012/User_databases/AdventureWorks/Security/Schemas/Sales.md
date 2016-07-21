@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../../index.md) > [(local)\\SQL2012](../../../../index.md) > [User databases](../../../index.md) > [AdventureWorks](../../index.md) > [Security](../index.md) > [Schemas](Schemas.md) > Sales
 
@@ -35,7 +35,7 @@ GO
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[Sales].[CountryRegionCurrency]](../../Tables/CountryRegionCurrency.md)
+* [[Sales].[CountryRegionCurrency]](../../Tables/CountryRegionCurrency.md)
 * [[Sales].[CreditCard]](../../Tables/CreditCard.md)
 * [[Sales].[Currency]](../../Tables/Currency.md)
 * [[Sales].[CurrencyRate]](../../Tables/CurrencyRate.md)
@@ -70,5 +70,5 @@ DEPENDENCYLIST* [[Sales].[CountryRegionCurrency]](../../Tables/CountryRegionCurr
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

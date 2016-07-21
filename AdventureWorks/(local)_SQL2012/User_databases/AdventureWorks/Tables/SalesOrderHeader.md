@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.SalesOrderHeader
 
@@ -381,7 +381,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[Person].[Address]](Address.md)
+* [[Person].[Address]](Address.md)
 * [[Purchasing].[ShipMethod]](ShipMethod.md)
 * [[Sales].[CreditCard]](CreditCard.md)
 * [[Sales].[CurrencyRate]](CurrencyRate.md)
@@ -398,7 +398,7 @@ DEPENDENCYLIST* [[Person].[Address]](Address.md)
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[Sales].[SalesOrderDetail]](SalesOrderDetail.md)
+* [[Sales].[SalesOrderDetail]](SalesOrderDetail.md)
 * [[Sales].[SalesOrderHeaderSalesReason]](SalesOrderHeaderSalesReason.md)
 * [[Sales].[vSalesPersonSalesByFiscalYears]](../Views/vSalesPersonSalesByFiscalYears.md)
 
@@ -409,5 +409,5 @@ DEPENDENCYLIST* [[Sales].[SalesOrderDetail]](SalesOrderDetail.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

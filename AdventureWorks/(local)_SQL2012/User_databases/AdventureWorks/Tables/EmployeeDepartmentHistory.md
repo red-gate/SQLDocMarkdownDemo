@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > HumanResources.EmployeeDepartmentHistory
 
@@ -133,7 +133,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[HumanResources].[Department]](Department.md)
+* [[HumanResources].[Department]](Department.md)
 * [[HumanResources].[Employee]](Employee.md)
 * [[HumanResources].[Shift]](Shift.md)
 * [HumanResources](../Security/Schemas/HumanResources.md)
@@ -143,7 +143,7 @@ DEPENDENCYLIST* [[HumanResources].[Department]](Department.md)
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[HumanResources].[vEmployeeDepartment]](../Views/vEmployeeDepartment.md)
+* [[HumanResources].[vEmployeeDepartment]](../Views/vEmployeeDepartment.md)
 * [[HumanResources].[vEmployeeDepartmentHistory]](../Views/vEmployeeDepartmentHistory.md)
 
 
@@ -153,5 +153,5 @@ DEPENDENCYLIST* [[HumanResources].[vEmployeeDepartment]](../Views/vEmployeeDepar
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

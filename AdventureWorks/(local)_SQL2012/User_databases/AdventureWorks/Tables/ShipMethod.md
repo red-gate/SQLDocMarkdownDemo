@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Purchasing.ShipMethod
 
@@ -122,7 +122,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
+* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Purchasing](../Security/Schemas/Purchasing.md)
 
 
@@ -130,7 +130,7 @@ DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[Purchasing].[PurchaseOrderHeader]](PurchaseOrderHeader.md)
+* [[Purchasing].[PurchaseOrderHeader]](PurchaseOrderHeader.md)
 * [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
 
 
@@ -140,5 +140,5 @@ DEPENDENCYLIST* [[Purchasing].[PurchaseOrderHeader]](PurchaseOrderHeader.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

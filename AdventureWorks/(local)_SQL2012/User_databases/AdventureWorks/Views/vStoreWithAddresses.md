@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > Sales.vStoreWithAddresses
 
@@ -76,7 +76,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[Person].[Address]](../Tables/Address.md)
+* [[Person].[Address]](../Tables/Address.md)
 * [[Person].[AddressType]](../Tables/AddressType.md)
 * [[Person].[BusinessEntityAddress]](../Tables/BusinessEntityAddress.md)
 * [[Person].[CountryRegion]](../Tables/CountryRegion.md)
@@ -91,5 +91,5 @@ DEPENDENCYLIST* [[Person].[Address]](../Tables/Address.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

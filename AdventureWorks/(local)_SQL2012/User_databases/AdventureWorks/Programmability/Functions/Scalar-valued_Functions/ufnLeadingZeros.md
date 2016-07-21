@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../../../index.md) > [(local)\\SQL2012](../../../../../index.md) > [User databases](../../../../index.md) > [AdventureWorks](../../../index.md) > [Programmability](../../index.md) > [Functions](../index.md) > [Scalar-valued Functions](Scalar-valued_Functions.md) > dbo.ufnLeadingZeros
 
@@ -61,7 +61,7 @@ GO
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[Sales].[Customer]](../../../Tables/Customer.md)
+* [[Sales].[Customer]](../../../Tables/Customer.md)
 
 
 ---
@@ -70,5 +70,5 @@ DEPENDENCYLIST* [[Sales].[Customer]](../../../Tables/Customer.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

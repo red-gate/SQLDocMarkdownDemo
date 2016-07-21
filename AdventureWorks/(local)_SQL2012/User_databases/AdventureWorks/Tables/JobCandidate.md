@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > HumanResources.JobCandidate
 
@@ -103,7 +103,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[HumanResources].[Employee]](Employee.md)
+* [[HumanResources].[Employee]](Employee.md)
 * [HumanResources](../Security/Schemas/HumanResources.md)
 * [[HumanResources].[HRResumeSchemaCollection]](../Programmability/Types/XML_Schema_Collections/HRResumeSchemaCollection.md)
 
@@ -112,7 +112,7 @@ DEPENDENCYLIST* [[HumanResources].[Employee]](Employee.md)
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[HumanResources].[vJobCandidate]](../Views/vJobCandidate.md)
+* [[HumanResources].[vJobCandidate]](../Views/vJobCandidate.md)
 * [[HumanResources].[vJobCandidateEducation]](../Views/vJobCandidateEducation.md)
 * [[HumanResources].[vJobCandidateEmployment]](../Views/vJobCandidateEmployment.md)
 * [[dbo].[uspSearchCandidateResumes]](../Programmability/Stored_Procedures/uspSearchCandidateResumes.md)
@@ -125,5 +125,5 @@ DEPENDENCYLIST* [[HumanResources].[vJobCandidate]](../Views/vJobCandidate.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.StateProvince
 
@@ -133,7 +133,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[Person].[CountryRegion]](CountryRegion.md)
+* [[Person].[CountryRegion]](CountryRegion.md)
 * [[Sales].[SalesTerritory]](SalesTerritory.md)
 * [[dbo].[Flag]](../Programmability/Types/User-Defined_Data_Types/Flag.md)
 * [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
@@ -144,7 +144,7 @@ DEPENDENCYLIST* [[Person].[CountryRegion]](CountryRegion.md)
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[Person].[Address]](Address.md)
+* [[Person].[Address]](Address.md)
 * [[Sales].[SalesTaxRate]](SalesTaxRate.md)
 * [[HumanResources].[vEmployee]](../Views/vEmployee.md)
 * [[Person].[vStateProvinceCountryRegion]](../Views/vStateProvinceCountryRegion.md)
@@ -160,5 +160,5 @@ DEPENDENCYLIST* [[Person].[Address]](Address.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

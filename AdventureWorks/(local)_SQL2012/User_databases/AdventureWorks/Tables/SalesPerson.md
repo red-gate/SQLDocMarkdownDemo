@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Sales.SalesPerson
 
@@ -165,7 +165,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[HumanResources].[Employee]](Employee.md)
+* [[HumanResources].[Employee]](Employee.md)
 * [[Sales].[SalesTerritory]](SalesTerritory.md)
 * [Sales](../Security/Schemas/Sales.md)
 
@@ -174,7 +174,7 @@ DEPENDENCYLIST* [[HumanResources].[Employee]](Employee.md)
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
+* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
 * [[Sales].[SalesPersonQuotaHistory]](SalesPersonQuotaHistory.md)
 * [[Sales].[SalesTerritoryHistory]](SalesTerritoryHistory.md)
 * [[Sales].[Store]](Store.md)
@@ -188,5 +188,5 @@ DEPENDENCYLIST* [[Sales].[SalesOrderHeader]](SalesOrderHeader.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

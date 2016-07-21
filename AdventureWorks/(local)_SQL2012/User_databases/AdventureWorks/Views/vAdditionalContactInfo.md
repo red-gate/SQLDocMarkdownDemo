@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Views](Views.md) > Person.vAdditionalContactInfo
 
@@ -109,7 +109,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[Person].[Person]](../Tables/Person.md)
+* [[Person].[Person]](../Tables/Person.md)
 * [Person](../Security/Schemas/Person.md)
 
 
@@ -119,5 +119,5 @@ DEPENDENCYLIST* [[Person].[Person]](../Tables/Person.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

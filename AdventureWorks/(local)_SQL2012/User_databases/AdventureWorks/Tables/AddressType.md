@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.AddressType
 
@@ -92,7 +92,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
+* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [Person](../Security/Schemas/Person.md)
 
 
@@ -100,7 +100,7 @@ DEPENDENCYLIST* [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[Person].[BusinessEntityAddress]](BusinessEntityAddress.md)
+* [[Person].[BusinessEntityAddress]](BusinessEntityAddress.md)
 * [[Purchasing].[vVendorWithAddresses]](../Views/vVendorWithAddresses.md)
 * [[Sales].[vIndividualCustomer]](../Views/vIndividualCustomer.md)
 * [[Sales].[vStoreWithAddresses]](../Views/vStoreWithAddresses.md)
@@ -112,5 +112,5 @@ DEPENDENCYLIST* [[Person].[BusinessEntityAddress]](BusinessEntityAddress.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

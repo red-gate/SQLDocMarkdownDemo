@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Person.Person
 
@@ -247,7 +247,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[Person].[BusinessEntity]](BusinessEntity.md)
+* [[Person].[BusinessEntity]](BusinessEntity.md)
 * [[dbo].[Name]](../Programmability/Types/User-Defined_Data_Types/Name.md)
 * [[dbo].[NameStyle]](../Programmability/Types/User-Defined_Data_Types/NameStyle.md)
 * [Person](../Security/Schemas/Person.md)
@@ -259,7 +259,7 @@ DEPENDENCYLIST* [[Person].[BusinessEntity]](BusinessEntity.md)
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[HumanResources].[Employee]](Employee.md)
+* [[HumanResources].[Employee]](Employee.md)
 * [[Person].[BusinessEntityContact]](BusinessEntityContact.md)
 * [[Person].[EmailAddress]](EmailAddress.md)
 * [[Person].[Password]](Password.md)
@@ -287,5 +287,5 @@ DEPENDENCYLIST* [[HumanResources].[Employee]](Employee.md)
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 

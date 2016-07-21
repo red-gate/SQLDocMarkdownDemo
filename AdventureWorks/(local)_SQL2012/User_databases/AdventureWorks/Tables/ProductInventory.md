@@ -1,4 +1,4 @@
-#### 
+#### asdasdasd
 
 [Project](../../../../index.md) > [(local)\\SQL2012](../../../index.md) > [User databases](../../index.md) > [AdventureWorks](../index.md) > [Tables](Tables.md) > Production.ProductInventory
 
@@ -132,7 +132,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-DEPENDENCYLIST* [[Production].[Location]](Location.md)
+* [[Production].[Location]](Location.md)
 * [[Production].[Product]](Product.md)
 * [Production](../Security/Schemas/Production.md)
 
@@ -141,7 +141,7 @@ DEPENDENCYLIST* [[Production].[Location]](Location.md)
 
 ## <a name="#usedby"></a>Used By
 
-DEPENDENCYLIST* [[dbo].[ufnGetStock]](../Programmability/Functions/Scalar-valued_Functions/ufnGetStock.md)
+* [[dbo].[ufnGetStock]](../Programmability/Functions/Scalar-valued_Functions/ufnGetStock.md)
 
 
 ---
@@ -150,5 +150,5 @@ DEPENDENCYLIST* [[dbo].[ufnGetStock]](../Programmability/Functions/Scalar-valued
 
 ###### Copyright 2016 - All Rights Reserved
 
-###### Created: 20 July 2016 10:31
+###### Created: 21 July 2016 12:25
 
